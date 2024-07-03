@@ -1,7 +1,7 @@
 <template>
   <el-row justify="center">
 
-    <div class="footer-container">
+    <div class="board-container">
       <div class="title-container">
         <h1 id="chinese-title">联系我们&nbsp</h1>
         <h2 id="english-title">contact us</h2>
@@ -13,6 +13,7 @@
         <div>地址：北京市顺义区千里马国际</div>
       </div>
     </div>
+    <div class="company-container">北京智慧土豆有限公司</div>
   </el-row>
 
 </template>
@@ -28,7 +29,7 @@ export default {
 </script>
 
 <style scoped lang="less">
-.footer-container {
+.board-container {
   background-image: url("../assets/footer-background.png");
   background-size: cover;
   //background-color: red;
@@ -46,7 +47,7 @@ export default {
   justify-content: center;
   align-items: center;
   color: white;
-  //background-color: red;
+  margin-top: -6vh;
 }
 
 #chinese-title {
@@ -57,6 +58,7 @@ export default {
   line-height: 79.19px;
   letter-spacing: 0.12em;
   text-align: left;
+  color: #ECF1FF;
 }
 
 #english-title {
@@ -80,7 +82,7 @@ export default {
   width: 40%;
   color: white;
   border-radius: 10px;
-  margin-top: 2vh;
+  margin-top: -1vh;
   padding: 3vh;
 
   font-family: YouSheBiaoTiHei;
@@ -88,8 +90,22 @@ export default {
   font-weight: 400;
   line-height: 41.6px;
   text-align: center;
+}
 
+.company-container {
+  width: 100%;
+  height: 124px;
+  font-family: Microsoft YaHei;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 124px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #31354D;
 
+  margin-top: -15px;
+;
 }
 
 </style>
