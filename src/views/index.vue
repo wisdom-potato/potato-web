@@ -1,17 +1,24 @@
 <template>
-  <div class="container">
+  <el-container>
 
     <!--页眉-->
-    <the-header/>
+    <el-header>
+      <the-header/>
+    </el-header>
 
     <!--正文-->
-    <router-view/>
+    <el-main>
 
+      <router-view/>
+
+    </el-main>
 
     <!--页脚-->
-    <the-footer/>
+    <el-footer>
+      <the-footer/>
+    </el-footer>
 
-  </div>
+  </el-container>
 </template>
 
 <script setup>
@@ -25,11 +32,8 @@ export default {
 }
 </script>
 
-<style scoped>
-.container {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+<style scoped lang="less">
+.el-container, .el-main, .el-footer, .el-header {
+  padding: 0;
 }
 </style>

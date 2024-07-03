@@ -1,6 +1,6 @@
 <template>
   <div class="home-header">
-<!--    todo: 需要让home-header粘滞在顶部-->
+    <!--    todo: 需要让home-header粘滞在顶部-->
     <h1 color="black">header</h1>
   </div>
   <div class="home-container">
@@ -23,23 +23,26 @@ export default {
 </script>
 
 <style scoped lang="less">
-.home-container{
+.home-container {
   background-image: url("../assets/home-bg.png");
   background-size: cover;
   width: 100%;
   height: 493px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.title-container{
+
+.title-container {
   color: #FFFFFF;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.home-header{
+
+.home-header {
   color: black;
   position: sticky;
   top: 0;
