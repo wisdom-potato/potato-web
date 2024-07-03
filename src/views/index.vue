@@ -34,6 +34,7 @@ export default {
 
 <style scoped lang="less">
 .el-container, .el-main, .el-footer, .el-header {
+  width: 100%;
   padding: 0;
 }
 </style>
