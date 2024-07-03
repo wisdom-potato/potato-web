@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: "the-footer"
+  name: "TheFooter"
 }
 </script>
 
