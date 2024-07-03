@@ -5,8 +5,8 @@
   </div>
   <div class="home-container">
     <div class="title-container">
-      <h1>智慧土豆</h1>
-      <h2>机器人技术支持专家</h2>
+      <h1 id="title">智慧土豆</h1>
+      <h2 id="subtitle">机器人技术支持专家</h2>
     </div>
   </div>
 
@@ -35,12 +35,31 @@ export default {
 }
 
 .title-container {
+
   color: #FFFFFF;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+#title{
+  font-family: Microsoft YaHei;
+  font-size: 64px;
+  line-height: 77.61px;
+  letter-spacing: 0.5em;
+  text-align: center;
+  font-weight: 700;
+}
+#subtitle{
+  font-family: Microsoft YaHei;
+  font-size: 24px;
+  line-height: 29.1px;
+  letter-spacing: 0.5em;
+  text-align: center;
+  font-weight: 700;
+
+}
+
 
 .home-header {
   color: black;
