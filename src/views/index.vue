@@ -1,24 +1,17 @@
 <template>
-  <el-container>
+  <div class="container">
 
     <!--页眉-->
-    <el-header>
-      <the-header/>
-    </el-header>
+    <the-header/>
 
     <!--正文-->
-    <el-main>
+    <router-view/>
 
-      <router-view/>
-
-    </el-main>
 
     <!--页脚-->
-    <el-footer>
-      <the-footer/>
-    </el-footer>
+    <the-footer/>
 
-  </el-container>
+  </div>
 </template>
 
 <script setup>
@@ -33,5 +26,10 @@ export default {
 </script>
 
 <style scoped>
-
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 </style>
