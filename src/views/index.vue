@@ -8,9 +8,7 @@
 
     <!--正文-->
     <el-main>
-
       <router-view/>
-
     </el-main>
 
     <!--页脚-->
