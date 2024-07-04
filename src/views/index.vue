@@ -51,6 +51,7 @@ export default {
 
 .el-main {
   margin-top: 75px;
+  background-color: #F8FAFF;
 }
 
 </style>
