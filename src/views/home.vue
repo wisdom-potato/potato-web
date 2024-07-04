@@ -1,8 +1,20 @@
 <template>
-  <div class="home-header">
-    <!--    todo: 需要让home-header粘滞在顶部-->
-    <h1 color="black">header</h1>
-  </div>
+<!--  TODO: 加入顶部菜单粘滞功能-->
+    <el-menu
+        :default-active="activeIndex"
+        mode="horizontal"
+        @select="handleSelect"
+        background-color="#6374B6"
+        text-color="#FFFFFF"
+    >
+      <el-menu-item index="1">硬件产品</el-menu-item>
+      <el-menu-item index="2">竞赛解决方案</el-menu-item>
+      <el-menu-item index="3" >STEAM教育</el-menu-item>
+    </el-menu>
+
+
+
+
   <div class="home-container">
     <div class="title-container">
       <h1 id="title">智慧土豆</h1>
@@ -12,11 +24,16 @@
 
 </template>
 
-<script setup>
+<script lang="ts" setup>
+  import { ref } from 'vue'
 
+  const activeIndex = ref('1')
+  const activeIndex2 = ref('1')
+  const handleSelect = (key: string, keyPath: string[]) => {console.log(key, keyPath)
+  }
 </script>
 
-<script>
+<script lang="ts">
 export default {
   name: "Home"
 }
@@ -60,13 +77,18 @@ export default {
 
 }
 
-
-.home-header {
-  color: black;
-  position: sticky;
-  top: 0;
-  background-color: white; /* 可以根据需要设置背景颜色 */
-  z-index: 1000; /* 确保 header 处于顶层 */
+.el-menu-demo {
+  display: flex;
+  justify-content: space-between; /* 使菜单项之间均匀分布 */
+  width: 100%; /* 让菜单占据100%的宽度 */
 }
 
+.el-menu-item {
+  flex: 1; /* 让每个菜单项占据相同的宽度 */
+  text-align: center; /* 让菜单项文本居中 */
+  font-family: Microsoft YaHei;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+}
 </style>
