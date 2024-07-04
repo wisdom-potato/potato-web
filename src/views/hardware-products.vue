@@ -56,6 +56,10 @@ export default {
 
   display: flex;
   align-items: center;
+
+  margin-left: 20px;
+  margin-right: 20px;
+
 }
 
 .header-text {
