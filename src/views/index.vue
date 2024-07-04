@@ -42,4 +42,15 @@ export default {
   height: 100%;
 }
 
+.el-header {
+  position: fixed;
+  top: 0;
+  width: 1440px;
+  z-index: 10;
+}
+
+.el-main {
+  margin-top: 75px;
+}
+
 </style>
