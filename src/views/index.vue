@@ -33,8 +33,12 @@ export default {
 </script>
 
 <style scoped lang="less">
-.el-container, .el-main, .el-footer, .el-header {
+.el-container, .el-header, .el-main, .el-footer {
   width: 100%;
   padding: 0;
+}
+
+.el-header, .el-main, .el-footer {
+  height: 100%;
 }
 </style>
