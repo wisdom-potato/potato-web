@@ -36,7 +36,6 @@ export default {
 .board-container {
   background-image: url("../assets/footer-background.png");
   background-size: cover;
-  //background-color: red;
   width: 1654px;
   height: 493px;
   display: flex;
@@ -67,7 +66,7 @@ export default {
 
 #english-title {
   //styleName: 英文标题;
-  font-family: TT Supermolot, serif;
+  font-family: "TT Supermolot", serif;
   font-size: 50px;
   font-style: italic;
   font-weight: 900;
@@ -77,7 +76,6 @@ export default {
 }
 
 .contact-container {
-  //background-color: blue;
   display: flex;
   flex-direction: column;
   justify-content: center;

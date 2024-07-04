@@ -36,10 +36,6 @@ export default {
   padding: 0;
 }
 
-.el-header, .el-main, .el-footer {
-  height: 100%;
-}
-
 .el-header {
   position: fixed;
   top: 0;
@@ -50,6 +46,9 @@ export default {
 .el-main {
   margin-top: 75px;
   background-color: #F8FAFF;
+
+  //align-items: stretch;
+  //overflow: visible;
 }
 
 </style>
