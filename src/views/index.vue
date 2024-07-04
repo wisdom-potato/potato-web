@@ -14,7 +14,7 @@
     </el-main>
 
     <!--页脚-->
-    <el-footer>
+    <el-footer id="footer">
       <the-footer/>
     </el-footer>
 
