@@ -1,16 +1,30 @@
 <template>
 <!--  TODO: 加入顶部菜单粘滞功能-->
-    <el-menu
-        :default-active="activeIndex"
-        mode="horizontal"
-        @select="handleSelect"
-        background-color="#6374B6"
-        text-color="#FFFFFF"
-    >
-      <el-menu-item index="1">硬件产品</el-menu-item>
-      <el-menu-item index="2">竞赛解决方案</el-menu-item>
-      <el-menu-item index="3" >STEAM教育</el-menu-item>
-    </el-menu>
+  <div class="menu-container">
+    <el-container>
+      <el-header class="common">
+        <el-row align="middle">
+          <!--标签-->
+          <el-col :span="24">
+            <el-row>
+              <el-col :span="8" class="centered-content">
+                <el-link>硬件产品</el-link>
+              </el-col>
+              <el-col :span="8" class="centered-content">
+                <el-link>竞赛解决方案</el-link>
+              </el-col>
+              <el-col :span="8" class="centered-content">
+                <el-link>STEAM教育</el-link>
+              </el-col>
+            </el-row>
+          </el-col>
+
+        </el-row>
+
+      </el-header>
+    </el-container>
+  </div>
+
 
 
 
@@ -28,7 +42,6 @@
   import { ref } from 'vue'
 
   const activeIndex = ref('1')
-  const activeIndex2 = ref('1')
   const handleSelect = (key: string, keyPath: string[]) => {console.log(key, keyPath)
   }
 </script>
@@ -40,6 +53,37 @@ export default {
 </script>
 
 <style scoped lang="less">
+.common {
+  background-color: #6374B6;
+  height: 65px;
+}
+
+
+.centered-content{
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center;    /* 垂直居中 */
+  height: 100%;
+}
+.el-link{
+  font-family: "Microsoft YaHei", serif;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  margin-top: 15px;
+
+  &:hover {
+    color: #8596CB;
+
+    &::after {
+      content: "";
+      border-bottom: 1px solid white;
+    }
+  }
+}
 .home-container {
   background-image: url("../assets/home-bg.png");
   background-size: cover;
@@ -76,19 +120,12 @@ export default {
   font-weight: 700;
 
 }
-
-.el-menu-demo {
-  display: flex;
-  justify-content: space-between; /* 使菜单项之间均匀分布 */
-  width: 100%; /* 让菜单占据100%的宽度 */
+.el-header {
+  position: fixed;
+  top: 75px;
+  width: 1440px;
+  z-index: 10;
 }
 
-.el-menu-item {
-  flex: 1; /* 让每个菜单项占据相同的宽度 */
-  text-align: center; /* 让菜单项文本居中 */
-  font-family: Microsoft YaHei;
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 400;
-}
+
 </style>
