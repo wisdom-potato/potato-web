@@ -6,7 +6,7 @@
         <!--logo-->
         <el-col :span="16" :offset="2">
           <el-row align="middle">
-            <el-image class="logo" :src="getAssetsFile('logo-with-text.png')" fit="contain"></el-image>
+            <el-image class="logo" :src="getAssetsFile('text-logo.png')" fit="contain"></el-image>
           </el-row>
         </el-col>
 
