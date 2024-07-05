@@ -1,6 +1,7 @@
 <template>
   <el-row justify="center">
 
+    <!--联系方式板-->
     <div class="board-container">
       <div class="title-container">
         <h1 id="chinese-title">联系我们&nbsp</h1>
@@ -13,7 +14,10 @@
         <div>地址：北京市顺义区千里马国际</div>
       </div>
     </div>
+
+    <!--页脚蓝条-->
     <div class="company-container">北京智慧土豆有限公司</div>
+
   </el-row>
 
 </template>
@@ -32,7 +36,6 @@ export default {
 .board-container {
   background-image: url("../assets/footer-background.png");
   background-size: cover;
-  //background-color: red;
   width: 1654px;
   height: 493px;
   display: flex;
@@ -52,7 +55,7 @@ export default {
 
 #chinese-title {
   //styleName: 标题1;
-  font-family: Microsoft YaHei;
+  font-family: Microsoft YaHei, serif;
   font-size: 60px;
   font-weight: 700;
   line-height: 79.19px;
@@ -63,7 +66,7 @@ export default {
 
 #english-title {
   //styleName: 英文标题;
-  font-family: TT Supermolot;
+  font-family: "TT Supermolot", serif;
   font-size: 50px;
   font-style: italic;
   font-weight: 900;
@@ -73,7 +76,6 @@ export default {
 }
 
 .contact-container {
-  //background-color: blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,17 +87,16 @@ export default {
   margin-top: -1vh;
   padding: 3vh;
 
-  font-family: YouSheBiaoTiHei;
+  font-family: YouSheBiaoTiHei, serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 41.6px;
-  text-align: center;
 }
 
 .company-container {
   width: 100%;
   height: 124px;
-  font-family: Microsoft YaHei;
+  font-family: Microsoft YaHei, serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 124px;
@@ -104,8 +105,7 @@ export default {
   color: #FFFFFF;
   background-color: #31354D;
 
-  margin-top: -15px;
-;
+  margin-top: -15px;;
 }
 
 </style>

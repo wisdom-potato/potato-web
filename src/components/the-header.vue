@@ -13,29 +13,35 @@
         <!--标签-->
         <el-col :span="17" :offset="1">
           <el-row justify="end" align="middle">
+
             <el-col :span="4">
               <el-link @click="router.push({name: 'Home'})">首页</el-link>
             </el-col>
+
             <el-col :span="4">
               <el-link>开源资料</el-link>
             </el-col>
+
             <el-col :span="4">
               <el-link @click="router.push({name: 'HardwareProducts'})">硬件产品</el-link>
             </el-col>
+
             <el-col :span="4">
               <el-link @click="router.push({name: 'CompetitionSolutions'})">竞赛解决方案</el-link>
             </el-col>
+
             <el-col :span="4">
               <el-link @click="router.push({name: 'SteamEducation'})">STEAM教育</el-link>
             </el-col>
+
             <el-col :span="4">
               <el-link @click="scrollToAnchor('footer')">联系我们</el-link>
             </el-col>
+
           </el-row>
         </el-col>
 
       </el-row>
-
     </el-header>
   </el-container>
 </template>
