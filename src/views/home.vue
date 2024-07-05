@@ -41,8 +41,10 @@
             <p style="margin-right: -15px">在机器人竞赛学习与教育领域，我们致力于为每位学员提供个性化定制的学习指导方案和专业化的技能培训，帮助他们实现学习上的突破和提升。无论是机械设计、电子电路、编程语言还是控制算法，我们都会全力以赴，为学员创造最佳的学习环境和机会，助力他们在机器人竞赛中取得成功。</p>
           </el-card>
         </el-col>
-        <el-col :span="12">
-          <img src="../assets/img.png" width="450px" height="417px" alt="">
+        <el-col :span="9" id="solution-image">
+          <p class="competition-float" id="competition-float1">竞赛辅导</p>
+          <p class="competition-float" id="competition-float2">竞赛机器人设计</p>
+          <img id="home-solution-img" src="../assets/home-solution-image.png"  alt="">
         </el-col>
       </el-row>
   </div>
@@ -66,10 +68,56 @@ export default {
 </script>
 
 <style scoped lang="less">
+.competition-float{
+  font-family: "Microsoft YaHei";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  justify-content: center;
+  position: absolute;
+  color: #8596CB;
+  border-style: hidden;
+  border-radius: 30px;
+  background-color: #ECF1FF;
+  z-index: 1;
+  padding: 18px 33px 18px 33px;
+}
+
+#competition-float1{
+  margin-top: 107px;
+  margin-left: 33px;
+}
+
+#competition-float2{
+  margin-top: 320px;
+  margin-left: 334px;
+}
+
+
 .common {
   background-color: #6374B6;
+  background-size: contain;
   height: 65px;
 }
+
+#home-solution-img{
+  width: 527px;
+  height: 279px;
+  position: absolute;
+  margin-top: 66px;
+  margin-left: 66px;
+  z-index: 0;
+}
+
+#solution-image{
+  background-image: url("../assets/img.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+
 #competition-description{
   border-radius: 10px;
   margin-left: 149px;
@@ -146,7 +194,6 @@ export default {
   margin-top: 180px;
   width:100%;
   height:100%;
-  margin-bottom: 100px;
 }
 
 .title-container {
