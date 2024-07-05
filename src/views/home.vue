@@ -42,9 +42,29 @@
           </el-card>
         </el-col>
         <el-col :span="9" id="solution-image">
-          <p class="competition-float" id="competition-float1">竞赛辅导</p>
-          <p class="competition-float" id="competition-float2">竞赛机器人设计</p>
+          <p class="float" id="competition-float1">竞赛辅导</p>
+          <p class="float" id="competition-float2">竞赛机器人设计</p>
           <img id="home-solution-img" src="../assets/home-solution-image.png"  alt="">
+        </el-col>
+      </el-row>
+  </div>
+
+
+  <div class="home-competition">
+      <el-row >
+        <el-col id="competition-text-col" :span="12">
+          <span id="competition-text">STEAM 教育</span>
+          <img src="../assets/star.png" width="52px" height="53px">
+          <span id="competition-english-text">STEAM Education</span>
+          <el-card id="competition-description" style="width: 561px">
+            <p style="margin-right: -15px">我们的专业Robomaster、Robocon、FRC等竞赛培训旨在为学生提供全面且深入的竞赛准备，帮助他们在机器人领域斩获佳绩，并为未来STEM领域的学习和发展奠定坚实基础。通过我们的培训服务，学生将能够掌握机器人竞赛所需的专业技能，培养创新思维和团队合作能力，为未来的成功铺就坚实的道路。</p>
+          </el-card>
+        </el-col>
+        <el-col :span="9" id="solution-image">
+          <p class="float" id="edu-float1">专业师资</p>
+          <p class="float" id="edu-float2">参与比赛</p>
+          <p class="float" id="edu-float3">培养兴趣</p>
+          <img id="home-education-img" src="../assets/steam-education.png" alt="">
         </el-col>
       </el-row>
   </div>
@@ -68,7 +88,35 @@ export default {
 </script>
 
 <style scoped lang="less">
-.competition-float{
+#edu-float1{
+  position: absolute;
+  top:5px;
+  right: 530px;
+
+}
+#edu-float2{
+  position: absolute;
+  top: 350px;
+  right: 560px;
+
+}
+#edu-float3{
+  position: absolute;
+  right: 130px;
+  top: 220px;
+
+}
+
+#home-steam-ed-img{
+  position: absolute;
+  left: 730px;
+  top: 60px;
+  width: 499px;
+  height: 375px;
+  z-index: 0;
+}
+
+.float{
   font-family: "Microsoft YaHei";
   font-weight: 700;
   font-size: 20px;
@@ -106,6 +154,15 @@ export default {
   position: absolute;
   margin-top: 66px;
   margin-left: 66px;
+  z-index: 0;
+}
+
+#home-education-img{
+  width: 489px;
+  height: 363px;
+  position: absolute;
+  right:230px;
+  top: 60px;
   z-index: 0;
 }
 
@@ -194,6 +251,7 @@ export default {
   margin-top: 180px;
   width:100%;
   height:100%;
+  margin-bottom: 50px;
 }
 
 .title-container {
