@@ -41,7 +41,7 @@
             <p style="margin-right: -15px">在机器人竞赛学习与教育领域，我们致力于为每位学员提供个性化定制的学习指导方案和专业化的技能培训，帮助他们实现学习上的突破和提升。无论是机械设计、电子电路、编程语言还是控制算法，我们都会全力以赴，为学员创造最佳的学习环境和机会，助力他们在机器人竞赛中取得成功。</p>
           </el-card>
         </el-col>
-        <el-col :span="9" id="solution-image">
+        <el-col :span="9" class="solution-image">
           <p class="float" id="competition-float1">竞赛辅导</p>
           <p class="float" id="competition-float2">竞赛机器人设计</p>
           <img id="home-solution-img" src="../assets/home-solution-image.png"  alt="">
@@ -60,7 +60,7 @@
             <p style="margin-right: -15px">我们的专业Robomaster、Robocon、FRC等竞赛培训旨在为学生提供全面且深入的竞赛准备，帮助他们在机器人领域斩获佳绩，并为未来STEM领域的学习和发展奠定坚实基础。通过我们的培训服务，学生将能够掌握机器人竞赛所需的专业技能，培养创新思维和团队合作能力，为未来的成功铺就坚实的道路。</p>
           </el-card>
         </el-col>
-        <el-col :span="9" id="solution-image">
+        <el-col class="solution-image" :span="9" >
           <p class="float" id="edu-float1">专业师资</p>
           <p class="float" id="edu-float2">参与比赛</p>
           <p class="float" id="edu-float3">培养兴趣</p>
@@ -91,13 +91,13 @@ export default {
 #edu-float1{
   position: absolute;
   top:5px;
-  right: 530px;
+  right: 544px;
 
 }
 #edu-float2{
   position: absolute;
-  top: 350px;
-  right: 560px;
+  top: 360px;
+  right: 550px;
 
 }
 #edu-float3{
@@ -117,6 +117,7 @@ export default {
 }
 
 .float{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* 添加阴影特效 */
   font-family: "Microsoft YaHei";
   font-weight: 700;
   font-size: 20px;
@@ -133,12 +134,12 @@ export default {
 
 #competition-float1{
   margin-top: 107px;
-  margin-left: 33px;
+  //margin-left: 10px;
 }
 
 #competition-float2{
   margin-top: 320px;
-  margin-left: 334px;
+  margin-left: 354px;
 }
 
 
@@ -158,21 +159,21 @@ export default {
 }
 
 #home-education-img{
-  width: 489px;
-  height: 363px;
+  width: 520px;
+  height: 393px;
   position: absolute;
-  right:230px;
-  top: 60px;
+  right:200px;
+  top: 40px;
   z-index: 0;
 }
 
-#solution-image{
+.solution-image{
   background-image: url("../assets/img.png");
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   margin-left: 30px;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 #competition-description{
