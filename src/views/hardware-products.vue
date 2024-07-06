@@ -11,6 +11,31 @@
     <img src="../assets/active-slider-switch-triangle.png" alt="" class="header-switch-triangle">
   </el-row>
 
+  <el-row class="product-title">现有产品</el-row>
+  <el-row class="product-store-link" justify="end">前往官方店铺查看更多</el-row>
+
+  <el-row justify="center">
+    <el-row class="products-container" justify="space-between" align="middle">
+
+      <div class="product-card" id="product-card-1">
+        <div class="product-text">土豆泥<br/>系列</div>
+        <img id="product-1" src="../assets/product-1.png" alt=""/>
+      </div>
+
+      <div class="product-card" id="product-card-2">
+        <div class="product-text">比赛<br/>定制</div>
+        <img id="product-2" src="../assets/product-2.png" alt=""/>
+      </div>
+
+      <div class="product-card" id="product-card-3">
+        <div class="product-text">敬请<br/>期待</div>
+        <img id="product-3" src="../assets/product-3.png" alt=""/>
+      </div>
+    </el-row>
+  </el-row>
+
+  <el-divider/>
+
 </template>
 
 <script setup>
@@ -38,9 +63,9 @@ export default {
   margin-bottom: 50px;
 }
 
-.slider-container{
+.slider-container {
   height: 476px;
-  margin-bottom: 210px;
+  margin-bottom: 115px;
 }
 
 .header-switch-triangle {
@@ -71,8 +96,6 @@ export default {
   text-align: left;
   color: white;
 
-  white-space: pre-line;
-
   margin-left: 100px;
 }
 
@@ -82,7 +105,107 @@ export default {
 
   position: relative;
   top: 110px;
+}
 
+.product-title {
+  font-family: Microsoft YaHei, serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 79.19px;
+  letter-spacing: 0.12em;
+  text-align: left;
+  color: #31354D;
+  margin-left: 114px;
+}
+
+.product-store-link {
+  font-family: Microsoft YaHei, serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.1em;
+  text-align: left;
+
+  color: #0000008A;
+
+  margin-right: 120px;
+  margin-top: -20px;
+}
+
+.products-container {
+  width: 1216px;
+  height: 513px;
+  margin-top: -10px;
+}
+
+.product-card {
+  width: 370px;
+  height: 467px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+
+  &:hover {
+    width: 407px;
+    height: 513px;
+  }
+}
+
+#product-card-1 {
+  background-image: url("../assets/product-card-bg-1.png");
+  background-size: 170% 170%;
+  background-position: left bottom;
+}
+
+#product-card-2 {
+  background-image: url("../assets/product-card-bg-1.png");
+  background-size: 320% 320%;
+  background-position: 70% 100%;
+  background-blend-mode: darken;
+}
+
+#product-card-3 {
+  background-image: url("../assets/product-card-bg-2.png");
+  background-size: 100% 100%;
+}
+
+#product-1 {
+  position: absolute;
+  width: 140%;
+  left: -10%;
+  top: 40%;
+  z-index: 10;
+}
+
+#product-2 {
+  position: absolute;
+  width: 120%;
+  left: 5%;
+  top: 30%;
+  background-blend-mode: hard-light;
+}
+
+#product-3 {
+  position: absolute;
+  width: 80%;
+  left: 20%;
+  bottom: 0;
+
+}
+
+.product-text {
+  //styleName: 标题1;
+  font-family: Microsoft YaHei, serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 79.19px;
+  letter-spacing: 0.12em;
+  text-align: left;
+  color: white;
+
+  position: absolute;
+  top: 5%;
+  left: 5%;
 }
 
 </style>
