@@ -31,7 +31,7 @@
     </div>
   </div>
 
-  <div class="home-competition">
+  <div class="home-content-left">
       <el-row >
         <el-col id="competition-text-col" :span="12">
           <span id="competition-text">竞赛解决方案</span>
@@ -49,8 +49,31 @@
       </el-row>
   </div>
 
+  <div class="home-content-right">
+  <el-row >
+    <el-col :span="12" >
+      <img id="home-product-img" src="../assets/product.png">
+      <img id="home-product-bg1" src="../assets/img.png">
+      <img id="home-product-bg2" src="../assets/img.png">
+      <p class="float" id="hardware1-float">自研硬件</p>
+      <p class="float" id="hardware2-float">开发平台</p>
 
-  <div class="home-competition">
+    </el-col>
+
+    <el-col id="hardware-text-col" :span="12">
+      <img src="../assets/star.png" width="52px" height="53px" style="margin-left: 200px; margin-right: 15px" >
+      <span id="hardware-text">硬件产品</span> <br>
+
+      <span id="hardware-english-text">Hardware Products</span>
+      <el-card id="hardware-description" style="width: 561px">
+        <p>我们自研的MP-0、MP-1等教育机器人为机器人竞赛学习与教育提供了强大的支持。它们不仅助力比赛进行，还为学员提供了一个实践和技能提升的平台。通过与这些教育机器人的互动和实践，学员将能够全面提升自己的机器人竞赛能力和STEM领域的学习和发展水平。</p>
+      </el-card>
+    </el-col>
+
+  </el-row>
+</div>
+
+  <div class="home-content-left">
       <el-row >
         <el-col id="competition-text-col" :span="12">
           <span id="competition-text">STEAM 教育</span>
@@ -68,9 +91,6 @@
         </el-col>
       </el-row>
   </div>
-
-
-
 </template>
 
 <script lang="ts" setup>
@@ -88,18 +108,34 @@ export default {
 </script>
 
 <style scoped lang="less">
+#hardware1-float{
+  position: absolute;
+  z-index: 3;
+  top: 20px;
+  left: 215px;
+}
+
+#hardware2-float{
+  position: absolute;
+  z-index: 3;
+  left: 564px;
+  top: 306px;
+}
+
 #edu-float1{
   position: absolute;
   top:5px;
   right: 544px;
 
 }
+
 #edu-float2{
   position: absolute;
   top: 360px;
   right: 550px;
 
 }
+
 #edu-float3{
   position: absolute;
   right: 130px;
@@ -142,7 +178,6 @@ export default {
   margin-left: 354px;
 }
 
-
 .common {
   background-color: #6374B6;
   background-size: contain;
@@ -167,6 +202,36 @@ export default {
   z-index: 0;
 }
 
+#home-product-img{
+  width: 609px;
+  height: 418px;
+  z-index: 2;
+  padding-left: 111px;
+  position: absolute;
+
+}
+
+#home-product-bg1{
+  width: 453px;
+  height: 349px;
+  z-index: 1;
+  position: absolute;
+  left: 257px;
+  top: 10px;
+  border-radius: 10px;
+
+}
+
+#home-product-bg2{
+  width: 287px;
+  height: 221px;
+  z-index: 0;
+  position: absolute;
+  left: 168px;
+  top: 207px;
+  border-radius: 10px;
+}
+
 .solution-image{
   background-image: url("../assets/img.png");
   background-position: center;
@@ -188,7 +253,23 @@ export default {
   background-color: #EFF1F87A;
 }
 
+#hardware-description{
+  border-radius: 10px;
+  margin-left: 20px;
+  font-family: "Microsoft YaHei";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.1em;
+  color: #000000B2;
+  background-color: #EFF1F87A;
+}
+
 #competition-text-col{
+  padding-top: 40px;
+}
+
+#hardware-text-col{
   padding-top: 40px;
 }
 
@@ -200,7 +281,6 @@ export default {
   color: #BDC8E4;
   font-weight: 900;
   padding-left: 149px;
-
 }
 
 #competition-text{
@@ -213,12 +293,35 @@ export default {
   font-family: "Microsoft YaHei";
   align-items: center;
 }
+
+#hardware-text{
+  font-size: 60px;
+  line-height: 79.19px;
+  font-weight: 700;
+  color: #31354D;
+  letter-spacing: 0.05em;
+  font-family: "Microsoft YaHei";
+  align-items: center;
+}
+
+#hardware-english-text{
+  font-family: "TT Supermolot";
+  font-size: 50px;
+  font-style: italic;
+  line-height: 61.5px;
+  color: #BDC8E4;
+  font-weight: 900;
+  position: relative;
+  left: 55px;
+}
+
 .centered-content{
   display: flex;
   justify-content: center; /* 水平居中 */
   align-items: center;    /* 垂直居中 */
   height: 100%;
 }
+
 .el-link{
   font-family: "Microsoft YaHei", serif;
   color: white;
@@ -238,6 +341,7 @@ export default {
     }
   }
 }
+
 .home-container {
   background-image: url("../assets/home-bg.png");
   background-size: cover;
@@ -248,10 +352,18 @@ export default {
   justify-content: center;
   align-items: center;
 }
-.home-competition{
+
+.home-content-left{
   margin-top: 180px;
   width:100%;
   height:100%;
+  margin-bottom: 50px;
+}
+
+.home-content-right{
+  height: 100%;
+  width: 100%;
+  margin-top: 100px;
   margin-bottom: 50px;
 }
 
@@ -263,6 +375,7 @@ export default {
   flex-direction: column;
   justify-content: center;
 }
+
 #title{
   font-family: Microsoft YaHei;
   font-size: 64px;
@@ -271,6 +384,7 @@ export default {
   text-align: center;
   font-weight: 700;
 }
+
 #subtitle{
   font-family: Microsoft YaHei;
   font-size: 24px;
@@ -280,13 +394,12 @@ export default {
   font-weight: 700;
 
 }
+
 .el-header {
   position: fixed;
   top: 75px;
   width: 1440px;
   z-index: 10;
 }
-
-
 
 </style>
