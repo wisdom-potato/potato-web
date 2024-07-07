@@ -91,6 +91,65 @@
         </el-col>
       </el-row>
   </div>
+
+  <div class="home-past-project">
+    <h2 id="past-project-header">过往项目</h2>
+    <el-carousel height="500px" :show-indicators="true" :motion-blur="true" >
+      <el-carousel-item>
+        <el-row>
+          <el-col id="project-idx" :span="3">
+            <p id="project-idx-text">案例一</p>
+          </el-col>
+          <el-col class="project-card" :span="17">
+            <img src="../assets/project-card.png" style="width: 439px;height:320px; position:absolute; right: 174px; top:68px">
+              <p id="card-title">x大学智能车大赛方案设计</p>
+            <div class="card-text-div">
+                <p class="card-text">提供比赛方案策划</p>
+
+            </div>
+            <div class="card-text-div">
+                <p class="card-text">比赛道具硬件支持</p>
+
+
+            </div>
+            <div class="card-text-div">
+                <p class="card-text">竞赛技术规则指导</p>
+            </div>
+
+          </el-col>
+
+        </el-row>
+      </el-carousel-item>
+
+      <el-carousel-item>
+        <el-row>
+          <el-col class="project-card" :span="17">
+            <img src="../assets/project-card-2.png" style="width: 300px;height:382px; position:absolute; right: 424px; top:33px">
+            <p id="card-title">MakeX 挑战赛竞赛方案</p>
+            <div class="card-text-div">
+              <p class="card-text">竞赛技术教育指导</p>
+
+            </div>
+            <div class="card-text-div">
+              <p class="card-text">道具硬件开发支持</p>
+
+
+            </div>
+            <div class="card-text-div">
+              <p class="card-text">竞赛技术规则指导</p>
+            </div>
+
+          </el-col>
+          <el-col id="project-idx" :span="3">
+            <p id="project-idx2">案例二</p>
+          </el-col>
+        </el-row>
+      </el-carousel-item>
+
+
+    </el-carousel>
+
+  </div>
 </template>
 
 <script lang="ts" setup>
@@ -108,6 +167,106 @@ export default {
 </script>
 
 <style scoped lang="less">
+
+.card-text{
+  padding-top: 20px;
+  font-family: "Microsoft YaHei";
+  font-weight: 400;
+  font-size: 30px;
+  color: white;
+  line-height: 35.59px;
+  letter-spacing: 0.12em;
+}
+
+.card-text-div{
+  background-image: url("../assets/card-bg.png");
+  height: 79px;
+  width: 466px;
+  margin-left: 43px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  text-align: center;
+
+  margin-bottom: 0px;
+
+
+}
+
+
+#card-title{
+  color: white;
+  font-weight: 700;
+  font-family: "Microsoft YaHei";
+  font-size: 35px;
+  line-height: 46px;
+  letter-spacing: 0.12em;
+  margin-top: 45px;
+  margin-left: 55px;
+}
+
+.project-card{
+  margin-left: 36px;
+  background-color: #31354D;
+  border-radius: 15px;
+}
+
+#project-idx{
+  background-color: #D0D5E9;
+  height: 449px;
+  border-radius: 15px;
+  width: 138px;
+  margin-left: 79px;
+  color: #6374B6;
+  font-size: 35px;
+  line-height: 45.19px;
+  font-weight: 700;
+  text-orientation: upright;
+  text-align: center;
+  writing-mode: vertical-rl;
+  letter-spacing: 0.3em;
+  justify-content: center;
+}
+
+#project-idx2{
+  background-color: #D0D5E9;
+  height: 449px;
+  border-radius: 15px;
+  width: 138px;
+  margin-right: 79px;
+  color: #6374B6;
+  font-size: 35px;
+  line-height: 45.19px;
+  font-weight: 700;
+  text-orientation: upright;
+  text-align: center;
+  writing-mode: vertical-rl;
+  letter-spacing: 0.3em;
+  justify-content: center;
+}
+
+#project-idx-text{
+  padding-right: 35px;
+}
+
+
+.home-past-project{
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+  margin-bottom: 130px;
+
+}
+
+#past-project-header{
+  font-size: 60px;
+  line-height: 79.19px;
+  font-family: "Microsoft YaHei";
+  color: #31354D;
+  text-align: center;
+}
+
 #hardware1-float{
   position: absolute;
   z-index: 3;
