@@ -150,6 +150,17 @@
     </el-carousel>
 
   </div>
+
+  <div class="home-about-us">
+    <h2 id="about-title-cn"> 关于我们 </h2>
+    <h3 id="about-title-en"> about us</h3>
+    <div class="home-about-us-text">
+      <img id="logo" src="../assets/logo.png">
+      <p id="home-about-text"> 致力于为中小学生提供以机器人科技研发为核心的创新实践平台。我们提供个性化定制的学习指导方案和专业化的技能培训，旨在激发学生的科技创新精神，让他们在接触顶尖机器人赛事的同时感受 STEM 教育的魅力。Infinity Geek Robotics Club 科研基地主营项目为 FRC 竞赛培训，助力学生在机器人领域斩获佳绩，并为未来 STEM 领域的学习和发展奠定坚实基础。</p>
+    </div>
+  </div>
+
+
 </template>
 
 <script lang="ts" setup>
@@ -167,6 +178,61 @@ export default {
 </script>
 
 <style scoped lang="less">
+#home-about-text{
+  font-family: "Microsoft YaHei";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.1em;
+  margin-left: 68px;
+  margin-right: 69px;
+  color:#4d4d4d;
+}
+
+#logo{
+  width: 683px;
+  height: 159px;
+  margin-top: 54px;
+  margin-bottom: 46px;
+}
+
+.home-about-us-text{
+  margin: auto;
+  width: 1009px;
+  height: 448px;
+  background-image: url("../assets/about-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#about-title-cn{
+  font-family: "Microsoft YaHei";
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 79.19px;
+  letter-spacing: 0.12em;
+  color: #31354D;
+  display:inline-block;
+}
+#about-title-en{
+  font-family: "TT Supermolot";
+  font-size: 50px;
+  line-height: 61.5px;
+  font-style: italic;
+  font-weight: bolder;
+  color: #CCD2E9;
+  display:inline-block;
+}
+
+.home-about-us{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width:100%;
+  height:100%;
+  margin-bottom: 100px;
+}
 
 .card-text{
   padding-top: 20px;
