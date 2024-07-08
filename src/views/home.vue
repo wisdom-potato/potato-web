@@ -7,13 +7,13 @@
           <el-col :span="24">
             <el-row>
               <el-col :span="8" class="centered-content">
-                <el-link>硬件产品</el-link>
+                <el-link @click.prevent="scrollTo('home-hardware')">硬件产品</el-link>
               </el-col>
               <el-col :span="8" class="centered-content">
-                <el-link>竞赛解决方案</el-link>
+                <el-link @click.prevent="scrollTo('home-solution')">竞赛解决方案</el-link>
               </el-col>
               <el-col :span="8" class="centered-content">
-                <el-link>STEAM教育</el-link>
+                <el-link @click.prevent="scrollTo('home-ed')">STEAM教育</el-link>
               </el-col>
             </el-row>
           </el-col>
@@ -32,7 +32,7 @@
   </div>
 
   <div class="home-content-left">
-      <el-row >
+      <el-row id="home-solution">
         <el-col id="competition-text-col" :span="12">
           <span id="competition-text">竞赛解决方案</span>
           <img src="../assets/star.png" width="52px" height="53px">
@@ -44,15 +44,18 @@
         <el-col :span="9" class="solution-image">
           <p class="float" id="competition-float1">竞赛辅导</p>
           <p class="float" id="competition-float2">竞赛机器人设计</p>
-          <img id="home-solution-img" src="../assets/home-solution-image.png"  alt="">
+<!--            <img id="home-solution-img" :class="{ zoom: isZoomed }" src="../assets/home-solution-image.png"  alt="" :style="imageStyle">-->
+          <image-zoom id="home-solution-img" src="src/assets/home-solution-image.png"></image-zoom>
         </el-col>
       </el-row>
   </div>
 
-  <div class="home-content-right">
-  <el-row >
+  <div class="home-content-right" >
+  <el-row id="home-hardware" >
     <el-col :span="12" >
-      <img id="home-product-img" src="../assets/product.png">
+
+<!--      <img id="home-product-img" :class="{ zoom: isZoomed }" src="../assets/product.png" alt="" :style="imageStyle">-->
+      <image-zoom id="home-product-img" src="src/assets/product.png"></image-zoom>
       <img id="home-product-bg1" src="../assets/img.png">
       <img id="home-product-bg2" src="../assets/img.png">
       <p class="float" id="hardware1-float">自研硬件</p>
@@ -74,7 +77,7 @@
 </div>
 
   <div class="home-content-left">
-      <el-row >
+      <el-row id="home-ed" >
         <el-col id="competition-text-col" :span="12">
           <span id="competition-text">STEAM 教育</span>
           <img src="../assets/star.png" width="52px" height="53px">
@@ -87,7 +90,11 @@
           <p class="float" id="edu-float1">专业师资</p>
           <p class="float" id="edu-float2">参与比赛</p>
           <p class="float" id="edu-float3">培养兴趣</p>
-          <img id="home-education-img" src="../assets/steam-education.png" alt="">
+
+
+<!--            <img id="home-education-img" :class="{ zoom: isZoomed }" src="../assets/steam-education.png" alt="" :style="imageStyle">-->
+          <image-zoom id="home-education-img" src="src/assets/steam-education.png"></image-zoom>
+
         </el-col>
       </el-row>
   </div>
@@ -160,20 +167,47 @@
     </div>
   </div>
 
-
 </template>
 
 <script lang="ts" setup>
   import { ref } from 'vue'
+  import ImageZoom from "../components/image-zoom.vue";
 
   const activeIndex = ref('1')
   const handleSelect = (key: string, keyPath: string[]) => {console.log(key, keyPath)
   }
+
+  function scrollToAnchorPoint(refName: any) {
+    const el = this.$refs[refName]
+    el.scrollIntoView({ behavior: 'smooth'})
+
+  }
+
 </script>
 
 <script lang="ts">
 export default {
-  name: "Home"
+  name: "Home",
+  computed: {
+    imageStyle() {
+      return {
+        zIndex: this.zIndex
+      };
+    }
+  },
+  methods: {
+    scrollTo(id) {
+      const element = document.getElementById(id);
+      const headerOffset = 200; // 固定头部的高度
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    },
+  }
 }
 </script>
 
@@ -389,7 +423,7 @@ export default {
   border-style: hidden;
   border-radius: 30px;
   background-color: #ECF1FF;
-  z-index: 1;
+  z-index: 3;
   padding: 18px 33px 18px 33px;
 }
 
@@ -415,7 +449,7 @@ export default {
   position: absolute;
   margin-top: 66px;
   margin-left: 66px;
-  z-index: 0;
+  //z-index: this.zIndex;
 }
 
 #home-education-img{
@@ -424,7 +458,7 @@ export default {
   position: absolute;
   right:200px;
   top: 40px;
-  z-index: 0;
+  //z-index: 0;
 }
 
 #home-product-img{
