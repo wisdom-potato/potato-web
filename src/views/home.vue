@@ -7,10 +7,11 @@
           <el-col :span="24">
             <el-row>
               <el-col :span="8" class="centered-content">
-                <el-link @click.prevent="scrollTo('home-hardware')">硬件产品</el-link>
+                <el-link @click.prevent="scrollTo('home-solution')">竞赛解决方案</el-link>
+
               </el-col>
               <el-col :span="8" class="centered-content">
-                <el-link @click.prevent="scrollTo('home-solution')">竞赛解决方案</el-link>
+                <el-link @click.prevent="scrollTo('home-hardware')">硬件产品</el-link>
               </el-col>
               <el-col :span="8" class="centered-content">
                 <el-link @click.prevent="scrollTo('home-ed')">STEAM教育</el-link>
@@ -108,7 +109,10 @@
             <p id="project-idx-text">案例一</p>
           </el-col>
           <el-col class="project-card" :span="17">
-            <img src="../assets/project-card.png" style="width: 439px;height:320px; position:absolute; right: 174px; top:68px">
+            <div class="black-filter">
+              <img src="../assets/project-card.png" style="width: 439px;height:320px; position:absolute; right: 124px; top:68px">
+            </div>
+
               <p id="card-title">x大学智能车大赛方案设计</p>
             <div class="card-text-div">
                 <p class="card-text">提供比赛方案策划</p>
@@ -131,7 +135,10 @@
       <el-carousel-item>
         <el-row>
           <el-col class="project-card" :span="17">
-            <img src="../assets/project-card-2.png" style="width: 300px;height:382px; position:absolute; right: 424px; top:33px">
+            <div class="black-filter">
+              <img src="../assets/project-card-2.png" style="width: 300px;height:382px; position:absolute; right: 424px; top:33px">
+            </div>
+
             <p id="card-title">MakeX 挑战赛竞赛方案</p>
             <div class="card-text-div">
               <p class="card-text">竞赛技术教育指导</p>
@@ -212,6 +219,11 @@ export default {
 </script>
 
 <style scoped lang="less">
+.black-filter{
+  background: black;
+  opacity: 90%;
+}
+
 #home-about-text{
   font-family: "Microsoft YaHei";
   font-size: 16px;
@@ -307,7 +319,7 @@ export default {
 }
 
 .project-card{
-  margin-left: 36px;
+  margin-left: 70px;
   background-color: #31354D;
   border-radius: 15px;
 }
