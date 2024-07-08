@@ -112,7 +112,7 @@ export default {
 
   margin-left: 20px;
   margin-right: 20px;
-
+  border-radius: 47px;
 }
 
 .header-text {
@@ -133,6 +133,11 @@ export default {
 
   position: relative;
   top: 110px;
+}
+
+.el-divider {
+  width: 1300px;
+  margin-left: 70px;
 }
 
 .product-title {
@@ -273,14 +278,14 @@ export default {
   color: #6374B6;
 }
 
-.step-images-container{
+.step-images-container {
   width: 1060px;
   height: 316px;
 
   margin-bottom: 220px;
 }
 
-.step-images{
+.step-images {
   width: 316px;
   height: 316px;
   border-radius: 10px;
