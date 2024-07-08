@@ -20,7 +20,7 @@
 
   <!--教育目标-->
   <el-row justify="center">
-    <el-row class="ed-goals" justify="space-between">
+    <el-row class="ed-goals" justify="space-between" align="middle">
 
       <div class="goal-card" id="ed-goal-1">
         <p>
@@ -57,6 +57,27 @@
         <div class="card-text">将课堂知识应用于实际问题解决，<br/>学以致用，让知识成就未来</div>
       </div>
     </el-row>
+  </el-row>
+
+  <!--教师团队板块-->
+  <el-row class="teachers-title" justify="center">专业教师团队</el-row>
+  <el-row justify="center">
+    <el-row class="teachers-descriptions" justify="center">
+      <div class="description" id="description1">拥有丰富机器人竞赛、培训经验</div>
+      <div class="description">荣获多项国内外知名机器人比赛大奖</div>
+      <div class="description">均毕业于国内外知名高校、985/211学校理工类专业</div>
+    </el-row>
+  </el-row>
+  <el-row justify="center">
+    <div class="teachers-container">
+      <!--背景颜色-->
+      <div class="teachers-background"/>
+
+      <img class="teacher-pic" src="../assets/teacher-1.png" alt=""/>
+      <img class="teacher-pic" src="../assets/teacher-2.png" alt=""/>
+      <img class="teacher-pic" src="../assets/teacher-3.png" alt=""/>
+      <img class="teacher-pic" src="../assets/teacher-4.png" alt=""/>
+    </div>
   </el-row>
 
 </template>
@@ -179,6 +200,7 @@ export default {
   border-radius: 10px;
 
 
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -260,6 +282,74 @@ export default {
 
 #ed-goal-6 {
   background-color: #DCEDF9;
+}
+
+.teachers-title {
+  font-family: Microsoft YaHei, serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 79.19px;
+  letter-spacing: 0.12em;
+  color: #31354D;
+
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.teachers-descriptions {
+  width: 821px;
+  //height: 100px;
+}
+
+.description {
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: #ECF1FF;
+  padding: 20px 32.5px 20px 32.5px;
+
+  font-family: Microsoft YaHei,serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  color: #8596CB;
+
+  margin-bottom: 20px;
+}
+
+#description1 {
+  margin-right: 30px;
+}
+
+.teachers-container{
+  width: 1206px;
+  height: 504px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 30px;
+  margin-bottom: 200px;
+}
+
+.teachers-background{
+  width: 1206px;
+  height: 476px;
+  background-color: #6374B6;
+  position: absolute;
+}
+
+.teacher-pic{
+  width: 270px;
+  height: 504px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+
+  z-index: 10;
 }
 
 </style>
