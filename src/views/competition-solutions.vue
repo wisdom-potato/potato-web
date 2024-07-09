@@ -144,7 +144,7 @@ export default {
   color: white;
   font-size: 16px;
   line-height: 32px;
-  font-family: "Microsoft YaHei";
+  font-family: "Microsoft YaHei",serif;
   padding-bottom: 100px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;

@@ -66,7 +66,7 @@ export default {
 
 #english-title {
   //styleName: 英文标题;
-  font-family: "TT Supermolot", serif;
+  font-family: "TT Supermolot";
   font-size: 50px;
   font-style: italic;
   font-weight: 900;

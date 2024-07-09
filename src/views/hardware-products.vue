@@ -78,7 +78,7 @@ export default {
 
 <style scoped lang="less">
 .mid-title {
-  font-family: "Microsoft YaHei", serif;
+  font-family: Microsoft YaHei, serif;
   font-size: 35px;
   font-weight: 700;
   line-height: 46.19px;
