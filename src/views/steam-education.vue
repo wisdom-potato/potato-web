@@ -73,17 +73,32 @@
       <!--背景颜色-->
       <div class="teachers-background"/>
 
-      <img class="teacher-pic" src="../assets/teacher-1.png" alt=""/>
-      <img class="teacher-pic" src="../assets/teacher-2.png" alt=""/>
-      <img class="teacher-pic" src="../assets/teacher-3.png" alt=""/>
-      <img class="teacher-pic" src="../assets/teacher-4.png" alt=""/>
+      <div class="teacher-pic-container">
+        <img class="teacher-pic" src="../assets/teacher-1.png" alt="" id="teacher-pic-1"/>
+        <p class="teacher-text">教师介绍1</p>
+      </div>
+
+      <div class="teacher-pic-container">
+        <img class="teacher-pic" src="../assets/teacher-2.png" alt=""/>
+        <p class="teacher-text">教师介绍2</p>
+      </div>
+
+      <div class="teacher-pic-container">
+        <img class="teacher-pic" src="../assets/teacher-3.png" alt=""/>
+        <p class="teacher-text">教师介绍3</p>
+      </div>
+
+      <div class="teacher-pic-container">
+        <img class="teacher-pic" src="../assets/teacher-4.png" alt=""/>
+        <p class="teacher-text">教师介绍4</p>
+      </div>
+
     </div>
   </el-row>
 
 </template>
 
 <script setup>
-
 </script>
 
 <script>
@@ -307,7 +322,7 @@ export default {
   background-color: #ECF1FF;
   padding: 20px 32.5px 20px 32.5px;
 
-  font-family: Microsoft YaHei,serif;
+  font-family: Microsoft YaHei, serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
@@ -321,7 +336,7 @@ export default {
   margin-right: 30px;
 }
 
-.teachers-container{
+.teachers-container {
   width: 1206px;
   height: 504px;
 
@@ -334,22 +349,65 @@ export default {
   margin-bottom: 200px;
 }
 
-.teachers-background{
+.teachers-background {
   width: 1206px;
   height: 476px;
   background-color: #6374B6;
   position: absolute;
 }
 
-.teacher-pic{
+.teacher-pic-container {
+  width: 270px;
+  height: 504px;
+
+  position: relative;
+
+  z-index: 10;
+
+  &:hover {
+    .teacher-pic {
+      filter: brightness(60%);
+    }
+
+    .teacher-text {
+      display: block;
+      filter: brightness(100%);
+    }
+  }
+}
+
+.teacher-pic {
   width: 270px;
   height: 504px;
 
   object-fit: cover;
 
   border-radius: 10px;
+}
 
-  z-index: 10;
+.teacher-text {
+  display: none;
+
+  width: 270px;
+  height: 504px;
+
+  margin: 0;
+
+  position: absolute;
+  top: 0;
+
+  border-radius: 10px;
+
+  opacity: 90%;
+  font-family: Microsoft YaHei, serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  color: white;
+
+  box-sizing: border-box;
+  padding: 20px;
 }
 
 </style>
