@@ -75,22 +75,22 @@
 
       <div class="teacher-pic-container">
         <img class="teacher-pic" src="../assets/teacher-1.png" alt="" id="teacher-pic-1"/>
-        <p class="teacher-text">教师介绍1</p>
+        <div class="teacher-text">教师姓名1<p>教师介绍1</p></div>
       </div>
 
       <div class="teacher-pic-container">
         <img class="teacher-pic" src="../assets/teacher-2.png" alt=""/>
-        <p class="teacher-text">教师介绍2</p>
+        <div class="teacher-text">教师姓名2<p>教师介绍2</p></div>
       </div>
 
       <div class="teacher-pic-container">
         <img class="teacher-pic" src="../assets/teacher-3.png" alt=""/>
-        <p class="teacher-text">教师介绍3</p>
+        <div class="teacher-text">教师姓名3<p>教师介绍3</p></div>
       </div>
 
       <div class="teacher-pic-container">
         <img class="teacher-pic" src="../assets/teacher-4.png" alt=""/>
-        <p class="teacher-text">教师介绍4</p>
+        <div class="teacher-text">教师姓名4<p>教师介绍4</p></div>
       </div>
 
     </div>
@@ -408,6 +408,16 @@ export default {
 
   box-sizing: border-box;
   padding: 20px;
+
+  p {
+    font-family: Microsoft YaHei, serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.1em;
+    color: white;
+    text-align: left;
+  }
 }
 
 </style>
