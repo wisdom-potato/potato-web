@@ -15,7 +15,6 @@ let activeInfoBubble = 1
 // 一共五种状态，0-4 4是所有bubbles都不放大
 
 function scaleInfoBubble() {
-  console.log(activeInfoBubble)
   let currentState = activeInfoBubble % 5;
 
   if (currentState === 0) {
