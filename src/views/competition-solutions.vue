@@ -88,9 +88,9 @@
       <el-col :span="8">
         <div>
           <image-zoom style="width: 366px; height: 150px; margin-top: 25px"
-                      src="src/assets/competition-img5.png"></image-zoom>
+                      :src="getAssetsFile('competition-img5.png')"></image-zoom>
           <image-zoom style="width: 366px; height: 150px; margin-top: 33px"
-                      src="src/assets/competition-img6.png"></image-zoom>
+                      :src="getAssetsFile('competition-img6.png')"></image-zoom>
           <p class="float" style="right: 75px; bottom: -30px">协助比赛顺利进行</p>
         </div>
 
@@ -139,6 +139,7 @@
 
 <script setup>
 import ImageZoom from "../components/image-zoom.vue";
+import {getAssetsFile} from "../utils/getAssetsFile.js";
 import InfoBubbles from "../components/info-bubbles.vue";
 import {onMounted, ref} from "vue";
 
