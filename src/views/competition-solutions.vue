@@ -40,18 +40,20 @@
     <h2 id="intro-title">让每一场比赛都精彩绝伦</h2>
     <p id="intro-text">北京智慧土豆公司，致力于为竞赛团队提供全面、专业的解决方案，以增强其在各类比赛中的竞争力。</p>
     <el-row style="margin-top: 106px">
-      <el-col  :span="12">
+      <el-col :span="12">
         <div id="intro-img1">
           <h2 id="competition-advising">竞赛辅导</h2>
-          <p id="advising-text">采取个性化的辅导方案，通过详细的初步评估来了解每个队伍的具体情况，包括队伍的技能水平、技术需求以及之前的竞赛经验。基于这些信息，制定出个性化辅导计划，这个计划将围绕比赛的具体需求，如技术论文提交、演讲、实操等多个方面进行全方位的指导。
+          <p id="advising-text">
+            采取个性化的辅导方案，通过详细的初步评估来了解每个队伍的具体情况，包括队伍的技能水平、技术需求以及之前的竞赛经验。基于这些信息，制定出个性化辅导计划，这个计划将围绕比赛的具体需求，如技术论文提交、演讲、实操等多个方面进行全方位的指导。
           </p>
         </div>
       </el-col>
 
-      <el-col  :span="12">
+      <el-col :span="12">
         <div id="intro-img2">
           <h2 id="competition-advising">竞赛机器人设计</h2>
-          <p id="advising-text">公司注重实践和创新，不仅提供机器人的硬件设计和软件编程指导，还会帮助团队进行创新设计的思维训练。设计师和工程师团队会与学生紧密合作，确保设计的机器人能够在满足比赛规则的同时，具备较强的实战能力和创新点。整个设计过程中，团队会定期进行设计的测试和优化，以确保最终的机器人设计能够高效完成比赛任务，从而在竞赛中取得优异成绩。
+          <p id="advising-text">
+            公司注重实践和创新，不仅提供机器人的硬件设计和软件编程指导，还会帮助团队进行创新设计的思维训练。设计师和工程师团队会与学生紧密合作，确保设计的机器人能够在满足比赛规则的同时，具备较强的实战能力和创新点。整个设计过程中，团队会定期进行设计的测试和优化，以确保最终的机器人设计能够高效完成比赛任务，从而在竞赛中取得优异成绩。
           </p>
         </div>
       </el-col>
@@ -65,7 +67,8 @@
 
       <el-col :span="8">
         <div id="card-content1">
-          <p id="card-text1">基于X大学信息学院对学习软硬件技术的具体需求，我们着手设计了智能车大赛规则。按照这些规则的要求，我们进一步设计并配置了比赛所需的硬件。最终，比赛在周密的准备和专业的组织下成功举行。</p>
+          <p id="card-text1">
+            基于X大学信息学院对学习软硬件技术的具体需求，我们着手设计了智能车大赛规则。按照这些规则的要求，我们进一步设计并配置了比赛所需的硬件。最终，比赛在周密的准备和专业的组织下成功举行。</p>
           <p class="float" id="competition-float1" style="left: 340px; top: 325px">确定需求</p>
 
         </div>
@@ -73,16 +76,21 @@
       </el-col>
       <el-col :span="8">
         <div style="justify-content: center;align-items: center">
-          <img src="../assets/competition-img3.png" style="width: 440px;height: 302px; margin-top: 67px; z-index: 2; position: relative">
-          <img src="../assets/competition-img4.png" style="width: 370px;height: 400px; left: 410px; top:-40px;position: absolute; z-index: 1">
-          <p class="float" style="position:absolute; left:800px; top:300px; font-size: 17px; line-height: 27px">硬件设计 <br> 规则策划</p>
+          <img src="../assets/competition-img3.png"
+               style="width: 440px;height: 302px; margin-top: 67px; z-index: 2; position: relative">
+          <img src="../assets/competition-img4.png"
+               style="width: 370px;height: 400px; left: 410px; top:-40px;position: absolute; z-index: 1">
+          <p class="float" style="position:absolute; left:800px; top:300px; font-size: 17px; line-height: 27px">硬件设计
+            <br> 规则策划</p>
         </div>
 
       </el-col>
       <el-col :span="8">
         <div>
-          <image-zoom style="width: 366px; height: 150px; margin-top: 25px" src="src/assets/competition-img5.png"></image-zoom>
-          <image-zoom style="width: 366px; height: 150px; margin-top: 33px" src="src/assets/competition-img6.png"></image-zoom>
+          <image-zoom style="width: 366px; height: 150px; margin-top: 25px"
+                      src="src/assets/competition-img5.png"></image-zoom>
+          <image-zoom style="width: 366px; height: 150px; margin-top: 33px"
+                      src="src/assets/competition-img6.png"></image-zoom>
           <p class="float" style="right: 75px; bottom: -30px">协助比赛顺利进行</p>
         </div>
 
@@ -95,13 +103,14 @@
 
       <el-col :span="8">
         <div id="card-content2">
-          <p id="card-text1">在指导参加MakeX的队伍时，首先分析比赛要求和队伍的实际情况，然后提供一个包含技术指导、策略规划和实战训练的全面辅导方案。此外，公司会针对MakeX比赛的特点，帮助队伍设计能够高效完成比赛任务的机器人，并确保其设计既创新又实用。</p>
+          <p id="card-text1">
+            在指导参加MakeX的队伍时，首先分析比赛要求和队伍的实际情况，然后提供一个包含技术指导、策略规划和实战训练的全面辅导方案。此外，公司会针对MakeX比赛的特点，帮助队伍设计能够高效完成比赛任务的机器人，并确保其设计既创新又实用。</p>
           <p class="float" id="competition-float1" style="left: 340px; top: 385px">确定需求</p>
         </div>
 
       </el-col>
       <el-col :span="8">
-        <div  style="justify-content: center; align-items: center; text-align: center">
+        <div style="justify-content: center; align-items: center; text-align: center">
           <img src="../assets/competition-img7.png" style="width: 368px;height: 443px; z-index: 2">
           <p class="float" style="position:absolute; left:800px; top:385px;">方案确定 </p>
         </div>
@@ -120,31 +129,8 @@
   <div class="information">
     <h2 id="card-title" style="color:#31354D; margin-bottom: 30px">为您提供专业竞赛解决方案</h2>
     <p id="info-text">创赛精准、资源全面，专业定制竞赛方案。定制方案，全程服务，打造极致竞赛体验。</p>
-    <el-row>
-      <el-col :span="12">
-        <div id="first-col">
-          <p style="padding-top: 30px">需求分析</p>
-        </div>
-      </el-col>
-      <el-col :span="12">
-        <div id="second-col">
-          <p style="padding-top: 30px">资源整合</p>
-        </div>
-      </el-col>
-
-    </el-row>
-    <el-row>
-      <el-col :span="12">
-        <div id="first-col">
-          <p style="padding-top: 30px">方案设计</p>
-        </div>
-      </el-col>
-      <el-col :span="12">
-        <div id="second-col">
-          <p style="padding-top: 30px">实施反馈</p>
-        </div>
-      </el-col>
-
+    <el-row justify="center">
+      <info-bubbles></info-bubbles>
     </el-row>
   </div>
 
@@ -153,6 +139,7 @@
 
 <script setup>
 import ImageZoom from "../components/image-zoom.vue";
+import InfoBubbles from "../components/info-bubbles.vue";
 import {onMounted, ref} from "vue";
 
 
@@ -205,7 +192,6 @@ onMounted(() => {
   document.querySelector('.indicator-container').style.width = `${numItems * 24 + 12 * (numItems - 1)}px`;
 })
 
-
 </script>
 
 <script>
@@ -215,38 +201,6 @@ export default {
 </script>
 
 <style scoped lang="less">
-#first-col{
-  background-color: #EFF1F8;
-  width: 266px;
-  height: 104px;
-  border-radius: 20px;
-  font-family: "Microsoft YaHei";
-  font-size: 35px;
-  line-height: 46.19px;
-  letter-spacing: 0.12em;
-  font-weight: 700;
-  color:#6374B6;
-  text-align: center;
-  margin-left:  420px;
-}
-#second-col {
-  background-color: #EFF1F8;
-  width: 266px;
-  height: 104px;
-  border-radius: 20px;
-  font-family: "Microsoft YaHei";
-  font-size: 35px;
-  line-height: 46.19px;
-  letter-spacing: 0.12em;
-  font-weight: 700;
-  color:#6374B6;
-  text-align: center;
-  margin-right:  420px;
-}
-
-
-
-
 #info-text {
   font-family: "Microsoft YaHei";
   color: black;
@@ -256,13 +210,15 @@ export default {
   letter-spacing: 0.1em;
 }
 
-.information{
+.information {
   text-align: center;
   width: 100%;
   height: 100%;
   margin-bottom: 150px;
 }
-.float{
+
+
+.float {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* 添加阴影特效 */
   font-family: "Microsoft YaHei";
   font-weight: 700;
@@ -277,8 +233,7 @@ export default {
 }
 
 
-
-#card-content1{
+#card-content1 {
   width: 368px;
   height: 356px;
   background-image: url("../assets/card-content-bg.png");
@@ -288,7 +243,7 @@ export default {
 }
 
 
-#card-content2{
+#card-content2 {
   width: 350px;
   height: 443px;
   background-image: url("../assets/card-content-bg.png");
@@ -300,7 +255,7 @@ export default {
 
 }
 
-#card-text1{
+#card-text1 {
   font-family: "Microsoft YaHei";
   font-weight: 400;
   font-size: 16px;
@@ -312,7 +267,8 @@ export default {
   padding-left: 34px;
   padding-right: 34px;
 }
-#card-title{
+
+#card-title {
   font-family: "Microsoft YaHei";
   font-weight: 700;
   font-size: 35px;
@@ -322,7 +278,7 @@ export default {
   text-align: center;
 }
 
-#past-projects-title{
+#past-projects-title {
   font-family: "Microsoft YaHei";
   font-size: 60px;
   font-weight: 700;
@@ -333,11 +289,12 @@ export default {
 
 }
 
-.past-projects{
+.past-projects {
   margin-top: 150px;
   margin-bottom: 100px;
 }
-#advising-text{
+
+#advising-text {
   color: white;
   font-weight: 300;
   font-size: 16px;
@@ -350,8 +307,8 @@ export default {
   text-align: center;
 }
 
-#competition-advising{
-  color:white;
+#competition-advising {
+  color: white;
   font-family: "Microsoft YaHei";
   font-size: 35px;
   font-weight: 700;
@@ -361,7 +318,7 @@ export default {
   padding-top: 56px;
 }
 
-#intro-img1{
+#intro-img1 {
   background-image: url("../assets/competition-img1.png");
   width: 566px;
   height: 420px;
@@ -371,7 +328,7 @@ export default {
 }
 
 
-#intro-img2{
+#intro-img2 {
   background-image: url("../assets/competition-img2.png");
   width: 575px;
   height: 420px;
@@ -381,7 +338,7 @@ export default {
 }
 
 
-#intro-text{
+#intro-text {
   font-family: "Microsoft YaHei";
   font-weight: 400;
   font-size: 16px;
@@ -391,7 +348,7 @@ export default {
   text-align: center;
 }
 
-#intro-title{
+#intro-title {
   color: #31354D;
   font-family: "Microsoft YaHei";
   font-weight: 700;
@@ -402,7 +359,7 @@ export default {
   margin-bottom: 35px;
 }
 
-.competition-intro{
+.competition-intro {
   height: 100%;
   width: 100%;
   margin-top: 59px;
@@ -451,7 +408,7 @@ export default {
   color: white;
   font-size: 16px;
   line-height: 32px;
-  font-family: "Microsoft YaHei",serif;
+  font-family: "Microsoft YaHei", serif;
   padding-bottom: 100px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
