@@ -207,7 +207,6 @@ export default {
   width: 140%;
   left: -10%;
   top: 40%;
-  z-index: 10;
 }
 
 #product-2 {

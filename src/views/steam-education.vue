@@ -182,7 +182,7 @@ export default {
 }
 
 .header-english-text {
-  font-family: TT Supermolot, serif;
+  font-family: TT Supermolot;
   font-size: 50px;
   font-style: italic;
   font-weight: 900;
@@ -313,7 +313,6 @@ export default {
 
 .teachers-descriptions {
   width: 821px;
-  //height: 100px;
 }
 
 .description {
@@ -361,8 +360,6 @@ export default {
   height: 504px;
 
   position: relative;
-
-  z-index: 10;
 
   &:hover {
     .teacher-pic {
