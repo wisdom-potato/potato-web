@@ -177,6 +177,7 @@ export default {
   border-radius: 20px;
   overflow: hidden;
   position: relative;
+  transition-duration: 0.5s;
 
   &:hover {
     width: 407px;
