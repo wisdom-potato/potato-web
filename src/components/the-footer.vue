@@ -1,24 +1,21 @@
 <template>
-  <el-row justify="center">
 
-    <!--联系方式板-->
-    <div class="board-container">
-      <div class="title-container">
-        <h1 id="chinese-title">联系我们&nbsp</h1>
-        <h2 id="english-title">contact us</h2>
-      </div>
-      <div class="contact-container">
-        <div>联系人：何老师</div>
-        <div>电话：13522793809</div>
-        <div>微信：同电话</div>
-        <div>地址：北京市顺义区千里马国际</div>
-      </div>
+  <!--联系方式板-->
+  <el-row class="board-container">
+    <div class="title-container">
+      <h1 id="chinese-title">联系我们&nbsp</h1>
+      <h2 id="english-title">contact us</h2>
     </div>
-
-    <!--页脚蓝条-->
-    <div class="company-container">北京智慧土豆有限公司</div>
-
+    <div class="contact-container">
+      <div>联系人：何老师</div>
+      <div>电话：13522793809</div>
+      <div>微信：同电话</div>
+      <div>地址：北京市顺义区千里马国际</div>
+    </div>
   </el-row>
+
+  <!--页脚蓝条-->
+  <el-row class="company-container" justify="center" align="middle">北京智慧土豆有限公司</el-row>
 
 </template>
 
@@ -36,7 +33,7 @@ export default {
 .board-container {
   background-image: url("../assets/footer-background.png");
   background-size: cover;
-  width: 1654px;
+  width: 100%;
   height: 493px;
   display: flex;
   flex-direction: column;
@@ -59,7 +56,7 @@ export default {
   font-size: 60px;
   font-weight: 700;
   line-height: 79.19px;
-  letter-spacing: 0.12em;
+  letter-spacing: 1.92px;
   text-align: left;
   color: #ECF1FF;
 }

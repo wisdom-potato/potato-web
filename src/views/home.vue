@@ -676,7 +676,7 @@ export default {
   position: fixed;
   top: 75px;
   width: 1440px;
-  z-index: 10;
+  z-index: 100;
 }
 
 </style>

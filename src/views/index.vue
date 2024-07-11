@@ -12,7 +12,7 @@
     </el-main>
 
     <!--页脚-->
-    <el-footer id="footer">
+    <el-footer>
       <the-footer/>
     </el-footer>
 
@@ -31,8 +31,8 @@ export default {
 </script>
 
 <style scoped lang="less">
+
 .el-container, .el-header, .el-main, .el-footer {
-  width: 100%;
   padding: 0;
 }
 
@@ -40,7 +40,7 @@ export default {
   position: fixed;
   top: 0;
   width: 1440px;
-  z-index: 10;
+  z-index: 100;
 }
 
 .el-main {
