@@ -7,9 +7,9 @@
     </el-header>
 
     <!--正文-->
-    <el-main>
-      <router-view/>
-    </el-main>
+    <!--    <el-main >-->
+    <router-view/>
+    <!--    </el-main>-->
 
     <!--页脚-->
     <el-footer>
@@ -37,15 +37,17 @@ export default {
 }
 
 .el-header {
-  position: fixed;
+  position: sticky;
   top: 0;
-  width: 1440px;
+  width: 100%;
+  height: 75px;
   z-index: 100;
 }
 
-.el-main {
-  margin-top: 75px;
-  background-color: #F8FAFF;
-}
+//.el-main {
+//  background-color: #F8FAFF;
+//  position: sticky;
+//  top: 75px;
+//}
 
 </style>

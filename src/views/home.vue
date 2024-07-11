@@ -1,29 +1,18 @@
 <template>
-  <div class="menu-container">
-    <el-container>
-      <el-header class="common">
-        <el-row align="middle">
-          <!--标签-->
-          <el-col :span="24">
-            <el-row>
-              <el-col :span="8" class="centered-content">
-                <el-link @click.prevent="scrollTo('home-solution')">竞赛解决方案</el-link>
+  <el-row align="middle" justify="center" class="common menu-container">
+    <!--标签-->
+    <el-col :span="8" class="centered-content">
+      <el-link @click.prevent="scrollTo('home-solution')" style="line-height: 100%">竞赛解决方案</el-link>
+    </el-col>
+    <el-col :span="8" class="centered-content">
+      <el-link @click.prevent="scrollTo('home-hardware')">硬件产品</el-link>
+    </el-col>
+    <el-col :span="8" class="centered-content">
+      <el-link @click.prevent="scrollTo('home-ed')">STEAM教育</el-link>
+    </el-col>
 
-              </el-col>
-              <el-col :span="8" class="centered-content">
-                <el-link @click.prevent="scrollTo('home-hardware')">硬件产品</el-link>
-              </el-col>
-              <el-col :span="8" class="centered-content">
-                <el-link @click.prevent="scrollTo('home-ed')">STEAM教育</el-link>
-              </el-col>
-            </el-row>
-          </el-col>
+  </el-row>
 
-        </el-row>
-
-      </el-header>
-    </el-container>
-  </div>
 
   <div class="home-container">
     <div class="title-container">
@@ -593,9 +582,7 @@ export default {
 }
 
 .centered-content {
-  display: flex;
-  justify-content: center; /* 水平居中 */
-  align-items: center; /* 垂直居中 */
+  text-align: center;
   height: 100%;
 }
 
@@ -672,10 +659,10 @@ export default {
 
 }
 
-.el-header {
-  position: fixed;
+.menu-container {
+  position: sticky;
   top: 75px;
-  width: 1440px;
+  width: 100%;
   z-index: 100;
 }
 
