@@ -1,11 +1,11 @@
 <template>
 
   <!--联系方式板-->
-  <el-row class="board-container">
-    <div class="title-container">
+  <el-row class="board-container" justify="center" align="middle">
+    <el-row class="title-container" justify="center" align="middle">
       <h1 id="chinese-title">联系我们&nbsp</h1>
       <h2 id="english-title">contact us</h2>
-    </div>
+    </el-row>
     <div class="contact-container">
       <div>联系人：何老师</div>
       <div>电话：13522793809</div>
@@ -34,7 +34,7 @@ export default {
   background-image: url("../assets/footer-background.png");
   background-size: cover;
   width: 100%;
-  height: 493px;
+  height: 30.813rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,21 +42,17 @@ export default {
 }
 
 .title-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   color: white;
-  margin-top: -6vh;
+  margin-top: -3.125rem;
 }
 
 #chinese-title {
   //styleName: 标题1;
   font-family: Microsoft YaHei, serif;
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 700;
-  line-height: 79.19px;
-  letter-spacing: 1.92px;
+  line-height: 4.949rem;
+  letter-spacing: 0.12rem;
   text-align: left;
   color: #ECF1FF;
 }
@@ -64,10 +60,10 @@ export default {
 #english-title {
   //styleName: 英文标题;
   font-family: "TT Supermolot";
-  font-size: 50px;
+  font-size: 3.125rem;
   font-style: italic;
   font-weight: 900;
-  line-height: 61.5px;
+  line-height: 3.844rem;
   text-align: left;
   color: #CCD2E9;
 }
@@ -80,29 +76,29 @@ export default {
   background-color: rgba(0, 0, 0, 0.5);
   width: 40%;
   color: white;
-  border-radius: 10px;
-  margin-top: -1vh;
-  padding: 3vh;
+  border-radius: 0.625rem;
+  margin-top: -0.641rem;
+  padding: 1.922rem;
 
   font-family: YouSheBiaoTiHei, serif;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 400;
-  line-height: 41.6px;
+  line-height: 2.6rem;
 }
 
 .company-container {
   width: 100%;
-  height: 124px;
+  height: 7.75rem;
   font-family: Microsoft YaHei, serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 124px;
-  letter-spacing: 0.1em;
+  line-height: 7.75rem;
+  letter-spacing: 0.1rem;
   text-align: center;
   color: #FFFFFF;
   background-color: #31354D;
 
-  margin-top: -15px;;
+  margin-top: -0.938rem;;
 }
 
 </style>

@@ -2,7 +2,7 @@
   <el-row align="middle" justify="center" class="common menu-container">
     <!--标签-->
     <el-col :span="8" class="centered-content">
-      <el-link @click.prevent="scrollTo('home-solution')" style="line-height: 100%">竞赛解决方案</el-link>
+      <el-link @click.prevent="scrollTo('home-solution')">竞赛解决方案</el-link>
     </el-col>
     <el-col :span="8" class="centered-content">
       <el-link @click.prevent="scrollTo('home-hardware')">硬件产品</el-link>
@@ -447,7 +447,7 @@ export default {
 .common {
   background-color: #6374B6;
   background-size: contain;
-  height: 65px;
+  height: 4.063rem;
 }
 
 #home-solution-img {
@@ -555,7 +555,7 @@ export default {
   line-height: 79.19px;
   font-weight: 700;
   color: #31354D;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.05rem;
   font-family: "Microsoft YaHei";
   align-items: center;
 }
@@ -582,19 +582,20 @@ export default {
 }
 
 .centered-content {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
 }
 
 .el-link {
   font-family: "Microsoft YaHei", serif;
   color: white;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.1em;
+  line-height: 100%;
+  letter-spacing: 0.1rem;
   text-align: left;
-  margin-top: 15px;
 
   &:hover {
     color: #8596CB;
@@ -661,7 +662,7 @@ export default {
 
 .menu-container {
   position: sticky;
-  top: 75px;
+  top: 4.688rem;
   width: 100%;
   z-index: 100;
 }

@@ -64,24 +64,24 @@ export default {
 <style scoped>
 .common {
   background-color: #31354D;
-  height: 75px;
+  height: 4.688rem;
 }
 
 .el-row {
-  height: 75px;
+  height: 4.688rem;
 }
 
 
 .logo {
-  height: 35px;
+  height: 4.688rem;
 }
 
 .el-link {
   font-family: "Microsoft YaHei", serif;
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 2rem;
   letter-spacing: 0.1em;
   text-align: left;
 
@@ -90,7 +90,7 @@ export default {
 
     &::after {
       content: "";
-      border-bottom: 1px solid white;
+      border-bottom: 0.063rem solid white;
     }
   }
 }

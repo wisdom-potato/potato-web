@@ -7,9 +7,10 @@
     </el-header>
 
     <!--正文-->
-    <!--    <el-main >-->
+    <!--el-main要注释掉要不然那个home里的sticky不会生效-->
+<!--            <el-main >-->
     <router-view/>
-    <!--    </el-main>-->
+<!--            </el-main>-->
 
     <!--页脚-->
     <el-footer>
@@ -40,14 +41,8 @@ export default {
   position: sticky;
   top: 0;
   width: 100%;
-  height: 75px;
+  height: 4.688rem;
   z-index: 100;
 }
-
-//.el-main {
-//  background-color: #F8FAFF;
-//  position: sticky;
-//  top: 75px;
-//}
 
 </style>

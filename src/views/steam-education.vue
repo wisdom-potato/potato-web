@@ -110,26 +110,26 @@ export default {
 <style scoped lang="less">
 .mid-title {
   font-family: "Microsoft YaHei", serif;
-  font-size: 35px;
+  font-size: 2.188rem;
   font-weight: 700;
-  line-height: 46.19px;
-  letter-spacing: 0.12em;
+  line-height: 2.887rem;
+  letter-spacing: 0.12rem;
   text-align: left;
   color: #31354D;
 
-  margin-top: 55px;
-  margin-left: 97px;
-  margin-bottom: 50px;
+  margin-top: 3.438rem;
+  margin-left: 6.063rem;
+  margin-bottom: 3.125rem;
 }
 
 .slider-container {
-  height: 476px;
-  margin-bottom: 50px;
+  height: 29.75rem;
+  margin-bottom: 3.125rem;
 }
 
 .header-switch-triangle {
-  width: 29.07px;
-  height: 69.52px;
+  width: 1.817rem;
+  height: 4.345rem;
 }
 
 .header-container {
