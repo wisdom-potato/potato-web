@@ -25,10 +25,10 @@
     <el-row id="home-solution">
       <el-col id="competition-text-col" :span="12">
         <span id="competition-text">竞赛解决方案</span>
-        <img src="../assets/star.png" width="52px" height="53px">
+        <img src="../assets/star.png" width="3.25rem" height="3.25rem">
         <span id="competition-english-text">Competition Solutions</span>
-        <el-card id="competition-description" style="width: 561px">
-          <p style="margin-right: -15px">
+        <el-card id="competition-description" style="width: 35.063rem">
+          <p style="margin-right: 0.938rem">
             在机器人竞赛学习与教育领域，我们致力于为每位学员提供个性化定制的学习指导方案和专业化的技能培训，帮助他们实现学习上的突破和提升。无论是机械设计、电子电路、编程语言还是控制算法，我们都会全力以赴，为学员创造最佳的学习环境和机会，助力他们在机器人竞赛中取得成功。</p>
         </el-card>
       </el-col>
@@ -52,11 +52,13 @@
       </el-col>
 
       <el-col id="hardware-text-col" :span="12">
-        <img src="../assets/star.png" width="52px" height="53px" style="margin-left: 200px; margin-right: 15px">
+        <img src="../assets/star.png" width="3.25rem" height="3.25rem" style="margin-left: 12.5rem
+
+; margin-right: 0.938rem">
         <span id="hardware-text">硬件产品</span> <br>
 
         <span id="hardware-english-text">Hardware Products</span>
-        <el-card id="hardware-description" style="width: 561px">
+        <el-card id="hardware-description" style="width: 35.063rem">
           <p>
             我们自研的MP-0、MP-1等教育机器人为机器人竞赛学习与教育提供了强大的支持。它们不仅助力比赛进行，还为学员提供了一个实践和技能提升的平台。通过与这些教育机器人的互动和实践，学员将能够全面提升自己的机器人竞赛能力和STEM领域的学习和发展水平。</p>
         </el-card>
@@ -69,10 +71,10 @@
     <el-row id="home-ed">
       <el-col id="competition-text-col" :span="12">
         <span id="competition-text">STEAM 教育</span>
-        <img src="../assets/star.png" width="52px" height="53px">
+        <img src="../assets/star.png" width="3.25rem" height="3.25rem">
         <span id="competition-english-text">STEAM Education</span>
-        <el-card id="competition-description" style="width: 561px">
-          <p style="margin-right: -15px">
+        <el-card id="competition-description" style="width: 35.063rem">
+          <p style="margin-right: -0.938rem">
             我们的专业Robomaster、Robocon、FRC等竞赛培训旨在为学生提供全面且深入的竞赛准备，帮助他们在机器人领域斩获佳绩，并为未来STEM领域的学习和发展奠定坚实基础。通过我们的培训服务，学生将能够掌握机器人竞赛所需的专业技能，培养创新思维和团队合作能力，为未来的成功铺就坚实的道路。</p>
         </el-card>
       </el-col>
@@ -90,7 +92,7 @@
 
   <div class="home-past-project">
     <h2 id="past-project-header">过往项目</h2>
-    <el-carousel height="500px" :show-indicators="true" :motion-blur="true">
+    <el-carousel height="31.25rem" :show-indicators="true" :motion-blur="true">
       <el-carousel-item>
         <el-row>
           <el-col id="project-idx" :span="3">
@@ -99,7 +101,7 @@
           <el-col class="project-card" :span="17">
             <div class="black-filter">
               <img src="../assets/project-card.png"
-                   style="width: 439px;height:320px; position:absolute; right: 124px; top:68px">
+                   style="width: 27.438rem;height:20rem; position:absolute; right: 7.75rem; top:4.25rem">
             </div>
 
             <p id="card-title">x大学智能车大赛方案设计</p>
@@ -126,7 +128,7 @@
           <el-col class="project-card" :span="17">
             <div class="black-filter">
               <img src="../assets/project-card-2.png"
-                   style="width: 300px;height:382px; position:absolute; right: 424px; top:33px">
+                   style="width: 18.75rem;height:23.875rem; position:absolute; right: 26.5rem; top:2.063rem">
             </div>
 
             <p id="card-title">MakeX 挑战赛竞赛方案</p>
@@ -220,26 +222,26 @@ export default {
 
 #home-about-text {
   font-family: "Microsoft YaHei";
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 32px;
-  letter-spacing: 0.1em;
-  margin-left: 68px;
-  margin-right: 69px;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
+  margin-left: 4.25rem;
+  margin-right: 4.313rem;
   color: #4d4d4d;
 }
 
 #logo {
-  width: 683px;
-  height: 159px;
-  margin-top: 54px;
-  margin-bottom: 46px;
+  width: 42.688rem;
+  height: 9.938rem;
+  margin-top: 3.375rem;
+  margin-bottom: 2.875rem;
 }
 
 .home-about-us-text {
   margin: auto;
-  width: 1009px;
-  height: 448px;
+  width: 63.063rem;
+  height: 28rem;
   background-image: url("../assets/about-bg.png");
   background-position: center;
   background-size: cover;
@@ -249,17 +251,17 @@ export default {
 #about-title-cn {
   font-family: "Microsoft YaHei";
   font-weight: 700;
-  font-size: 60px;
-  line-height: 79.19px;
-  letter-spacing: 0.12em;
+  font-size: 3.75rem;
+  line-height: 4.949375rem;
+  letter-spacing: 0.12rem;
   color: #31354D;
   display: inline-block;
 }
 
 #about-title-en {
   font-family: "TT Supermolot";
-  font-size: 50px;
-  line-height: 61.5px;
+  font-size: 3.125rem;
+  line-height: 3.84375rem;
   font-style: italic;
   font-weight: bolder;
   color: #CCD2E9;
@@ -272,33 +274,29 @@ export default {
   text-align: center;
   width: 100%;
   height: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 6.25rem;
 }
 
 .card-text {
-  padding-top: 20px;
+  padding-top: 1.25rem;
   font-family: "Microsoft YaHei";
   font-weight: 400;
-  font-size: 30px;
+  font-size: 1.875rem;
   color: white;
-  line-height: 35.59px;
-  letter-spacing: 0.12em;
+  line-height: 2.224375rem;
+  letter-spacing: 0.12rem;
 }
 
 .card-text-div {
   background-image: url("../assets/card-bg.png");
-  height: 79px;
-  width: 466px;
-  margin-left: 43px;
+  height: 4.9375rem;
+  width: 29.125rem;
+  margin-left: 2.6875rem;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
   text-align: center;
-
-  margin-bottom: 0px;
-
-
 }
 
 
@@ -306,69 +304,69 @@ export default {
   color: white;
   font-weight: 700;
   font-family: "Microsoft YaHei";
-  font-size: 35px;
-  line-height: 46px;
-  letter-spacing: 0.12em;
-  margin-top: 45px;
-  margin-left: 55px;
+  font-size: 2.1875rem;
+  line-height: 2.875rem;
+  letter-spacing: 0.12rem;
+  margin-top: 2.8125rem;
+  margin-left: 3.4375rem;
 }
 
 .project-card {
-  margin-left: 70px;
+  margin-left: 4.375rem;
   background-color: #31354D;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
 }
 
 #project-idx {
   background-color: #D0D5E9;
-  height: 449px;
-  border-radius: 15px;
-  width: 138px;
-  margin-left: 79px;
+  height: 28.063rem;
+  border-radius: 0.9375rem;
+  width: 8.625rem;
+  margin-left: 4.9375rem;
   color: #6374B6;
-  font-size: 35px;
-  line-height: 45.19px;
+  font-size: 2.1875rem;
+  line-height: 2.8244rem;
   font-weight: 700;
   text-orientation: upright;
   text-align: center;
   writing-mode: vertical-rl;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.3rem;
   justify-content: center;
 }
 
 #project-idx2 {
   background-color: #D0D5E9;
-  height: 449px;
-  border-radius: 15px;
-  width: 138px;
-  margin-right: 79px;
+  height: 28.063rem;
+  border-radius: 0.9375rem;
+  width: 8.625rem;
+  margin-right: 4.9375rem;
   color: #6374B6;
-  font-size: 35px;
-  line-height: 45.19px;
+  font-size: 2.1875rem;
+  line-height: 2.8244rem;
   font-weight: 700;
   text-orientation: upright;
   text-align: center;
   writing-mode: vertical-rl;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.3rem;
   justify-content: center;
 }
 
 #project-idx-text {
-  padding-right: 35px;
+  padding-right: 2.188rem;
 }
 
 
 .home-past-project {
   width: 100%;
   height: 100%;
-  margin-top: 100px;
-  margin-bottom: 130px;
+  margin-top: 6.25rem;
+  margin-bottom: 8.125rem;
 
 }
 
 #past-project-header {
-  font-size: 60px;
-  line-height: 79.19px;
+  font-size: 3.75rem;
+  line-height: 4.949rem;
   font-family: "Microsoft YaHei";
   color: #31354D;
   text-align: center;
@@ -377,71 +375,70 @@ export default {
 #hardware1-float {
   position: absolute;
   z-index: 3;
-  top: 20px;
-  left: 215px;
+  top: 1.25rem;
+  left: 13.438rem;
 }
 
 #hardware2-float {
   position: absolute;
   z-index: 3;
-  left: 564px;
-  top: 306px;
+  left: 35.25rem;
+  top: 19.125rem;
 }
 
 #edu-float1 {
   position: absolute;
-  top: 5px;
-  right: 544px;
+  top: 0.313rem;
+  right: 34rem;
 
 }
 
 #edu-float2 {
   position: absolute;
-  top: 360px;
-  right: 550px;
+  top: 22.5rem;
+  right: 34.375rem;
 
 }
 
 #edu-float3 {
   position: absolute;
-  right: 130px;
-  top: 220px;
+  right: 8.125rem;
+  top: 13.75rem;
 
 }
 
 #home-steam-ed-img {
   position: absolute;
-  left: 730px;
-  top: 60px;
-  width: 499px;
-  height: 375px;
+  left: 45.625rem;
+  top: 3.75rem;
+  width: 31.1875rem;
+  height: 23.4375rem;
   z-index: 0;
 }
 
 .float {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* 添加阴影特效 */
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.25); /* 添加阴影特效 */
   font-family: "Microsoft YaHei";
   font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
   justify-content: center;
   position: absolute;
   color: #8596CB;
   border-style: hidden;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   background-color: #ECF1FF;
   z-index: 3;
-  padding: 18px 33px 18px 33px;
+  padding: 1.125rem 2.063rem 1.125rem 2.063rem;
 }
 
 #competition-float1 {
-  margin-top: 107px;
-  //margin-left: 10px;
+  margin-top: 6.688rem;
 }
 
 #competition-float2 {
-  margin-top: 320px;
-  margin-left: 354px;
+  margin-top: 20rem;
+  margin-left: 22.125rem;
 }
 
 .common {
@@ -451,51 +448,50 @@ export default {
 }
 
 #home-solution-img {
-  width: 527px;
-  height: 279px;
+  width: 32.938rem;
+  height: 17.438rem;
   position: absolute;
-  margin-top: 66px;
-  margin-left: 66px;
-  //z-index: this.zIndex;
+  margin-top: 4.125rem;
+  margin-left: 4.125rem;
+
 }
 
 #home-education-img {
-  width: 520px;
-  height: 393px;
+  width: 32.5rem;
+  height: 24.563rem;
   position: absolute;
-  right: 200px;
-  top: 40px;
-  //z-index: 0;
+  right: 12.5rem;
+  top: 2.5rem;
 }
 
 #home-product-img {
-  width: 609px;
-  height: 418px;
+  width: 38.063rem;
+  height: 26.125rem;
   z-index: 2;
-  padding-left: 111px;
+  padding-left: 6.938rem;
   position: absolute;
 
 }
 
 #home-product-bg1 {
-  width: 453px;
-  height: 349px;
+  width: 28.313rem;
+  height: 21.813rem;
   z-index: 1;
   position: absolute;
-  left: 257px;
-  top: 10px;
-  border-radius: 10px;
+  left: 16.063rem;
+  top: 0.625rem;
+  border-radius: 0.625rem;
 
 }
 
 #home-product-bg2 {
-  width: 287px;
-  height: 221px;
+  width: 17.938rem;
+  height: 13.813rem;
   z-index: 0;
   position: absolute;
-  left: 168px;
-  top: 207px;
-  border-radius: 10px;
+  left: 10.5rem;
+  top: 12.938rem;
+  border-radius: 0.625rem;
 }
 
 .solution-image {
@@ -503,56 +499,56 @@ export default {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-left: 30px;
-  border-radius: 30px;
+  margin-left: 1.875rem;
+  border-radius: 1.875rem;
 }
 
 #competition-description {
-  border-radius: 10px;
-  margin-left: 149px;
+  border-radius: 0.625rem;
+  margin-left: 9.313rem;
   font-family: "Microsoft YaHei";
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 32px;
-  letter-spacing: 0.1em;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
   color: #000000B2;
   background-color: #EFF1F87A;
 }
 
 #hardware-description {
-  border-radius: 10px;
-  margin-left: 20px;
+  border-radius: 0.625rem;
+  margin-left: 1.25rem;
   font-family: "Microsoft YaHei";
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 32px;
-  letter-spacing: 0.1em;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
   color: #000000B2;
   background-color: #EFF1F87A;
 }
 
 #competition-text-col {
-  padding-top: 40px;
+  padding-top: 2.5rem;
 }
 
 #hardware-text-col {
-  padding-top: 40px;
+  padding-top: 2.5rem;
 }
 
 #competition-english-text {
   font-family: "TT Supermolot";
-  font-size: 50px;
+  font-size: 3.125rem;
   font-style: italic;
-  line-height: 61.5px;
+  line-height: 3.844rem;
   color: #BDC8E4;
   font-weight: 900;
-  padding-left: 149px;
+  padding-left: 9.313rem;
 }
 
 #competition-text {
-  padding-left: 149px;
-  font-size: 60px;
-  line-height: 79.19px;
+  padding-left: 9.313rem;
+  font-size: 3.75rem;
+  line-height: 4.949rem;
   font-weight: 700;
   color: #31354D;
   letter-spacing: 0.05rem;
@@ -561,24 +557,24 @@ export default {
 }
 
 #hardware-text {
-  font-size: 60px;
-  line-height: 79.19px;
+  font-size: 3.75rem;
+  line-height: 4.949rem;
   font-weight: 700;
   color: #31354D;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.05rem;
   font-family: "Microsoft YaHei";
   align-items: center;
 }
 
 #hardware-english-text {
   font-family: "TT Supermolot";
-  font-size: 50px;
+  font-size: 3.125rem;
   font-style: italic;
-  line-height: 61.5px;
+  line-height:3.844rem;
   color: #BDC8E4;
   font-weight: 900;
   position: relative;
-  left: 55px;
+  left: 3.438rem;
 }
 
 .centered-content {
@@ -602,7 +598,7 @@ export default {
 
     &::after {
       content: "";
-      border-bottom: 1px solid white;
+      border-bottom: 0.063rem solid white;
     }
   }
 }
@@ -611,7 +607,7 @@ export default {
   background-image: url("../assets/home-bg.png");
   background-size: cover;
   width: 100%;
-  height: 493px;
+  height: 30.813rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -619,17 +615,17 @@ export default {
 }
 
 .home-content-left {
-  margin-top: 180px;
+  margin-top: 11.25rem;
   width: 100%;
   height: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 
 .home-content-right {
   height: 100%;
   width: 100%;
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin-top: 6.25rem;
+  margin-bottom: 3.125rem;
 }
 
 .title-container {
@@ -643,18 +639,18 @@ export default {
 
 #title {
   font-family: Microsoft YaHei;
-  font-size: 64px;
-  line-height: 77.61px;
-  letter-spacing: 0.5em;
+  font-size: 4rem;
+  line-height: 4.851rem;
+  letter-spacing: 0.5rem;
   text-align: center;
   font-weight: 700;
 }
 
 #subtitle {
   font-family: Microsoft YaHei;
-  font-size: 24px;
-  line-height: 29.1px;
-  letter-spacing: 0.5em;
+  font-size: 1.5rem;
+  line-height: 1.819rem;
+  letter-spacing: 0.5rem;
   text-align: center;
   font-weight: 700;
 

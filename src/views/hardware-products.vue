@@ -79,109 +79,109 @@ export default {
 <style scoped lang="less">
 .mid-title {
   font-family: Microsoft YaHei, serif;
-  font-size: 35px;
+  font-size: 2.1875rem; /* 35px */
   font-weight: 700;
-  line-height: 46.19px;
-  letter-spacing: 0.12em;
+  line-height: 2.8869rem; /* 46.19px */
+  letter-spacing: 0.12rem;
   text-align: left;
   color: #31354D;
 
-  margin-top: 55px;
-  margin-left: 97px;
-  margin-bottom: 50px;
+  margin-top: 3.4375rem; /* 55px */
+  margin-left: 6.0625rem; /* 97px */
+  margin-bottom: 3.125rem; /* 50px */
 }
 
 .slider-container {
-  height: 476px;
-  margin-bottom: 115px;
+  height: 29.75rem; /* 476px */
+  margin-bottom: 7.1875rem; /* 115px */
 }
 
 .header-switch-triangle {
-  width: 29.07px;
-  height: 69.52px;
+  width: 1.817rem; /* 29.07px */
+  height: 4.345rem; /* 69.52px */
 }
 
 .header-container {
   background-image: url("../assets/orange-rectgangle-long.png");
   background-size: cover;
-  width: 1071px;
-  height: 476px;
+  width: 66.9375rem; /* 1071px */
+  height: 29.75rem; /* 476px */
 
   display: flex;
   align-items: center;
 
-  margin-left: 20px;
-  margin-right: 20px;
-  border-radius: 47px;
+  margin-left: 1.25rem; /* 20px */
+  margin-right: 1.25rem; /* 20px */
+  border-radius: 2.9375rem; /* 47px */
 }
 
 .header-text {
   font-family: Microsoft YaHei, serif;
-  font-size: 60px;
+  font-size: 3.75rem; /* 60px */
   font-weight: 700;
-  line-height: 79.19px;
-  letter-spacing: 0.12em;
+  line-height: 4.9494rem; /* 79.19px */
+  letter-spacing: 0.12rem;
   text-align: left;
   color: white;
 
-  margin-left: 100px;
+  margin-left: 6.25rem; /* 100px */
 }
 
 .polygon-combinations {
-  width: 628.03px;
-  height: 642.21px;
+  width: 39.252rem; /* 628.03px */
+  height: 40.1381rem; /* 642.21px */
 
   position: relative;
-  top: 110px;
+  top: 6.875rem; /* 110px */
 }
 
 .el-divider {
-  width: 1300px;
-  margin-left: 70px;
+  width: 81.25rem; /* 1300px */
+  margin-left: 4.375rem; /* 70px */
 }
 
 .product-title {
   font-family: Microsoft YaHei, serif;
-  font-size: 60px;
+  font-size: 3.75rem; /* 60px */
   font-weight: 700;
-  line-height: 79.19px;
-  letter-spacing: 0.12em;
+  line-height: 4.9494rem; /* 79.19px */
+  letter-spacing: 0.12rem;
   text-align: left;
   color: #31354D;
-  margin-left: 114px;
+  margin-left: 7.125rem; /* 114px */
 }
 
 .product-store-link {
   font-family: Microsoft YaHei, serif;
-  font-size: 16px;
+  font-size: 1rem; /* 16px */
   font-weight: 400;
-  line-height: 32px;
-  letter-spacing: 0.1em;
+  line-height: 2rem; /* 32px */
+  letter-spacing: 0.1rem;
   text-align: left;
 
   color: #0000008A;
 
-  margin-right: 120px;
-  margin-top: -20px;
+  margin-right: 7.5rem; /* 120px */
+  margin-top: -1.25rem; /* -20px */
 }
 
 .products-container {
-  width: 1216px;
-  height: 513px;
-  margin-top: -10px;
+  width: 76rem; /* 1216px */
+  height: 32.0625rem; /* 513px */
+  margin-top: -0.625rem; /* -10px */
 }
 
 .product-card {
-  width: 370px;
-  height: 467px;
-  border-radius: 20px;
+  width: 23.125rem; /* 370px */
+  height: 29.1875rem; /* 467px */
+  border-radius: 1.25rem; /* 20px */
   overflow: hidden;
   position: relative;
   transition-duration: 0.5s;
 
   &:hover {
-    width: 407px;
-    height: 513px;
+    width: 25.4375rem; /* 407px */
+    height: 32.0625rem; /* 513px */
   }
 }
 
@@ -223,16 +223,14 @@ export default {
   width: 80%;
   left: 20%;
   bottom: 0;
-
 }
 
 .product-text {
-  //styleName: 标题1;
   font-family: Microsoft YaHei, serif;
-  font-size: 60px;
+  font-size: 3.75rem; /* 60px */
   font-weight: 700;
-  line-height: 79.19px;
-  letter-spacing: 0.12em;
+  line-height: 4.9494rem; /* 79.19px */
+  letter-spacing: 0.12rem;
   text-align: left;
   color: white;
 
@@ -243,54 +241,51 @@ export default {
 
 .roadmap-title {
   font-family: Microsoft YaHei, serif;
-  font-size: 35px;
+  font-size: 2.1875rem; /* 35px */
   font-weight: 700;
-  line-height: 46.19px;
+  line-height: 2.8869rem; /* 46.19px */
   letter-spacing: 0.12em;
   text-align: left;
 
   color: #31354D;
 
-  margin-top: 80px;
-  margin-bottom: 56px;
+  margin-top: 5rem; /* 80px */
+  margin-bottom: 3.5rem; /* 56px */
 }
 
 .steps-container {
-  width: 938px;
-  height: 104px;
-
-  margin-bottom: 50px;
+  width: 58.625rem; /* 938px */
+  height: 6.5rem; /* 104px */
+  margin-bottom: 3.125rem; /* 50px */
 }
 
 .step {
-  width: 286px;
-  height: 104px;
-  border-radius: 20px;
+  width: 17.875rem; /* 286px */
+  height: 6.5rem; /* 104px */
+  border-radius: 1.25rem; /* 20px */
   background-color: #EFF1F8;
 
-  //styleName: 中标题;
   font-family: Microsoft YaHei, serif;
-  font-size: 35px;
+  font-size: 2.1875rem; /* 35px */
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.12rem;
   text-align: center;
-  line-height: 104px;
+  line-height: 6.5rem; /* 104px */
   color: #6374B6;
 }
 
 .step-images-container {
-  width: 1060px;
-  height: 316px;
-
-  margin-bottom: 220px;
+  width: 66.25rem; /* 1060px */
+  height: 19.75rem; /* 316px */
+  margin-bottom: 13.75rem; /* 220px */
 }
 
 .step-images {
-  width: 316px;
-  height: 316px;
-  border-radius: 10px;
-
+  width: 19.75rem; /* 316px */
+  height: 19.75rem; /* 316px */
+  border-radius: 0.625rem; /* 10px */
   object-fit: cover;
 }
+
 
 </style>

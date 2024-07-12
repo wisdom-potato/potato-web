@@ -110,72 +110,70 @@ export default {
 <style scoped lang="less">
 .mid-title {
   font-family: "Microsoft YaHei", serif;
-  font-size: 2.188rem;
+  font-size: 2.188rem; /* 35px */
   font-weight: 700;
-  line-height: 2.887rem;
+  line-height: 2.887rem; /* 46.19px */
   letter-spacing: 0.12rem;
   text-align: left;
   color: #31354D;
 
-  margin-top: 3.438rem;
-  margin-left: 6.063rem;
-  margin-bottom: 3.125rem;
+  margin-top: 3.438rem; /* 55px */
+  margin-left: 6.063rem; /* 97px */
+  margin-bottom: 3.125rem; /* 50px */
 }
 
 .slider-container {
-  height: 29.75rem;
-  margin-bottom: 3.125rem;
+  height: 29.75rem; /* 476px */
+  margin-bottom: 7.188rem; /* 115px */
 }
 
 .header-switch-triangle {
-  width: 1.817rem;
-  height: 4.345rem;
+  width: 1.817rem; /* 29.07px */
+  height: 4.345rem; /* 69.52px */
 }
 
 .header-container {
   background-image: url("../assets/green-rectgangle-long.png");
   background-size: cover;
 
-  width: 1071px;
-  height: 476px;
+  width: 66.9375rem; /* 1071px */
+  height: 29.75rem; /* 476px */
   display: flex;
   align-items: center;
 
-  margin-left: 20px;
-  margin-right: 20px;
-  border-radius: 47px;
+  margin-left: 1.25rem; /* 20px */
+  margin-right: 1.25rem; /* 20px */
+  border-radius: 2.9375rem; /* 47px */
 }
 
 .header-text {
-  width: 423px;
-  height: 476px;
+  width: 26.4375rem; /* 423px */
+  height: 29.75rem; /* 476px */
 
   font-family: Microsoft YaHei, serif;
-  font-size: 60px;
+  font-size: 3.75rem; /* 60px */
   font-weight: 700;
-  line-height: 79.19px;
+  line-height: 4.9494rem; /* 79.19px */
   letter-spacing: 0.12em;
   text-align: left;
   color: #3A3A3A;
 
-  margin-left: 100px;
+  margin-left: 6.25rem; /* 100px */
 
   opacity: 0.8;
 }
 
 .header-link {
-  //styleName: 中标题;
   font-family: Microsoft YaHei, serif;
-  font-size: 35px;
+  font-size: 2.188rem; /* 35px */
   font-weight: 700;
-  line-height: 46.19px;
+  line-height: 2.887rem; /* 46.19px */
   letter-spacing: 0.12em;
   text-align: left;
 
   color: #44AA92;
 
   &:hover {
-    //color: #3A3A3A;
     text-decoration: underline;
     cursor: pointer;
   }
@@ -183,40 +181,38 @@ export default {
 
 .header-english-text {
   font-family: TT Supermolot;
-  font-size: 50px;
+  font-size: 3.125rem; /* 50px */
   font-style: italic;
   font-weight: 900;
-  line-height: 61.5px;
+  line-height: 3.8438rem; /* 61.5px */
   text-align: left;
   white-space: nowrap;
   color: #3A3A3A;
-  margin-bottom: -50px;
+  margin-bottom: -3.125rem; /* -50px */
 }
 
 .header-pic-1 {
-  width: 628.03px;
+  width: 39.252rem; /* 628.03px */
   position: relative;
-  top: 50px;
-  left: -30px;
+  top: 3.125rem; /* 50px */
+  left: -1.875rem; /* -30px */
 }
 
 .el-divider {
-  width: 1300px;
-  margin-left: 70px;
+  width: 81.25rem; /* 1300px */
+  margin-left: 4.375rem; /* 70px */
 }
 
 .ed-goals {
-  width: 1090px;
+  width: 68.125rem; /* 1090px */
 }
 
 .goal-card {
-  width: 337px;
-  height: 370px;
-  border-radius: 10px;
-
-
-  margin-top: 50px;
-  margin-bottom: 50px;
+  width: 21.063rem; /* 337px */
+  height: 23.125rem; /* 370px */
+  border-radius: 0.625rem; /* 10px */
+  margin-top: 3.125rem; /* 50px */
+  margin-bottom: 3.125rem; /* 50px */
 }
 
 #ed-goal-1 {
@@ -228,15 +224,15 @@ export default {
 
   p {
     font-family: Microsoft YaHei, serif;
-    font-size: 24px;
+    font-size: 1.5rem; /* 24px */
     font-weight: 700;
-    line-height: 31.68px;
-    letter-spacing: 0.1em;
+    line-height: 1.98rem; /* 31.68px */
+    letter-spacing: 0.1rem;
     text-align: left;
     color: #31354D;
 
-    margin-top: 251px;
-    margin-left: 30px;
+    margin-top: 15.688rem; /* 251px */
+    margin-left: 1.875rem; /* 30px */
   }
 }
 
@@ -245,42 +241,40 @@ export default {
 }
 
 .goal-card-bg {
-  width: 337px;
-  height: 239px;
-  border-radius: 10px 10px 0 0;
+  width: 21.063rem; /* 337px */
+  height: 14.938rem; /* 239px */
+  border-radius: 0.625rem 0.625rem 0 0; /* 10px 10px 0 0 */
   object-fit: cover;
 }
 
 .card-title {
   font-family: Microsoft YaHei, serif;
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
   font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.1em;
+  line-height: 1.875rem; /* 30px */
+  letter-spacing: 0.1rem;
   color: black;
   text-align: left;
 
-  margin-top: 13px;
-  margin-left: 20px;
-
+  margin-top: 0.8125rem; /* 13px */
+  margin-left: 1.25rem; /* 20px */
 }
 
 .card-text {
-  width: 297px;
+  width: 18.563rem; /* 297px */
 
   font-family: Microsoft YaHei, serif;
-  font-size: 16px;
+  font-size: 1rem; /* 16px */
   font-weight: 400;
-  line-height: 32px;
-  letter-spacing: 0.1em;
+  line-height: 2rem; /* 32px */
+  letter-spacing: 0.1rem;
   color: black;
   text-align: left;
 
   opacity: 0.7;
 
-  margin-top: 10px;
-  margin-left: 20px;
-
+  margin-top: 0.625rem; /* 10px */
+  margin-left: 1.25rem; /* 20px */
 }
 
 #ed-goal-3 {
@@ -301,64 +295,63 @@ export default {
 
 .teachers-title {
   font-family: Microsoft YaHei, serif;
-  font-size: 60px;
+  font-size: 3.75rem; /* 60px */
   font-weight: 700;
-  line-height: 79.19px;
+  line-height: 4.9494rem; /* 79.19px */
   letter-spacing: 0.12em;
   color: #31354D;
 
-  margin-top: 70px;
-  margin-bottom: 20px;
+  margin-top: 4.375rem; /* 70px */
+  margin-bottom: 1.25rem; /* 20px */
 }
 
 .teachers-descriptions {
-  width: 821px;
+  width: 51.313rem; /* 821px */
 }
 
 .description {
   box-sizing: border-box;
-  border-radius: 30px;
+  border-radius: 1.875rem; /* 30px */
   background-color: #ECF1FF;
-  padding: 20px 32.5px 20px 32.5px;
+  padding: 1.25rem 2.0313rem; /* 20px 32.5px 20px 32.5px */
 
   font-family: Microsoft YaHei, serif;
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
   font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.1em;
+  line-height: 1.875rem; /* 30px */
+  letter-spacing: 0.1rem;
   color: #8596CB;
 
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem; /* 20px */
 }
 
 #description1 {
-  margin-right: 30px;
+  margin-right: 1.875rem; /* 30px */
 }
 
 .teachers-container {
-  width: 1206px;
-  height: 504px;
+  width: 75.375rem; /* 1206px */
+  height: 31.5rem; /* 504px */
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
-  margin-top: 30px;
-  margin-bottom: 200px;
+  margin-top: 1.875rem; /* 30px */
+  margin-bottom: 12.5rem; /* 200px */
 }
 
 .teachers-background {
-  width: 1206px;
-  height: 476px;
+  width: 75.375rem; /* 1206px */
+  height: 29.75rem; /* 476px */
   background-color: #6374B6;
   position: absolute;
 }
 
 .teacher-pic-container {
-  width: 270px;
-  height: 504px;
-
+  width: 16.875rem; /* 270px */
+  height: 31.5rem; /* 504px */
   position: relative;
 
   &:hover {
@@ -374,44 +367,36 @@ export default {
 }
 
 .teacher-pic {
-  width: 270px;
-  height: 504px;
-
+  width: 16.875rem; /* 270px */
+  height: 31.5rem; /* 504px */
   object-fit: cover;
-
-  border-radius: 10px;
+  border-radius: 0.625rem; /* 10px */
 }
 
 .teacher-text {
   display: none;
-
-  width: 270px;
-  height: 504px;
-
+  width: 16.875rem; /* 270px */
+  height: 31.5rem; /* 504px */
   margin: 0;
-
   position: absolute;
   top: 0;
-
-  border-radius: 10px;
-
+  border-radius: 0.625rem; /* 10px */
   opacity: 90%;
   font-family: Microsoft YaHei, serif;
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
   font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.1em;
+  line-height: 1.875rem; /* 30px */
+  letter-spacing: 0.1rem;
   color: white;
-
   box-sizing: border-box;
-  padding: 20px;
+  padding: 1.25rem; /* 20px */
 
   p {
     font-family: Microsoft YaHei, serif;
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
     font-weight: 400;
-    line-height: 32px;
-    letter-spacing: 0.1em;
+    line-height: 2rem; /* 32px */
+    letter-spacing: 0.1rem;
     color: white;
     text-align: left;
   }
