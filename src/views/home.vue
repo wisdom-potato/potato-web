@@ -1,172 +1,186 @@
 <template>
-  <el-row align="middle" justify="center" class="common menu-container">
-    <!--标签-->
-    <el-col :span="8" class="centered-content">
-      <el-link @click.prevent="scrollTo('home-solution')">竞赛解决方案</el-link>
-    </el-col>
-    <el-col :span="8" class="centered-content">
-      <el-link @click.prevent="scrollTo('home-hardware')">硬件产品</el-link>
-    </el-col>
-    <el-col :span="8" class="centered-content">
-      <el-link @click.prevent="scrollTo('home-ed')">STEAM教育</el-link>
-    </el-col>
+<!--  <el-row align="middle" justify="center" class="common menu-container">-->
+<!--    &lt;!&ndash;标签&ndash;&gt;-->
+<!--    <el-col :span="8" class="centered-content">-->
+<!--      <el-link @click.prevent="scrollTo('home-solution')">竞赛解决方案</el-link>-->
+<!--    </el-col>-->
+<!--    <el-col :span="8" class="centered-content">-->
+<!--      <el-link @click.prevent="scrollTo('home-hardware')">硬件产品</el-link>-->
+<!--    </el-col>-->
+<!--    <el-col :span="8" class="centered-content">-->
+<!--      <el-link @click.prevent="scrollTo('home-ed')">STEAM教育</el-link>-->
+<!--    </el-col>-->
 
-  </el-row>
+<!--  </el-row>-->
 
 
-  <div class="home-container">
-    <div class="title-container">
-      <h1 id="title">智慧土豆</h1>
-      <h2 id="subtitle">机器人技术支持专家</h2>
-    </div>
-  </div>
+<!--  <div class="home-container">-->
+<!--    <div class="title-container">-->
+<!--      <h1 id="title">智慧土豆</h1>-->
+<!--      <h2 id="subtitle">机器人技术支持专家</h2>-->
+<!--    </div>-->
+<!--  </div>-->
+
+<!--  <el-row align="middle" justify="center" style="margin-top: 20px">-->
+<!--    <el-row style="width: 1144px; height:417px; background-color: lightblue" justify="space-between">-->
+<!--      <div style="width: 561px; background-color: lightgreen">-->
+<!--        <div id="competition-english-text">Competition Solutions</div>-->
+<!--      </div>-->
+<!--      <div style="width: 573px; background-color: lightcoral"></div>-->
+<!--    </el-row>-->
+<!--  </el-row>-->
+
 
   <div class="home-content-left">
     <el-row id="home-solution">
       <el-col id="competition-text-col" :span="12">
         <span id="competition-text">竞赛解决方案</span>
-        <img src="../assets/star.png" width="3.25rem" height="3.25rem">
+        <img src="../assets/star.png" style="width: 3.25rem; height: 3.25rem">
         <span id="competition-english-text">Competition Solutions</span>
-        <el-card id="competition-description" style="width: 35.063rem">
-          <p style="margin-right: 0.938rem">
-            在机器人竞赛学习与教育领域，我们致力于为每位学员提供个性化定制的学习指导方案和专业化的技能培训，帮助他们实现学习上的突破和提升。无论是机械设计、电子电路、编程语言还是控制算法，我们都会全力以赴，为学员创造最佳的学习环境和机会，助力他们在机器人竞赛中取得成功。</p>
-        </el-card>
+<!--        <el-card id="competition-description" style="width: 35.063rem">-->
+<!--          <p style="margin-right: 0.938rem">-->
+<!--            在机器人竞赛学习与教育领域，我们致力于为每位学员提供个性化定制的学习指导方案和专业化的技能培训，帮助他们实现学习上的突破和提升。无论是机械设计、电子电路、编程语言还是控制算法，我们都会全力以赴，为学员创造最佳的学习环境和机会，助力他们在机器人竞赛中取得成功。</p>-->
+<!--        </el-card>-->
       </el-col>
-      <el-col :span="9" class="solution-image">
+
+      <div :span="9" class="solution-image">
+<!--      <el-col :span="9" class="solution-image">-->
         <p class="float" id="competition-float1">竞赛辅导</p>
         <p class="float" id="competition-float2">竞赛机器人设计</p>
         <image-zoom id="home-solution-img" :src="getAssetsFile('home-solution-image.png')"></image-zoom>
-      </el-col>
+<!--        <img src="../assets/home-solution-image.png" class="lol" alt="" style="width: 31.063rem; height: 17.5rem; position: absolute; right: -5rem; top: 5rem;"/>-->
+<!--      </el-col>-->
+      </div>
     </el-row>
   </div>
 
-  <div class="home-content-right">
-    <el-row id="home-hardware">
-      <el-col :span="12">
-        <image-zoom id="home-product-img" :src="getAssetsFile('product.png')"></image-zoom>
-        <img id="home-product-bg1" src="../assets/img.png">
-        <img id="home-product-bg2" src="../assets/img.png">
-        <p class="float" id="hardware1-float">自研硬件</p>
-        <p class="float" id="hardware2-float">开发平台</p>
+<!--  <div class="home-content-right">-->
+<!--    <el-row id="home-hardware">-->
+<!--      <el-col :span="12">-->
+<!--        <image-zoom id="home-product-img" :src="getAssetsFile('product.png')"></image-zoom>-->
+<!--        <img id="home-product-bg1" src="../assets/img.png">-->
+<!--        <img id="home-product-bg2" src="../assets/img.png">-->
+<!--&lt;!&ndash;        <p class="float" id="hardware1-float">自研硬件</p>&ndash;&gt;-->
+<!--&lt;!&ndash;        <p class="float" id="hardware2-float">开发平台</p>&ndash;&gt;-->
 
-      </el-col>
+<!--      </el-col>-->
 
-      <el-col id="hardware-text-col" :span="12">
-        <img src="../assets/star.png" width="3.25rem" height="3.25rem" style="margin-left: 12.5rem
+<!--      <el-col id="hardware-text-col" :span="12">-->
+<!--        <img src="../assets/star.png" width="3.25rem" height="3.25rem" style="margin-left: 12.5rem-->
 
-; margin-right: 0.938rem">
-        <span id="hardware-text">硬件产品</span> <br>
+<!--; margin-right: 0.938rem">-->
+<!--        <span id="hardware-text">硬件产品</span> <br>-->
 
-        <span id="hardware-english-text">Hardware Products</span>
-        <el-card id="hardware-description" style="width: 35.063rem">
-          <p>
-            我们自研的MP-0、MP-1等教育机器人为机器人竞赛学习与教育提供了强大的支持。它们不仅助力比赛进行，还为学员提供了一个实践和技能提升的平台。通过与这些教育机器人的互动和实践，学员将能够全面提升自己的机器人竞赛能力和STEM领域的学习和发展水平。</p>
-        </el-card>
-      </el-col>
+<!--        <span id="hardware-english-text">Hardware Products</span>-->
+<!--        <el-card id="hardware-description" style="width: 35.063rem">-->
+<!--          <p>-->
+<!--            我们自研的MP-0、MP-1等教育机器人为机器人竞赛学习与教育提供了强大的支持。它们不仅助力比赛进行，还为学员提供了一个实践和技能提升的平台。通过与这些教育机器人的互动和实践，学员将能够全面提升自己的机器人竞赛能力和STEM领域的学习和发展水平。</p>-->
+<!--        </el-card>-->
+<!--      </el-col>-->
 
-    </el-row>
-  </div>
+<!--    </el-row>-->
+<!--  </div>-->
 
-  <div class="home-content-left">
-    <el-row id="home-ed">
-      <el-col id="competition-text-col" :span="12">
-        <span id="competition-text">STEAM 教育</span>
-        <img src="../assets/star.png" width="3.25rem" height="3.25rem">
-        <span id="competition-english-text">STEAM Education</span>
-        <el-card id="competition-description" style="width: 35.063rem">
-          <p style="margin-right: -0.938rem">
-            我们的专业Robomaster、Robocon、FRC等竞赛培训旨在为学生提供全面且深入的竞赛准备，帮助他们在机器人领域斩获佳绩，并为未来STEM领域的学习和发展奠定坚实基础。通过我们的培训服务，学生将能够掌握机器人竞赛所需的专业技能，培养创新思维和团队合作能力，为未来的成功铺就坚实的道路。</p>
-        </el-card>
-      </el-col>
-      <el-col class="solution-image" :span="9">
-        <p class="float" id="edu-float1">专业师资</p>
-        <p class="float" id="edu-float2">参与比赛</p>
-        <p class="float" id="edu-float3">培养兴趣</p>
-
-
-        <image-zoom id="home-steam-ed-img" :src="getAssetsFile('steam-education.png')"></image-zoom>
-
-      </el-col>
-    </el-row>
-  </div>
-
-  <div class="home-past-project">
-    <h2 id="past-project-header">过往项目</h2>
-    <el-carousel height="31.25rem" :show-indicators="true" :motion-blur="true">
-      <el-carousel-item>
-        <el-row>
-          <el-col id="project-idx" :span="3">
-            <p id="project-idx-text">案例一</p>
-          </el-col>
-          <el-col class="project-card" :span="17">
-            <div class="black-filter">
-              <img src="../assets/project-card.png"
-                   style="width: 27.438rem;height:20rem; position:absolute; right: 7.75rem; top:4.25rem">
-            </div>
-
-            <p id="card-title">x大学智能车大赛方案设计</p>
-            <div class="card-text-div">
-              <p class="card-text">提供比赛方案策划</p>
-
-            </div>
-            <div class="card-text-div">
-              <p class="card-text">比赛道具硬件支持</p>
+<!--  <div class="home-content-left">-->
+<!--    <el-row id="home-ed">-->
+<!--      <el-col id="competition-text-col" :span="12">-->
+<!--        <span id="competition-text">STEAM 教育</span>-->
+<!--        <img src="../assets/star.png" width="3.25rem" height="3.25rem">-->
+<!--        <span id="competition-english-text">STEAM Education</span>-->
+<!--        <el-card id="competition-description" style="width: 35.063rem">-->
+<!--          <p style="margin-right: -0.938rem">-->
+<!--            我们的专业Robomaster、Robocon、FRC等竞赛培训旨在为学生提供全面且深入的竞赛准备，帮助他们在机器人领域斩获佳绩，并为未来STEM领域的学习和发展奠定坚实基础。通过我们的培训服务，学生将能够掌握机器人竞赛所需的专业技能，培养创新思维和团队合作能力，为未来的成功铺就坚实的道路。</p>-->
+<!--        </el-card>-->
+<!--      </el-col>-->
+<!--      <el-col class="solution-image" :span="9">-->
+<!--&lt;!&ndash;        <p class="float" id="edu-float1">专业师资</p>&ndash;&gt;-->
+<!--&lt;!&ndash;        <p class="float" id="edu-float2">参与比赛</p>&ndash;&gt;-->
+<!--&lt;!&ndash;        <p class="float" id="edu-float3">培养兴趣</p>&ndash;&gt;-->
 
 
-            </div>
-            <div class="card-text-div">
-              <p class="card-text">竞赛技术规则指导</p>
-            </div>
+<!--        <image-zoom id="home-steam-ed-img" :src="getAssetsFile('steam-education.png')"></image-zoom>-->
 
-          </el-col>
+<!--      </el-col>-->
+<!--    </el-row>-->
+<!--  </div>-->
 
-        </el-row>
-      </el-carousel-item>
+<!--  <div class="home-past-project">-->
+<!--    <h2 id="past-project-header">过往项目</h2>-->
+<!--    <el-carousel height="31.25rem" :show-indicators="true" :motion-blur="true">-->
+<!--      <el-carousel-item>-->
+<!--        <el-row>-->
+<!--          <el-col id="project-idx" :span="3">-->
+<!--            <p id="project-idx-text">案例一</p>-->
+<!--          </el-col>-->
+<!--          <el-col class="project-card" :span="17">-->
+<!--            <div class="black-filter">-->
+<!--              <img src="../assets/project-card.png"-->
+<!--                   style="width: 27.438rem;height:20rem; position:absolute; right: 7.75rem; top:4.25rem">-->
+<!--            </div>-->
 
-      <el-carousel-item>
-        <el-row>
-          <el-col class="project-card" :span="17">
-            <div class="black-filter">
-              <img src="../assets/project-card-2.png"
-                   style="width: 18.75rem;height:23.875rem; position:absolute; right: 26.5rem; top:2.063rem">
-            </div>
+<!--            <p id="card-title">x大学智能车大赛方案设计</p>-->
+<!--            <div class="card-text-div">-->
+<!--              <p class="card-text">提供比赛方案策划</p>-->
 
-            <p id="card-title">MakeX 挑战赛竞赛方案</p>
-            <div class="card-text-div">
-              <p class="card-text">竞赛技术教育指导</p>
-
-            </div>
-            <div class="card-text-div">
-              <p class="card-text">道具硬件开发支持</p>
-
-
-            </div>
-            <div class="card-text-div">
-              <p class="card-text">竞赛技术规则指导</p>
-            </div>
-
-          </el-col>
-          <el-col id="project-idx" :span="3">
-            <p id="project-idx2">案例二</p>
-          </el-col>
-        </el-row>
-      </el-carousel-item>
+<!--            </div>-->
+<!--            <div class="card-text-div">-->
+<!--              <p class="card-text">比赛道具硬件支持</p>-->
 
 
-    </el-carousel>
+<!--            </div>-->
+<!--            <div class="card-text-div">-->
+<!--              <p class="card-text">竞赛技术规则指导</p>-->
+<!--            </div>-->
 
-  </div>
+<!--          </el-col>-->
 
-  <div class="home-about-us">
-    <h2 id="about-title-cn"> 关于我们 </h2>
-    <h3 id="about-title-en"> about us</h3>
-    <div class="home-about-us-text">
-      <img id="logo" src="../assets/logo.png">
-      <p id="home-about-text"> 致力于为中小学生提供以机器人科技研发为核心的创新实践平台。我们提供个性化定制的学习指导方案和专业化的技能培训，旨在激发学生的科技创新精神，让他们在接触顶尖机器人赛事的同时感受
-        STEM 教育的魅力。Infinity Geek Robotics Club 科研基地主营项目为 FRC 竞赛培训，助力学生在机器人领域斩获佳绩，并为未来
-        STEM 领域的学习和发展奠定坚实基础。</p>
-    </div>
-  </div>
+<!--        </el-row>-->
+<!--      </el-carousel-item>-->
+
+<!--      <el-carousel-item>-->
+<!--        <el-row>-->
+<!--          <el-col class="project-card" :span="17">-->
+<!--            <div class="black-filter">-->
+<!--              <img src="../assets/project-card-2.png"-->
+<!--                   style="width: 18.75rem;height:23.875rem; position:absolute; right: 26.5rem; top:2.063rem">-->
+<!--            </div>-->
+
+<!--            <p id="card-title">MakeX 挑战赛竞赛方案</p>-->
+<!--            <div class="card-text-div">-->
+<!--              <p class="card-text">竞赛技术教育指导</p>-->
+
+<!--            </div>-->
+<!--            <div class="card-text-div">-->
+<!--              <p class="card-text">道具硬件开发支持</p>-->
+
+
+<!--            </div>-->
+<!--            <div class="card-text-div">-->
+<!--              <p class="card-text">竞赛技术规则指导</p>-->
+<!--            </div>-->
+
+<!--          </el-col>-->
+<!--          <el-col id="project-idx" :span="3">-->
+<!--            <p id="project-idx2">案例二</p>-->
+<!--          </el-col>-->
+<!--        </el-row>-->
+<!--      </el-carousel-item>-->
+
+
+<!--    </el-carousel>-->
+
+<!--  </div>-->
+
+<!--  <div class="home-about-us">-->
+<!--    <h2 id="about-title-cn"> 关于我们 </h2>-->
+<!--    <h3 id="about-title-en"> about us</h3>-->
+<!--    <div class="home-about-us-text">-->
+<!--      <img id="logo" src="../assets/logo.png">-->
+<!--      <p id="home-about-text"> 致力于为中小学生提供以机器人科技研发为核心的创新实践平台。我们提供个性化定制的学习指导方案和专业化的技能培训，旨在激发学生的科技创新精神，让他们在接触顶尖机器人赛事的同时感受-->
+<!--        STEM 教育的魅力。Infinity Geek Robotics Club 科研基地主营项目为 FRC 竞赛培训，助力学生在机器人领域斩获佳绩，并为未来-->
+<!--        STEM 领域的学习和发展奠定坚实基础。</p>-->
+<!--    </div>-->
+<!--  </div>-->
 
 </template>
 
@@ -215,6 +229,7 @@ export default {
 </script>
 
 <style scoped lang="less">
+
 .black-filter {
   background: black;
   opacity: 90%;
@@ -495,12 +510,17 @@ export default {
 }
 
 .solution-image {
+  position: relative;
   background-image: url("../assets/img.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   margin-left: 1.875rem;
   border-radius: 1.875rem;
+
+  width: 31.875rem;
+  height: 26.063rem;
+  //background-size: 31.875rem 26.063rem;
 }
 
 #competition-description {
@@ -536,12 +556,18 @@ export default {
 }
 
 #competition-english-text {
-  font-family: "TT Supermolot";
-  font-size: 3.125rem;
+
+  width:553px;
+
+  //styleName: 英文标题;
+  font-family: TT Supermolot, sans-serif;
+  font-size: 2.875rem;
   font-style: italic;
-  line-height: 3.844rem;
-  color: #BDC8E4;
   font-weight: 900;
+  line-height: 3.844rem;
+
+  text-align: left;
+  color: #BDC8E4;
   padding-left: 9.313rem;
 }
 

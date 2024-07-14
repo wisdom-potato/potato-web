@@ -73,7 +73,7 @@ export default {
   border-radius: 20px;
 
   font-family: Microsoft YaHei, serif;
-  font-size: 90%;
+  font-size: 100%;
   font-weight: 700;
   line-height: 100%;
   letter-spacing: 0.12em;
