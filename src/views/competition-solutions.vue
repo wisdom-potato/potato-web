@@ -3,32 +3,38 @@
     <el-carousel height="50rem" :show-indicators="true" @change="handleCarouselChange" indicator-position="none"
                  ref="carousel">
       <!--一定记得在JavaScript中设置numItems以确保指示器的创建正确-->
-      <el-carousel-item id="carousel-item1">
+      <el-carousel-item id="carousel-item1" style="height: 50rem">
         <div class="overlay"></div>
-        <div id="carousel-header">
-          竞赛解决方案
-        </div>
-        <div id="carousel-text">
-          FRC
-        </div>
-        <div id="carousel-text1" style="width: 68.75rem; height: 0.938rem">
-          <p style="padding:0.625rem"> FIRST Robotics Competition
-            FIRST机器人挑战赛，简称FRC。是由美国非盈利机构FIRST主办，针对高中生的一项工业级机器人竞赛，把运动的刺激性和科学技术的严谨性结合在一起，学生在有限是时间和资源下，严格遵守规则，制作完成机器人，与志同道合的竞争对手完成一场机器人挑战。迄今为止已经举办30多届，并且获得全球多所高校的认可。</p>
-        </div>
+        <el-row align="middle" justify="start" style="width: 100%">
+          <el-row justify="space-between" style="flex-direction: column; width: 100rem; margin-left: 3.5rem">
+            <div id="carousel-header">
+              竞赛解决方案
+            </div>
+            <div id="carousel-text">
+              FRC
+            </div>
+            <div id="carousel-text1" style="width: 68.75rem; height: 9rem; justify-content: center">
+              <p style="padding:0.625rem"> FIRST Robotics Competition
+                FIRST机器人挑战赛，简称FRC。是由美国非盈利机构FIRST主办，针对高中生的一项工业级机器人竞赛，把运动的刺激性和科学技术的严谨性结合在一起，学生在有限是时间和资源下，严格遵守规则，制作完成机器人，与志同道合的竞争对手完成一场机器人挑战。迄今为止已经举办30多届，并且获得全球多所高校的认可。</p>
+            </div>
+          </el-row>
+        </el-row>
       </el-carousel-item>
 
       <el-carousel-item id="carousel-item2">
         <div class="overlay"></div>
-        <div id="carousel-header">
-          竞赛解决方案
-        </div>
-        <div id="carousel-text">
-          ROBOMASTER
-        </div>
-        <div id="carousel-text1" style="width: 68.75rem; height: 0.938rem">
-          <p style="padding: 0.625rem"> FIRST Robotics Competition
-            FIRST机器人挑战赛，简称FRC。是由美国非盈利机构FIRST主办，针对高中生的一项工业级机器人竞赛，把运动的刺激性和科学技术的严谨性结合在一起，学生在有限是时间和资源下，严格遵守规则，制作完成机器人，与志同道合的竞争对手完成一场机器人挑战。迄今为止已经举办30多届，并且获得全球多所高校的认可。</p>
-        </div>
+        <el-row align="middle" justify="start" style="width: 100%">
+          <el-row justify="space-between" style="flex-direction: column; width: 100rem; margin-left: 3.5rem">
+
+            <div id="carousel-text" style="margin-top: 30rem">
+              ROBOMASTER
+            </div>
+            <div id="carousel-text1" style="width: 68.75rem; height: 9rem; justify-content: center">
+              <p style="padding: 0.625rem"> FIRST Robotics Competition
+                FIRST机器人挑战赛，简称FRC。是由美国非盈利机构FIRST主办，针对高中生的一项工业级机器人竞赛，把运动的刺激性和科学技术的严谨性结合在一起，学生在有限是时间和资源下，严格遵守规则，制作完成机器人，与志同道合的竞争对手完成一场机器人挑战。迄今为止已经举办30多届，并且获得全球多所高校的认可。</p>
+            </div>
+          </el-row>
+        </el-row>
       </el-carousel-item>
 
     </el-carousel>
@@ -39,62 +45,67 @@
   <div class="competition-intro">
     <h2 id="intro-title">让每一场比赛都精彩绝伦</h2>
     <p id="intro-text">北京智慧土豆公司，致力于为竞赛团队提供全面、专业的解决方案，以增强其在各类比赛中的竞争力。</p>
-    <el-row style="margin-top: 106px">
-      <el-col :span="12">
+    <el-row  align="middle" justify="center" style="margin-top: 106px;width: 100%">
+      <el-row justify="space-evenly" style="width: 100%">
         <div id="intro-img1">
           <h2 id="competition-advising">竞赛辅导</h2>
           <p id="advising-text">
             采取个性化的辅导方案，通过详细的初步评估来了解每个队伍的具体情况，包括队伍的技能水平、技术需求以及之前的竞赛经验。基于这些信息，制定出个性化辅导计划，这个计划将围绕比赛的具体需求，如技术论文提交、演讲、实操等多个方面进行全方位的指导。
           </p>
         </div>
-      </el-col>
 
-      <el-col :span="12">
         <div id="intro-img2">
           <h2 id="competition-advising">竞赛机器人设计</h2>
           <p id="advising-text">
             公司注重实践和创新，不仅提供机器人的硬件设计和软件编程指导，还会帮助团队进行创新设计的思维训练。设计师和工程师团队会与学生紧密合作，确保设计的机器人能够在满足比赛规则的同时，具备较强的实战能力和创新点。整个设计过程中，团队会定期进行设计的测试和优化，以确保最终的机器人设计能够高效完成比赛任务，从而在竞赛中取得优异成绩。
           </p>
         </div>
-      </el-col>
+
+      </el-row>
+
+
     </el-row>
   </div>
   <div class="past-projects">
+    <hr style="width: 75rem; background-color: rgba(99,116,182,0.2); height: 0.063rem; border: none">
     <h2 id="past-projects-title">过往项目</h2>
-    <hr style="width: 75rem; background-color: #6374B6; height: 0.063rem; border: none">
+    <hr style="width: 75rem; background-color: rgba(99,116,182,0.2); height: 0.063rem; border: none">
     <h2 id="card-title">X大学智能车大赛方案设计</h2>
-    <el-row>
 
-      <div style="width:35rem">
-        <div id="card-content1">
-          <p id="card-text1">
-            基于X大学信息学院对学习软硬件技术的具体需求，我们着手设计了智能车大赛规则。按照这些规则的要求，我们进一步设计并配置了比赛所需的硬件。最终，比赛在周密的准备和专业的组织下成功举行。</p>
-          <p class="float" style="margin-left: 15rem; margin-top: 2rem; width: 4rem">确定需求</p>
+    <el-row align="middle" justify="center" style="width: 100%">
+      <el-row justify="space-between" style="width: 100%; margin-left: 5rem; height: 20rem">
+        <div style="width:27rem;">
+          <div id="card-content1">
+            <p id="card-text1">
+              基于X大学信息学院对学习软硬件技术的具体需求，我们着手设计了智能车大赛规则。按照这些规则的要求，我们进一步设计并配置了比赛所需的硬件。最终，比赛在周密的准备和专业的组织下成功举行。</p>
+            <p class="float" style="margin-left: 17rem; width: 4rem; margin-top: -6.5rem">确定需求</p>
+
+          </div>
+
+        </div>
+        <div style="width:27rem; position: relative">
+            <img src="../assets/competition-img3.png"
+                 style="width: 27rem;height: 18.875rem;z-index: 2; margin-top: 5rem ; position: absolute">
+            <img src="../assets/competition-img4.png"
+                 style="width: 23.125rem;height: 25rem; position: absolute; z-index: 1; margin-left: -5rem; margin-top: -1rem">
+            <p class="float" style="position:absolute;margin-top: 19rem;margin-left: 15rem; font-size: 1.063rem; line-height: 1.688rem">硬件设计
+              <br> 规则策划</p>
+
+
+        </div>
+        <div style="width:27rem">
+          <div>
+            <image-zoom style="width: 22.875rem; height: 9.375rem; margin-top: 1rem"
+                        :src="getAssetsFile('competition-img5.png')"></image-zoom>
+            <image-zoom style="width: 22.875rem; height: 9.375rem; margin-top: 1.5rem"
+                        :src="getAssetsFile('competition-img6.png')"></image-zoom>
+            <p class="float" style="margin-top: -2rem; margin-left: 12rem">协助比赛顺利进行</p>
+          </div>
 
         </div>
 
-      </div>
-      <div style="width:35rem">
-        <div style="justify-content: center;align-items: center; position: relative">
-          <img src="../assets/competition-img3.png"
-               style="width: 27.5rem;height: 18.875rem; margin-top: 4.188rem; z-index: 2; position: absolute">
-          <img src="../assets/competition-img4.png"
-               style="width: 23.125rem;height: 25rem;  top:-2.5rem;position: absolute; z-index: 1">
-          <p class="float" style="position:absolute; left:50rem; top:18.75rem; font-size: 1.063rem; line-height: 1.688rem">硬件设计
-            <br> 规则策划</p>
-        </div>
+      </el-row>
 
-      </div>
-      <div style="width:35rem">
-        <div>
-          <image-zoom style="width: 22.875rem; height: 9.375rem; margin-top: 1.563rem"
-                      :src="getAssetsFile('competition-img5.png')"></image-zoom>
-          <image-zoom style="width: 22.875rem; height: 9.375rem; margin-top: 2.063rem"
-                      :src="getAssetsFile('competition-img6.png')"></image-zoom>
-          <p class="float" style="right: 4.688rem; bottom: -1.875rem">协助比赛顺利进行</p>
-        </div>
-
-      </div>
     </el-row>
   </div>
   <div class="past-projects">
@@ -238,13 +249,13 @@ export default {
   width: 23rem;
   height: 22.25rem;
   background-image: url("../assets/card-content-bg.png");
-  background-size: contain;
-  margin-left: 5.5rem;
-  //margin-right: 3rem;
+  background-size: cover;
   background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
+  text-align: center;
   position: relative;
+  border-radius: 0.625rem;
 }
 
 
@@ -253,14 +264,13 @@ export default {
   height: 443px;
   background-image: url("../assets/card-content-bg.png");
   background-size: cover;
-  margin-top: -15px;
-  margin-left: 88px;
   background-repeat: no-repeat;
   border-radius: 10px;
-
 }
 
 #card-text1 {
+  width: 20rem;
+  height: 20.25rem;
   font-family: "Microsoft YaHei";
   font-weight: 400;
   font-size: 1rem;
@@ -269,8 +279,7 @@ export default {
   color: white;
   text-align: center;
   padding-top: 5.125rem;
-  padding-left: 2.125rem;
-  padding-right: 2.125rem;
+  padding-left: 1.5rem;
 }
 
 #card-title {
@@ -302,44 +311,44 @@ export default {
 #advising-text {
   color: white;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 32px;
+  font-size: 1rem;
+  line-height: 2rem;
   font-family: "Microsoft YaHei";
   letter-spacing: 0.12em;
-  margin-top: 73px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-top: 4.563rem;
+  margin-left: 1.875rem;
+  margin-right: 1.875rem;
   text-align: center;
 }
 
 #competition-advising {
   color: white;
   font-family: "Microsoft YaHei";
-  font-size: 35px;
+  font-size: 2.188rem;
   font-weight: 700;
-  line-height: 46.19px;
-  letter-spacing: 0.12em;
+  line-height: 2.887rem;
+  letter-spacing: 0.12rem;
   text-align: center;
-  padding-top: 56px;
+  padding-top: 3.5rem;
 }
 
 #intro-img1 {
   background-image: url("../assets/competition-img1.png");
-  width: 566px;
-  height: 420px;
-  margin-left: 88px;
+  width: 40.25rem;
+  height: 30.25rem;
   border-radius: 10px;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
 #intro-img2 {
   background-image: url("../assets/competition-img2.png");
-  width: 575px;
-  height: 420px;
-  margin-right: 125px;
+  width: 40.25rem;
+  height: 30.25rem;
   border-radius: 10px;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
@@ -382,7 +391,6 @@ export default {
 
 #carousel-header {
   color: white;
-  margin-left: 3.75rem;
   margin-top: 6.25rem;
   font-family: "Microsoft YaHei", serif;
   font-size: 3.75rem;
@@ -401,20 +409,17 @@ export default {
   font-size: 6.25rem;
   line-height: 7.688rem;
   font-style: italic;
-  margin-left: 3.75rem;
-  margin-top: 21.884rem;
   z-index: 2;
   position: relative;
+  margin-top: 19rem;
 
 }
 
 #carousel-text1 {
-  margin-left: 3.75rem;
   color: white;
   font-size: 1rem;
   line-height: 2rem;
   font-family: "Microsoft YaHei", serif;
-  padding-bottom: 6.25rem;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 0.625rem;
   z-index: 2;
