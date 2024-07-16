@@ -1,6 +1,6 @@
 <template>
   <div class="competition-header">
-    <el-carousel height="800px" :show-indicators="true" @change="handleCarouselChange" indicator-position="none"
+    <el-carousel height="50rem" :show-indicators="true" @change="handleCarouselChange" indicator-position="none"
                  ref="carousel">
       <!--一定记得在JavaScript中设置numItems以确保指示器的创建正确-->
       <el-carousel-item id="carousel-item1">
@@ -11,8 +11,8 @@
         <div id="carousel-text">
           FRC
         </div>
-        <div id="carousel-text1" style="width: 1100px; height: 15px">
-          <p style="padding:10px"> FIRST Robotics Competition
+        <div id="carousel-text1" style="width: 68.75rem; height: 0.938rem">
+          <p style="padding:0.625rem"> FIRST Robotics Competition
             FIRST机器人挑战赛，简称FRC。是由美国非盈利机构FIRST主办，针对高中生的一项工业级机器人竞赛，把运动的刺激性和科学技术的严谨性结合在一起，学生在有限是时间和资源下，严格遵守规则，制作完成机器人，与志同道合的竞争对手完成一场机器人挑战。迄今为止已经举办30多届，并且获得全球多所高校的认可。</p>
         </div>
       </el-carousel-item>
@@ -25,8 +25,8 @@
         <div id="carousel-text">
           ROBOMASTER
         </div>
-        <div id="carousel-text1" style="width: 1100px; height: 15px">
-          <p style="padding:10px"> FIRST Robotics Competition
+        <div id="carousel-text1" style="width: 68.75rem; height: 0.938rem">
+          <p style="padding: 0.625rem"> FIRST Robotics Competition
             FIRST机器人挑战赛，简称FRC。是由美国非盈利机构FIRST主办，针对高中生的一项工业级机器人竞赛，把运动的刺激性和科学技术的严谨性结合在一起，学生在有限是时间和资源下，严格遵守规则，制作完成机器人，与志同道合的竞争对手完成一场机器人挑战。迄今为止已经举办30多届，并且获得全球多所高校的认可。</p>
         </div>
       </el-carousel-item>
@@ -61,40 +61,40 @@
   </div>
   <div class="past-projects">
     <h2 id="past-projects-title">过往项目</h2>
-    <hr style="width: 1280px; background-color: #6374B6; height: 1px; border: none">
+    <hr style="width: 75rem; background-color: #6374B6; height: 0.063rem; border: none">
     <h2 id="card-title">X大学智能车大赛方案设计</h2>
     <el-row>
 
-      <el-col :span="8">
+      <div style="width:35rem">
         <div id="card-content1">
           <p id="card-text1">
             基于X大学信息学院对学习软硬件技术的具体需求，我们着手设计了智能车大赛规则。按照这些规则的要求，我们进一步设计并配置了比赛所需的硬件。最终，比赛在周密的准备和专业的组织下成功举行。</p>
-          <p class="float" id="competition-float1" style="left: 340px; top: 325px">确定需求</p>
+          <p class="float" style="margin-left: 15rem; margin-top: 2rem; width: 4rem">确定需求</p>
 
         </div>
 
-      </el-col>
-      <el-col :span="8">
-        <div style="justify-content: center;align-items: center">
+      </div>
+      <div style="width:35rem">
+        <div style="justify-content: center;align-items: center; position: relative">
           <img src="../assets/competition-img3.png"
-               style="width: 440px;height: 302px; margin-top: 67px; z-index: 2; position: relative">
+               style="width: 27.5rem;height: 18.875rem; margin-top: 4.188rem; z-index: 2; position: absolute">
           <img src="../assets/competition-img4.png"
-               style="width: 370px;height: 400px; left: 410px; top:-40px;position: absolute; z-index: 1">
-          <p class="float" style="position:absolute; left:800px; top:300px; font-size: 17px; line-height: 27px">硬件设计
+               style="width: 23.125rem;height: 25rem;  top:-2.5rem;position: absolute; z-index: 1">
+          <p class="float" style="position:absolute; left:50rem; top:18.75rem; font-size: 1.063rem; line-height: 1.688rem">硬件设计
             <br> 规则策划</p>
         </div>
 
-      </el-col>
-      <el-col :span="8">
+      </div>
+      <div style="width:35rem">
         <div>
-          <image-zoom style="width: 366px; height: 150px; margin-top: 25px"
+          <image-zoom style="width: 22.875rem; height: 9.375rem; margin-top: 1.563rem"
                       :src="getAssetsFile('competition-img5.png')"></image-zoom>
-          <image-zoom style="width: 366px; height: 150px; margin-top: 33px"
+          <image-zoom style="width: 22.875rem; height: 9.375rem; margin-top: 2.063rem"
                       :src="getAssetsFile('competition-img6.png')"></image-zoom>
-          <p class="float" style="right: 75px; bottom: -30px">协助比赛顺利进行</p>
+          <p class="float" style="right: 4.688rem; bottom: -1.875rem">协助比赛顺利进行</p>
         </div>
 
-      </el-col>
+      </div>
     </el-row>
   </div>
   <div class="past-projects">
@@ -105,7 +105,7 @@
         <div id="card-content2">
           <p id="card-text1">
             在指导参加MakeX的队伍时，首先分析比赛要求和队伍的实际情况，然后提供一个包含技术指导、策略规划和实战训练的全面辅导方案。此外，公司会针对MakeX比赛的特点，帮助队伍设计能够高效完成比赛任务的机器人，并确保其设计既创新又实用。</p>
-          <p class="float" id="competition-float1" style="left: 340px; top: 385px">确定需求</p>
+          <p class="float"  style="left: 340px; top: 385px">确定需求</p>
         </div>
 
       </el-col>
@@ -127,7 +127,7 @@
   </div>
 
   <div class="information">
-    <h2 id="card-title" style="color:#31354D; margin-bottom: 30px">为您提供专业竞赛解决方案</h2>
+    <h2 id="card-title" style="color:#31354D; margin-bottom: 1.875rem">为您提供专业竞赛解决方案</h2>
     <p id="info-text">创赛精准、资源全面，专业定制竞赛方案。定制方案，全程服务，打造极致竞赛体验。</p>
     <el-row justify="center">
       <info-bubbles></info-bubbles>
@@ -206,9 +206,9 @@ export default {
   font-family: "Microsoft YaHei";
   color: black;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 32px;
-  letter-spacing: 0.1em;
+  font-size: 0.938rem;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
 }
 
 .information {
@@ -235,12 +235,16 @@ export default {
 
 
 #card-content1 {
-  width: 368px;
-  height: 356px;
+  width: 23rem;
+  height: 22.25rem;
   background-image: url("../assets/card-content-bg.png");
   background-size: contain;
-  margin-left: 88px;
+  margin-left: 5.5rem;
+  //margin-right: 3rem;
   background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 
@@ -259,22 +263,22 @@ export default {
 #card-text1 {
   font-family: "Microsoft YaHei";
   font-weight: 400;
-  font-size: 16px;
-  line-height: 32px;
-  letter-spacing: 0.1em;
+  font-size: 1rem;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
   color: white;
   text-align: center;
-  padding-top: 82px;
-  padding-left: 34px;
-  padding-right: 34px;
+  padding-top: 5.125rem;
+  padding-left: 2.125rem;
+  padding-right: 2.125rem;
 }
 
 #card-title {
   font-family: "Microsoft YaHei";
   font-weight: 700;
-  font-size: 35px;
-  line-height: 46.19px;
-  letter-spacing: 0.12em;
+  font-size: 2.188rem;
+  line-height: 2.887rem;
+  letter-spacing: 0.12rem;
   color: #6374B6;
   text-align: center;
 }
@@ -342,9 +346,9 @@ export default {
 #intro-text {
   font-family: "Microsoft YaHei";
   font-weight: 400;
-  font-size: 16px;
-  line-height: 32px;
-  letter-spacing: 0.1em;
+  font-size: 1rem;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
   color: black;
   text-align: center;
 }
@@ -353,11 +357,11 @@ export default {
   color: #31354D;
   font-family: "Microsoft YaHei";
   font-weight: 700;
-  font-size: 35px;
-  line-height: 46.19px;
-  letter-spacing: 0.12em;
+  font-size: 2.188rem;
+  line-height: 2.887rem;
+  letter-spacing: 0.12rem;
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 2.188rem;
 }
 
 .competition-intro {
@@ -378,13 +382,13 @@ export default {
 
 #carousel-header {
   color: white;
-  margin-left: 60px;
-  margin-top: 100px;
+  margin-left: 3.75rem;
+  margin-top: 6.25rem;
   font-family: "Microsoft YaHei", serif;
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 700;
-  line-height: 79.19px;
-  letter-spacing: 0.12em;
+  line-height: 4.949rem;
+  letter-spacing: 0.12rem;
   z-index: 2;
   position: relative;
 
@@ -394,25 +398,25 @@ export default {
   font-family: "TT Supermolot";
   color: white;
   font-weight: 900;
-  font-size: 100px;
-  line-height: 123px;
+  font-size: 6.25rem;
+  line-height: 7.688rem;
   font-style: italic;
-  margin-left: 60px;
-  margin-top: 350.16px;
+  margin-left: 3.75rem;
+  margin-top: 21.884rem;
   z-index: 2;
   position: relative;
 
 }
 
 #carousel-text1 {
-  margin-left: 60px;
+  margin-left: 3.75rem;
   color: white;
-  font-size: 16px;
-  line-height: 32px;
+  font-size: 1rem;
+  line-height: 2rem;
   font-family: "Microsoft YaHei", serif;
-  padding-bottom: 100px;
+  padding-bottom: 6.25rem;
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
+  border-radius: 0.625rem;
   z-index: 2;
   position: relative;
 

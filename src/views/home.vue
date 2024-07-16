@@ -106,34 +106,34 @@
   <div class="home-past-project">
     <h2 id="past-project-header">过往项目</h2>
     <el-carousel height="31.25rem" :show-indicators="true" :motion-blur="false">
-<!--      <el-carousel-item>-->
-<!--        <el-row>-->
-<!--          <div id="project-idx">-->
-<!--            <p id="project-idx-text">案例一</p>-->
-<!--          </div>-->
-<!--          <div class="project-card">-->
-<!--            <div class="black-filter">-->
-<!--              <img src="../assets/project-card.png"-->
-<!--                   style="width: 27.438rem;height:20rem; position:absolute; right: 5.75rem; top:4.25rem">-->
-<!--            </div>-->
-<!--            <p id="card-title">x大学智能车大赛方案设计</p>-->
-<!--            <div class="card-text-div">-->
-<!--              <p class="card-text">提供比赛方案策划</p>-->
+      <el-carousel-item>
+        <el-row >
+          <div id="project-idx">
+            <p id="project-idx-text">案例一</p>
+          </div>
+          <div class="project-card">
+            <div class="black-filter">
+              <img src="../assets/project-card.png"
+                   style="width: 27.438rem;height:20rem; position:absolute; right: 5.75rem; top:4.25rem">
+            </div>
+            <p id="card-title">x大学智能车大赛方案设计</p>
+            <div class="card-text-div">
+              <p class="card-text">提供比赛方案策划</p>
 
-<!--            </div>-->
-<!--            <div class="card-text-div">-->
-<!--              <p class="card-text">比赛道具硬件支持</p>-->
+            </div>
+            <div class="card-text-div">
+              <p class="card-text">比赛道具硬件支持</p>
 
 
-<!--            </div>-->
-<!--            <div class="card-text-div">-->
-<!--              <p class="card-text">竞赛技术规则指导</p>-->
-<!--            </div>-->
+            </div>
+            <div class="card-text-div">
+              <p class="card-text">竞赛技术规则指导</p>
+            </div>
 
-<!--          </div>-->
+          </div>
 
-<!--        </el-row>-->
-<!--      </el-carousel-item>-->
+        </el-row>
+      </el-carousel-item>
 
       <el-carousel-item>
         <el-row>
@@ -160,7 +160,7 @@
           </div>
           <div id="project-idx" style="margin-left: 5rem">
             <p>案例二</p>
-          </div>>
+          </div>
         </el-row>
       </el-carousel-item>
     </el-carousel>
