@@ -51,9 +51,9 @@
     </el-row>
   </el-row>
 
-  <div class="home-content-right">
-    <el-row id="home-hardware">
-      <div style="height: 30rem;position: relative; padding-left: 13rem; width:50rem">
+  <el-row align="middle" justify="center" class="home-content-right">
+    <el-row id="home-hardware" justify="space-between">
+      <div style="height: 30rem;position: relative;width:35.063rem">
         <image-zoom id="home-product-img" :src="getAssetsFile('product.png')"></image-zoom>
         <img id="home-product-bg1" src="../assets/img.png">
         <img id="home-product-bg2" src="../assets/img.png">
@@ -71,17 +71,17 @@
 
 
 
-        <div id="competition-description" style="width: 35rem; margin-left: -3rem" >
+        <div id="competition-description" style="width: 35rem;" >
           <p style="padding:2.063rem 1.375rem 1.563rem 1.313rem">
             我们自研的MP-0、MP-1等教育机器人为机器人竞赛学习与教育提供了强大的支持。它们不仅助力比赛进行，还为学员提供了一个实践和技能提升的平台。通过与这些教育机器人的互动和实践，学员将能够全面提升自己的机器人竞赛能力和STEM领域的学习和发展水平。</p>
         </div>
       </div>
 
     </el-row>
-  </div>
+  </el-row>
 
-  <div class="home-content-left">
-    <el-row id="home-ed">
+  <el-row align="middle" justify="center"  class="home-content-left">
+    <el-row id="home-ed" justify="space-between">
       <div id="competition-text-col" style="width: 35.063rem; margin-right: 3rem">
         <span id="competition-text">STEAM 教育</span>
         <img src="../assets/star.png" style="width:3.25rem; height:3.25rem">
@@ -94,74 +94,80 @@
         </div>
       </div>
 
-      <div class="solution-image" style="position: relative; width: 32rem; margin-left: 9rem;">
+      <div class="solution-image" style="position: relative; width: 32rem; margin-left: 3rem;">
         <p class="float" id="edu-float1">专业师资</p>
         <p class="float" id="edu-float2">参与比赛</p>
         <p class="float" id="edu-float3">培养兴趣</p>
         <image-zoom id="home-steam-ed-img" :src="getAssetsFile('steam-education.png')"></image-zoom>
       </div>
     </el-row>
-  </div>
+  </el-row>
 
   <div class="home-past-project">
     <h2 id="past-project-header">过往项目</h2>
-    <el-carousel height="31.25rem" :show-indicators="true" :motion-blur="false">
-      <el-carousel-item>
-        <el-row >
-          <div id="project-idx">
-            <p id="project-idx-text">案例一</p>
-          </div>
-          <div class="project-card">
-            <div class="black-filter">
-              <img src="../assets/project-card.png"
-                   style="width: 27.438rem;height:20rem; position:absolute; right: 5.75rem; top:4.25rem">
+    <el-carousel  style="height: 30rem;"  :show-indicators="true" :motion-blur="false">
+      <el-carousel-item style="height: 30rem">
+        <el-row align="middle" justify="center">
+          <el-row justify="space-between" style="width: 80rem">
+            <div id="project-idx">
+              <p id="project-idx-text">案例一</p>
             </div>
-            <p id="card-title">x大学智能车大赛方案设计</p>
-            <div class="card-text-div">
-              <p class="card-text">提供比赛方案策划</p>
+            <div class="project-card" style="position: relative">
+              <div class="black-filter">
+                <img src="../assets/project-card.png"
+                     style="width: 27.438rem;height:20rem; position:absolute; right: 2.75rem; top:4.25rem">
+              </div>
+              <p id="card-title">x大学智能车大赛方案设计</p>
+              <div class="card-text-div">
+                <p class="card-text">提供比赛方案策划</p>
+
+              </div>
+              <div class="card-text-div">
+                <p class="card-text">比赛道具硬件支持</p>
+
+
+              </div>
+              <div class="card-text-div">
+                <p class="card-text">竞赛技术规则指导</p>
+              </div>
 
             </div>
-            <div class="card-text-div">
-              <p class="card-text">比赛道具硬件支持</p>
 
-
-            </div>
-            <div class="card-text-div">
-              <p class="card-text">竞赛技术规则指导</p>
-            </div>
-
-          </div>
-
+          </el-row>
         </el-row>
+
       </el-carousel-item>
 
-      <el-carousel-item>
-        <el-row>
-          <div class="project-card" style="margin-left: 17rem;">
-            <div class="black-filter" style="position: relative;">
-              <img src="../assets/project-card-2.png"
-                   style="width: 18.75rem;height:23.875rem; position:absolute; margin-left: 43.5rem; margin-top:2.363rem">
+      <el-carousel-item style="height: 30rem">
+        <el-row align="middle" justify="center">
+          <el-row justify="space-between" style="width: 80rem">
+            <div class="project-card">
+              <div class="black-filter" style="position: relative;">
+                <img src="../assets/project-card-2.png"
+                     style="width: 18.75rem;height:23.875rem; position:absolute; margin-left: 40.5rem; margin-top:2.363rem">
+              </div>
+
+              <p id="card-title">MakeX 挑战赛竞赛方案</p>
+              <div class="card-text-div">
+                <p class="card-text">竞赛技术教育指导</p>
+
+              </div>
+              <div class="card-text-div">
+                <p class="card-text">道具硬件开发支持</p>
+
+
+              </div>
+              <div class="card-text-div">
+                <p class="card-text">竞赛技术规则指导</p>
+              </div>
+
             </div>
-
-            <p id="card-title">MakeX 挑战赛竞赛方案</p>
-            <div class="card-text-div">
-              <p class="card-text">竞赛技术教育指导</p>
-
+            <div id="project-idx">
+              <p>案例二</p>
             </div>
-            <div class="card-text-div">
-              <p class="card-text">道具硬件开发支持</p>
-
-
-            </div>
-            <div class="card-text-div">
-              <p class="card-text">竞赛技术规则指导</p>
-            </div>
-
-          </div>
-          <div id="project-idx" style="margin-left: 5rem">
-            <p>案例二</p>
-          </div>
+          </el-row>
         </el-row>
+
       </el-carousel-item>
     </el-carousel>
   </div>
@@ -323,8 +329,8 @@ export default {
 
 .project-card {
   position: relative;
-  width: 70rem;
-  margin-left: 4.375rem;
+  width: 65rem;
+  //margin-left: 4.375rem;
   background-color: #31354D;
   border-radius: 0.9375rem;
 }
@@ -334,7 +340,7 @@ export default {
   height: 28.063rem;
   border-radius: 0.9375rem;
   width: 8.625rem;
-  margin-left: 14.9375rem;
+  //margin-left: 8.9375rem;
   color: #6374B6;
   font-size: 2.1875rem;
   font-weight: 700;
@@ -375,14 +381,14 @@ export default {
   position: absolute;
   z-index: 3;
   margin-top: 2rem;
-  margin-left: 13.438rem;
+  margin-left: 3.438rem;
 }
 
 #hardware2-float {
   width: 6.563rem;
   position: absolute;
   z-index: 3;
-  margin-left: 32.25rem;
+  margin-left: 23.25rem;
   margin-top: 20.125rem;
 }
 
@@ -442,6 +448,10 @@ export default {
   margin-top: 6.688rem;
 }
 
+#home-hardware{
+  width: 71.5rem;
+}
+
 #competition-float2 {
   width: 8.8rem;
   margin-top: 20rem;
@@ -479,7 +489,6 @@ export default {
   width: 38.063rem;
   height: 26.125rem;
   z-index: 2;
-  padding-left: 6.938rem;
   position: absolute;
 
 }
@@ -489,8 +498,7 @@ export default {
   height: 21.813rem;
   z-index: 1;
   position: absolute;
-  padding-left: 16.063rem;
-  padding-top: 0.625rem;
+  margin-left: 7.063rem;
   border-radius: 0.625rem;
 
 }
@@ -500,8 +508,7 @@ export default {
   height: 13.813rem;
   z-index: 0;
   position: absolute;
-  padding-left: 10.5rem;
-  padding-top: 12.938rem;
+  margin-top: 12.938rem;
   border-radius: 0.625rem;
 }
 
@@ -550,8 +557,7 @@ export default {
 }
 
 #hardware-text-col {
-  width: 40rem;
-  padding-top: 2.5rem;
+  width: 35.063rem;
 }
 
 #competition-english-text {
@@ -587,7 +593,7 @@ export default {
   letter-spacing: 0.05rem;
   font-family: "Microsoft YaHei";
   align-items: center;
-  margin-right: 8rem;
+  //margin-right: 8rem;
 }
 
 #hardware-english-text {
@@ -598,7 +604,7 @@ export default {
   color: #BDC8E4;
   font-weight: 900;
   position: relative;
-  margin-right: 8rem;
+  //margin-right: 8rem;
 }
 
 .centered-content {
@@ -644,10 +650,8 @@ export default {
 }
 
 .home-content-right {
-  height: 100%;
-  width: 100%;
-  margin-top: 6.25rem;
-  margin-bottom: 3.125rem;
+  margin-top: 11.25rem;
+  margin-bottom: 5.125rem;
 }
 
 .title-container {
