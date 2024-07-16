@@ -30,8 +30,8 @@
 <!--  </el-row>-->
 
 
-  <div class="home-content-left">
-    <el-row id="home-solution">
+  <el-row align="middle" justify="center" class="home-content-left">
+    <el-row id="home-solution" justify="space-between">
       <div id="competition-text-col">
         <span id="competition-text">竞赛解决方案</span>
         <img src="../assets/star.png" style="width: 3.25rem; height: 3.25rem">
@@ -49,7 +49,7 @@
         <image-zoom id="home-solution-img" :src="getAssetsFile('home-solution-image.png')"></image-zoom>
       </div>
     </el-row>
-  </div>
+  </el-row>
 
   <div class="home-content-right">
     <el-row id="home-hardware">
@@ -454,6 +454,10 @@ export default {
   height: 4.063rem;
 }
 
+#home-solution {
+  width: 71.5rem;
+}
+
 #home-solution-img {
   width: 32.938rem;
   height: 17.438rem;
@@ -508,7 +512,7 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
 
-  margin-left: 1.875rem;
+  //margin-left: 1.875rem;
   border-radius: 1.875rem;
 
   width: 31.875rem;
@@ -518,7 +522,6 @@ export default {
 
 #competition-description {
   border-radius: 0.625rem;
-  margin-left: 9.313rem;
   font-family: "Microsoft YaHei";
   font-size: 1rem;
   font-weight: 400;
@@ -542,8 +545,8 @@ export default {
 }
 
 #competition-text-col {
-  padding-left: 15.125rem;
-
+  width: 35.063rem;
+  height:30rem;
 }
 
 #hardware-text-col {
@@ -552,7 +555,6 @@ export default {
 }
 
 #competition-english-text {
-
   width:553px;
 
   //styleName: 英文标题;
@@ -564,11 +566,10 @@ export default {
 
   text-align: left;
   color: #BDC8E4;
-  padding-left: 9.313rem;
 }
 
 #competition-text {
-  padding-left: 9.313rem;
+  //padding-left: 9.313rem;
   font-size: 3.75rem;
   line-height: 4.949rem;
   font-weight: 700;
@@ -639,8 +640,6 @@ export default {
 
 .home-content-left {
   margin-top: 11.25rem;
-  width: 100%;
-  height: 100%;
   margin-bottom: 5.125rem;
 }
 
