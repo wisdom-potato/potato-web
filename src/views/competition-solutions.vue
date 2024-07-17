@@ -74,7 +74,6 @@
 
     <el-row align="middle" justify="center" style="width: 100%">
       <el-row justify="space-between" style="width: 100%; margin-left: 5rem; height: 20rem">
-        <div style="width:27rem;">
           <div id="card-content1">
             <p id="card-text1">
               基于X大学信息学院对学习软硬件技术的具体需求，我们着手设计了智能车大赛规则。按照这些规则的要求，我们进一步设计并配置了比赛所需的硬件。最终，比赛在周密的准备和专业的组织下成功举行。</p>
@@ -82,13 +81,12 @@
 
           </div>
 
-        </div>
         <div style="width:27rem; position: relative">
             <img src="../assets/competition-img3.png"
                  style="width: 27rem;height: 18.875rem;z-index: 2; margin-top: 5rem ; position: absolute">
             <img src="../assets/competition-img4.png"
                  style="width: 23.125rem;height: 25rem; position: absolute; z-index: 1; margin-left: -5rem; margin-top: -1rem">
-            <p class="float" style="position:absolute;margin-top: 19rem;margin-left: 15rem; font-size: 1.063rem; line-height: 1.688rem">硬件设计
+            <p class="float" style="position:absolute;margin-top: 19rem;margin-left: 15rem; font-size: 1.063rem; line-height: 1.688rem;width: 5rem">硬件设计
               <br> 规则策划</p>
 
 
@@ -99,7 +97,7 @@
                         :src="getAssetsFile('competition-img5.png')"></image-zoom>
             <image-zoom style="width: 22.875rem; height: 9.375rem; margin-top: 1.5rem"
                         :src="getAssetsFile('competition-img6.png')"></image-zoom>
-            <p class="float" style="margin-top: -2rem; margin-left: 12rem">协助比赛顺利进行</p>
+            <p class="float" style="margin-top: -2rem; margin-left: 12rem; width: 8rem">协助比赛顺利进行</p>
           </div>
 
         </div>
@@ -108,33 +106,28 @@
 
     </el-row>
   </div>
+
   <div class="past-projects">
     <h2 id="card-title">MakeX 挑战赛竞赛方案</h2>
-    <el-row>
+    <el-row align="middle" justify="center" style="width: 100%; height: 31.25rem">
+      <el-row justify="space-between" style="width: 100%; margin-left: 5rem; height: 20rem">
+          <div id="card-content2" style="position: relative;" >
+            <p id="card-text1">
+              在指导参加MakeX的队伍时，首先分析比赛要求和队伍的实际情况，然后提供一个包含技术指导、策略规划和实战训练的全面辅导方案。此外，公司会针对MakeX比赛的特点，帮助队伍设计能够高效完成比赛任务的机器人，并确保其设计既创新又实用。</p>
+            <p class="float"  style="width: 4rem; margin-left: 15rem; margin-top: -1.5rem">确定需求</p>
+          </div>
+          <div style="justify-content: center; align-items: center; text-align: center; width: 27rem; position: relative">
+            <img src="../assets/competition-img7.png" style="width: 23rem;height: 27.688rem; z-index: 2">
+            <p class="float" style="position:absolute; width: 4rem; margin-left: 18rem;margin-top: -2rem">方案确定 </p>
+          </div>
 
-      <el-col :span="8">
-        <div id="card-content2">
-          <p id="card-text1">
-            在指导参加MakeX的队伍时，首先分析比赛要求和队伍的实际情况，然后提供一个包含技术指导、策略规划和实战训练的全面辅导方案。此外，公司会针对MakeX比赛的特点，帮助队伍设计能够高效完成比赛任务的机器人，并确保其设计既创新又实用。</p>
-          <p class="float"  style="left: 340px; top: 385px">确定需求</p>
-        </div>
-
-      </el-col>
-      <el-col :span="8">
-        <div style="justify-content: center; align-items: center; text-align: center">
-          <img src="../assets/competition-img7.png" style="width: 368px;height: 443px; z-index: 2">
-          <p class="float" style="position:absolute; left:800px; top:385px;">方案确定 </p>
-        </div>
-
-      </el-col>
-      <el-col :span="8">
-        <div style="text-align: center">
-          <img src="../assets/competition-img8.png" style="width: 368px;height: 443px; position: relative">
-          <p class="float" style="right: 35px; top: 385px">成品交付</p>
-        </div>
-
-      </el-col>
+          <div style="justify-content: center; align-items: center;width: 27rem;position: relative">
+            <img src="../assets/competition-img8.png" style="width: 23rem;height: 27.688rem; position: relative">
+            <p class="float" style="width: 4rem; margin-top: -2rem; margin-left: 16rem">成品交付</p>
+          </div>
+      </el-row>
     </el-row>
+
   </div>
 
   <div class="information">
@@ -260,12 +253,15 @@ export default {
 
 
 #card-content2 {
-  width: 350px;
-  height: 443px;
+  width: 23rem;
+  height: 27.688rem;
   background-image: url("../assets/card-content-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 10px;
+  border-radius: 0.625rem;
+  justify-content: center;
+  align-items: center;
+
 }
 
 #card-text1 {
@@ -279,7 +275,7 @@ export default {
   color: white;
   text-align: center;
   padding-top: 5.125rem;
-  padding-left: 1.5rem;
+  padding-left: 1.25rem;
 }
 
 #card-title {
@@ -306,6 +302,8 @@ export default {
 .past-projects {
   margin-top: 150px;
   margin-bottom: 100px;
+  width: 100%;
+  height: 100%;
 }
 
 #advising-text {
