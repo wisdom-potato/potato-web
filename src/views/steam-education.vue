@@ -16,11 +16,13 @@
   </el-row>
 
   <!--分割线-->
-  <el-divider/>
+  <el-row justify="center">
+    <el-divider/>
+  </el-row>
 
   <!--教育目标-->
   <el-row justify="center">
-    <el-row class="ed-goals" justify="space-between" align="middle">
+    <div class="ed-goals">
 
       <div class="goal-card" id="ed-goal-1">
         <p>
@@ -56,7 +58,7 @@
         <div class="card-title">实践应用</div>
         <div class="card-text">将课堂知识应用于实际问题解决，<br/>学以致用，让知识成就未来</div>
       </div>
-    </el-row>
+    </div>
   </el-row>
 
   <!--教师团队板块-->
@@ -200,19 +202,22 @@ export default {
 
 .el-divider {
   width: 81.25rem; /* 1300px */
-  margin-left: 4.375rem; /* 70px */
 }
 
 .ed-goals {
   width: 68.125rem; /* 1090px */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  place-content: center center;
+  gap: 41px;
+  margin-top: 3.125rem; /* 50px */
+  margin-bottom: 3.125rem; /* 50px */
 }
 
 .goal-card {
-  width: 21.063rem; /* 337px */
+  //width: 21.063rem; /* 337px */
   height: 23.125rem; /* 370px */
   border-radius: 0.625rem; /* 10px */
-  margin-top: 3.125rem; /* 50px */
-  margin-bottom: 3.125rem; /* 50px */
 }
 
 #ed-goal-1 {
@@ -241,7 +246,9 @@ export default {
 }
 
 .goal-card-bg {
-  width: 21.063rem; /* 337px */
+  //width: 21.063rem; /* 337px */
+  //height: 14.938rem; /* 239px */
+  width: 100%; /* 337px */
   height: 14.938rem; /* 239px */
   border-radius: 0.625rem 0.625rem 0 0; /* 10px 10px 0 0 */
   object-fit: cover;
@@ -249,6 +256,7 @@ export default {
 
 .card-title {
   font-family: Microsoft YaHei, serif;
+  //font-size: 1.25rem; /* 20px */
   font-size: 1.25rem; /* 20px */
   font-weight: 700;
   line-height: 1.875rem; /* 30px */
