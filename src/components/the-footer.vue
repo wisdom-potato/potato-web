@@ -1,7 +1,7 @@
 <template>
 
   <!--联系方式板-->
-  <el-row class="board-container" justify="center" align="middle">
+  <el-row class="board-container" justify="center" align="middle" id="footer">
     <el-row class="title-container" justify="center" align="middle">
       <h1 id="chinese-title">联系我们&nbsp</h1>
       <h2 id="english-title">contact us</h2>
@@ -100,5 +100,39 @@ export default {
 
   margin-top: -0.938rem;;
 }
+
+@media screen and (max-width: 768px) {
+  .board-container {
+    height: 40.625rem;
+  }
+
+  .title-container {
+    margin-top: -3.125rem;
+  }
+
+  #chinese-title {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+
+  #english-title {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+
+  .contact-container {
+    width: 80%;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+
+  .company-container {
+    height: 15.5rem;
+    font-size: 3rem;
+    line-height: 15.5rem;
+  }
+
+}
+
 
 </style>

@@ -32,6 +32,8 @@ export default {
 </script>
 
 <style scoped lang="less">
+@header-height: 4.688rem;
+@mobile-header-height: 12rem;
 
 .el-container, .el-header, .el-main, .el-footer {
   padding: 0;
@@ -41,8 +43,14 @@ export default {
   position: sticky;
   top: 0;
   width: 100%;
-  height: 4.688rem;
+  height: @header-height;
   z-index: 100;
+}
+
+@media screen and (max-width: 768px) {
+  .el-header {
+    height: @mobile-header-height;
+  }
 }
 
 </style>

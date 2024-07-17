@@ -43,7 +43,9 @@
 
 
   <!--分割线-->
-  <el-divider/>
+  <el-row align="middle" justify="center">
+    <el-divider/>
+  </el-row>
 
   <!--流程介绍板块-->
   <el-row class="roadmap-title" justify="center">专业设计团队 一站式解决硬件需求</el-row>
@@ -92,7 +94,6 @@ export default {
 }
 
 .slider-container {
-  height: 29.75rem; /* 476px */
   margin-bottom: 7.1875rem; /* 115px */
 }
 
@@ -133,11 +134,6 @@ export default {
 
   position: relative;
   top: 6.875rem; /* 110px */
-}
-
-.el-divider {
-  width: 81.25rem; /* 1300px */
-  margin-left: 4.375rem; /* 70px */
 }
 
 .product-title {
@@ -239,6 +235,10 @@ export default {
   left: 5%;
 }
 
+.el-divider {
+  width: 81.25rem; /* 1300px */
+}
+
 .roadmap-title {
   font-family: Microsoft YaHei, serif;
   font-size: 2.1875rem; /* 35px */
@@ -287,5 +287,92 @@ export default {
   object-fit: cover;
 }
 
+@media screen and (max-width: 768px) {
+  .mid-title {
+    font-size: 4rem;
+  }
+
+  .header-container {
+    width: 80%;
+    height: 40rem;
+  }
+
+  .header-switch-triangle {
+    width: 2rem;
+    height: 5rem;
+  }
+
+  .header-text {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+
+  .polygon-combinations {
+    width: 50rem;
+    height: 50rem;
+
+    top: 10rem;
+  }
+
+  .product-title {
+    font-size: 4rem;
+  }
+
+  .product-store-link {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .products-container {
+    width: 90%;
+    height: 40rem;
+  }
+
+  .product-card {
+    width: 30rem;
+    height: 35rem;
+
+    &:hover {
+      width: 35rem;
+      height: 40rem;
+    }
+  }
+
+  .product-text {
+    font-size: 5rem;
+  }
+
+  .el-divider {
+    width: 90%;
+  }
+
+  .roadmap-title {
+    font-size: 4rem;
+  }
+
+  .steps-container {
+    width: 75%;
+    height: 7rem;
+  }
+
+  .step {
+    width: 28rem;
+    height: 7rem;
+    line-height: 7rem;
+    font-size: 3.2rem;
+  }
+
+  .step-images-container {
+    width: 85%;
+    height: 30rem;
+  }
+
+  .step-images {
+    width: 30rem;
+    height: 30rem;
+  }
+
+
+}
 
 </style>

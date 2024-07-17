@@ -56,7 +56,7 @@
       <div class="goal-card" id="ed-goal-6">
         <img class="goal-card-bg" src="../assets/ed-goal-card-bg-6.png" alt="">
         <div class="card-title">实践应用</div>
-        <div class="card-text">将课堂知识应用于实际问题解决，<br/>学以致用，让知识成就未来</div>
+        <div class="card-text">将课堂知识应用于实际问题解决，学以致用，让知识成就未来</div>
       </div>
     </div>
   </el-row>
@@ -215,8 +215,7 @@ export default {
 }
 
 .goal-card {
-  //width: 21.063rem; /* 337px */
-  height: 23.125rem; /* 370px */
+  min-height: 23.125rem; /* 370px */
   border-radius: 0.625rem; /* 10px */
 }
 
@@ -256,7 +255,6 @@ export default {
 
 .card-title {
   font-family: Microsoft YaHei, serif;
-  //font-size: 1.25rem; /* 20px */
   font-size: 1.25rem; /* 20px */
   font-weight: 700;
   line-height: 1.875rem; /* 30px */
@@ -269,7 +267,7 @@ export default {
 }
 
 .card-text {
-  width: 18.563rem; /* 297px */
+  //width: 18.563rem; /* 297px */
 
   font-family: Microsoft YaHei, serif;
   font-size: 1rem; /* 16px */
@@ -408,6 +406,136 @@ export default {
     color: white;
     text-align: left;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .mid-title {
+    font-size: 4rem;
+  }
+
+  .header-container{
+    width: 80%;
+    height: 40rem;
+  }
+
+  .header-switch-triangle {
+    width: 2rem;
+    height: 5rem;
+  }
+
+  .header-text {
+    font-size: 5rem;
+  }
+
+  .header-link {
+    font-size: 3rem;
+  }
+
+  .header-english-text {
+    font-size: 4rem;
+  }
+
+  .header-pic-1 {
+    width: 60rem;
+  }
+
+  .el-divider {
+    width: 90%;
+  }
+
+  .ed-goals {
+    width: 80%;
+  }
+
+  .goal-card {
+    min-height: 36rem;
+  }
+
+  #ed-goal-1 {
+    p {
+      font-size: 4rem;
+      line-height: 4rem;
+      margin-top: 25rem;
+    }
+  }
+
+  .goal-card-bg {
+    height: 25rem;
+  }
+
+  .card-title {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+
+  .card-text {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .teachers-title {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+
+  .teachers-descriptions {
+    width: 90%;
+  }
+
+  .description {
+    font-size: 3rem;
+    line-height: 3rem;
+    padding: 2rem 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .teachers-container {
+    width: 90%;
+    height: 40rem;
+  }
+
+  .teachers-background {
+    width: 90%;
+    height: 40rem;
+  }
+
+  .teacher-pic-container {
+    width: 20rem;
+    height: 40rem;
+
+    &:hover {
+      .teacher-pic {
+        filter: brightness(60%);
+      }
+
+      .teacher-text {
+        display: block;
+        filter: brightness(100%);
+      }
+    }
+
+  }
+
+  .teacher-pic {
+    width: 20rem;
+    height: 40rem;
+  }
+
+  .teacher-text {
+    width: 20rem;
+    height: 40rem;
+    padding: 2rem;
+    font-size: 3rem;
+    line-height: 3rem;
+    p {
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+    }
+  }
+
+
+
 }
 
 </style>

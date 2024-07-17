@@ -230,6 +230,8 @@ export default {
 </script>
 
 <style scoped lang="less">
+@header-height: 4.688rem;
+@mobile-header-height: 12rem;
 
 .black-filter {
   background: black;
@@ -684,9 +686,17 @@ export default {
 
 .menu-container {
   position: sticky;
-  top: 4.688rem;
+  top: @header-height;
   width: 100%;
   z-index: 100;
 }
+
+@media screen and (max-width: 768px) {
+  .menu-container {
+    top: @mobile-header-height;
+  }
+
+}
+
 
 </style>
