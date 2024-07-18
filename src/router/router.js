@@ -3,7 +3,7 @@ import Index from '../views/index.vue'
 import Home from '../views/home.vue'
 import HardwareProducts from "../views/hardware-products.vue";
 import CompetitionSolutions from "../views/competition-solutions.vue";
-import SteamEducation from "../views/steam-education.vue";
+import StemEducation from "../views/stem-education.vue";
 
 const routes = [
     {
@@ -27,9 +27,9 @@ const routes = [
                 name: "CompetitionSolutions"
             },
             {
-                path: "steam-education",
-                component: SteamEducation,
-                name: "SteamEducation"
+                path: "stem-education",
+                component: StemEducation,
+                name: "StemEducation"
             }
         ]
     }

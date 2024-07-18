@@ -1,6 +1,6 @@
 <template>
   <!--STEAM教育专区板块-->
-  <el-row class="mid-title">STEAM教育专区</el-row>
+  <el-row class="mid-title">STEM教育专区</el-row>
   <el-row align="middle" justify="center" class="slider-container">
     <img src="../assets/inactive-slider-switch-triangle.png" alt="" class="header-switch-triangle">
 
@@ -26,7 +26,7 @@
 
       <div class="goal-card" id="ed-goal-1">
         <p>
-          为您提供优质<br/>STEAM教育方案
+          为您提供优质<br/>STEM教育方案
         </p>
       </div>
 
@@ -105,7 +105,7 @@
 
 <script>
 export default {
-  name: "SteamEducation"
+  name: "StemEducation"
 }
 </script>
 

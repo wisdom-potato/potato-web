@@ -30,7 +30,7 @@
         </el-col>
 
         <el-col :span="4">
-          <el-link @click="router.push({name: 'SteamEducation'})">STEAM教育</el-link>
+          <el-link @click="router.push({name: 'StemEducation'})">STEM教育</el-link>
         </el-col>
 
         <el-col :span="4">
@@ -61,7 +61,7 @@
       <el-divider/>
       <div class="collapse-menu-item" @click="collapseMenuClicked('CompetitionSolutions')">竞赛解决方案</div>
       <el-divider/>
-      <div class="collapse-menu-item" @click="collapseMenuClicked('SteamEducation')">STEAM教育</div>
+      <div class="collapse-menu-item" @click="collapseMenuClicked('StemEducation')">STEM教育</div>
       <el-divider/>
       <div class="collapse-menu-item" @click="scrollToAnchor('footer'); collapseMenuClicked()">联系我们</div>
       <el-divider/>
