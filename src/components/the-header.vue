@@ -40,31 +40,32 @@
       </el-row>
     </el-col>
 
-    <!--折叠状态-->
+    <!--折叠按钮-->
     <el-col :offset="15" :span="2">
-      <svg t="1721201908292" viewBox="0 0 1024 1024" version="1.1"
-           xmlns="http://www.w3.org/2000/svg" p-id="1482" class="collapse-menu-button"
-           @click="collapseMenuClicked()">
-        <path
-            d="M170.666667 213.333333h682.666666v85.333334H170.666667V213.333333z m0 512h682.666666v85.333334H170.666667v-85.333334z m0-256h682.666666v85.333334H170.666667v-85.333334z"
-            fill="#ffffff" p-id="1483"></path>
+      <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg" @click="collapseMenuClicked()" class="collapse-menu-button">
+        <rect width="34" height="5" rx="2.5"/>
+        <rect y="11" width="34" height="5" rx="2.5"/>
+        <rect y="22" width="34" height="5" rx="2.5"/>
       </svg>
     </el-col>
   </el-row>
 
-  <div class="collapse-menu" v-if="showCollapseMenu">
-    <div @click="collapseMenuClicked('Home')" class="collapse-menu-item">首页</div>
-    <el-divider/>
-    <div class="collapse-menu-item">开源资料</div>
-    <el-divider/>
-    <div class="collapse-menu-item" @click="collapseMenuClicked('HardwareProducts')">硬件产品</div>
-    <el-divider/>
-    <div class="collapse-menu-item" @click="collapseMenuClicked('CompetitionSolutions')">竞赛解决方案</div>
-    <el-divider/>
-    <div class="collapse-menu-item" @click="collapseMenuClicked('SteamEducation')">STEAM教育</div>
-    <el-divider/>
-    <div class="collapse-menu-item" @click="scrollToAnchor('footer'); collapseMenuClicked()">联系我们</div>
-    <el-divider/>
+  <!--折叠菜单-->
+  <div class="collapse-menu">
+    <el-drawer v-model="showCollapseMenu" :with-header="false" :show-close="false" direction="ttb" size="100%">
+      <div @click="collapseMenuClicked('Home')" class="collapse-menu-item">首页</div>
+      <el-divider/>
+      <div class="collapse-menu-item">开源资料</div>
+      <el-divider/>
+      <div class="collapse-menu-item" @click="collapseMenuClicked('HardwareProducts')">硬件产品</div>
+      <el-divider/>
+      <div class="collapse-menu-item" @click="collapseMenuClicked('CompetitionSolutions')">竞赛解决方案</div>
+      <el-divider/>
+      <div class="collapse-menu-item" @click="collapseMenuClicked('SteamEducation')">STEAM教育</div>
+      <el-divider/>
+      <div class="collapse-menu-item" @click="scrollToAnchor('footer'); collapseMenuClicked()">联系我们</div>
+      <el-divider/>
+    </el-drawer>
   </div>
 </template>
 
@@ -97,7 +98,7 @@ export default {
 
 <style scoped lang="less">
 @header-height: 5rem;
-@mobile-header-height: 12rem;
+@mobile-header-height: 20rem;
 
 .common {
   background-color: #31354D;
@@ -117,6 +118,10 @@ export default {
 
 #mobile-logo {
   display: none;
+
+  margin-left: 2rem;
+  height: @mobile-header-height;
+  transform: scale(0.7);
 }
 
 .menu-buttons {
@@ -144,25 +149,37 @@ export default {
 
 .collapse-menu-button {
   display: none;
-  height: 8rem;
-  width: 8rem;
-  color: white;
+
+  height: @mobile-header-height;
+  margin-left: 1.5rem;
   cursor: pointer;
+
+  fill: #D0D5E9;
+;
+
+  &:active {
+    fill: #8596CB;
+  }
+
 }
 
 .collapse-menu {
-  position: fixed;
-  top: @mobile-header-height;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  box-shadow: 0 4px 4px 0 #00000040;
 
-  z-index: 200;
+  &:deep(.el-overlay) {
+    position: fixed;
+    top: @mobile-header-height;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
-  box-sizing: border-box;
-  padding: 5rem 0 0 5rem;
+  &:deep(.el-drawer) {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    box-shadow: 0 4px 4px 0 #00000040;
+
+    box-sizing: border-box;
+    padding-left: 1rem;
+  }
 }
 
 .collapse-menu-item {
@@ -196,9 +213,6 @@ export default {
 
   #mobile-logo {
     display: block;
-    margin-left: 0.5rem;
-    height: @mobile-header-height;
-    transform: scale(0.7);
   }
 
   .menu-buttons {
@@ -209,6 +223,4 @@ export default {
     display: block;
   }
 }
-
-
 </style>
