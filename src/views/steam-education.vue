@@ -182,7 +182,7 @@ export default {
 }
 
 .header-english-text {
-  font-family: TT Supermolot;
+  font-family: TT Supermolot, SansSerif;
   font-size: 3.125rem; /* 50px */
   font-style: italic;
   font-weight: 900;
@@ -216,7 +216,7 @@ export default {
 
 .goal-card {
   min-height: 23.125rem; /* 370px */
-  border-radius: 0.625rem; /* 10px */
+  border-radius: 10px;
 }
 
 #ed-goal-1 {
@@ -249,7 +249,7 @@ export default {
   //height: 14.938rem; /* 239px */
   width: 100%; /* 337px */
   height: 14.938rem; /* 239px */
-  border-radius: 0.625rem 0.625rem 0 0; /* 10px 10px 0 0 */
+  border-radius: 10px 10px 0 0; /* 10px 10px 0 0 */
   object-fit: cover;
 }
 
@@ -317,7 +317,7 @@ export default {
 
 .description {
   box-sizing: border-box;
-  border-radius: 1.875rem; /* 30px */
+  border-radius:30px; /* 30px */
   background-color: #ECF1FF;
   padding: 1.25rem 2.0313rem; /* 20px 32.5px 20px 32.5px */
 
@@ -359,6 +359,7 @@ export default {
   width: 16.875rem; /* 270px */
   height: 31.5rem; /* 504px */
   position: relative;
+  border-radius: 10px;
 
   &:hover {
     .teacher-pic {
@@ -376,7 +377,7 @@ export default {
   width: 16.875rem; /* 270px */
   height: 31.5rem; /* 504px */
   object-fit: cover;
-  border-radius: 0.625rem; /* 10px */
+  border-radius: 10px;
 }
 
 .teacher-text {
@@ -410,33 +411,47 @@ export default {
 
 @media screen and (max-width: 768px) {
   .mid-title {
-    font-size: 4rem;
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+
+  .slider-container {
+    height: 80rem;
   }
 
   .header-container{
     width: 80%;
-    height: 40rem;
+    height: 80rem;
+    align-items: normal;
   }
 
   .header-switch-triangle {
+    display: none;
     width: 2rem;
     height: 5rem;
   }
 
   .header-text {
-    font-size: 5rem;
+    width: 80%;
+    font-size: 8rem;
+    line-height: 8rem;
   }
 
   .header-link {
-    font-size: 3rem;
+    font-size: 4rem;
+    line-height: 4rem;
   }
 
   .header-english-text {
-    font-size: 4rem;
+    font-size: 5rem;
+    line-height: 5rem;
   }
 
   .header-pic-1 {
-    width: 60rem;
+    width: 90rem;
+    object-fit: contain;
+    top: 22rem;
+    left: -32rem;
   }
 
   .el-divider {
@@ -448,62 +463,82 @@ export default {
   }
 
   .goal-card {
-    min-height: 36rem;
+    min-height: 100rem;
   }
 
   #ed-goal-1 {
+    background: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 0;
+
     p {
-      font-size: 4rem;
-      line-height: 4rem;
-      margin-top: 25rem;
+      margin: 0;
+      text-align: center;
+      font-size: 6rem;
+      line-height: 8rem;
     }
   }
 
   .goal-card-bg {
-    height: 25rem;
+    height: 70rem;
   }
 
   .card-title {
-    font-size: 3.5rem;
-    line-height: 3.5rem;
+    margin: 5rem;
+
+    font-size: 7rem;
+    line-height: 7rem;
   }
 
   .card-text {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    margin-bottom: 2rem;
+    margin: 5rem 5rem 8rem 5rem;
+
+    font-size: 5rem;
+    line-height: 5rem;
   }
 
   .teachers-title {
     font-size: 5rem;
     line-height: 5rem;
+    margin-bottom: 5rem;
   }
 
   .teachers-descriptions {
-    width: 90%;
+    width: 80%;
   }
 
   .description {
-    font-size: 3rem;
-    line-height: 3rem;
-    padding: 2rem 3rem;
-    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    padding: 3rem 5rem;
+    margin-bottom: 5rem;
+  }
+
+  #description1 {
+    margin-right: 0;
   }
 
   .teachers-container {
-    width: 90%;
-    height: 40rem;
+    width: 70%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 2rem;
   }
 
   .teachers-background {
     width: 90%;
     height: 40rem;
+    display: none;
   }
 
   .teacher-pic-container {
-    width: 20rem;
-    height: 40rem;
-
+    width: 40rem;
+    height: 80rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     &:hover {
       .teacher-pic {
         filter: brightness(60%);
@@ -514,12 +549,11 @@ export default {
         filter: brightness(100%);
       }
     }
-
   }
 
   .teacher-pic {
-    width: 20rem;
-    height: 40rem;
+    width: 100%;
+    height: 100%;
   }
 
   .teacher-text {
