@@ -64,7 +64,7 @@
 
       <div id="hardware-text-col">
         <div style="text-align: right; margin-top: -3rem; margin-bottom: 2.5rem">
-          <img src="../assets/star.png" style="margin-right: 0.938rem; width: 3.25rem; height: 3.25rem">
+          <img src="../assets/star.png" style="margin-right: 0.938rem; width: 3.25rem; height: 3.25rem" alt="">
           <span id="hardware-text">硬件产品</span> <br>
           <span id="hardware-english-text">Hardware Products</span>
         </div>
