@@ -328,18 +328,15 @@ export default {
   }
 
   .product-title {
-    display: none;
-
     font-size: 5rem;
     line-height: 5rem;
   }
 
   .product-store-link {
-    display: none;
-
     font-size: 3rem;
     line-height: 3rem;
-    margin-bottom: 1rem;
+    margin-top: -3rem;
+    margin-bottom: 5rem;
   }
 
   .products-container {
