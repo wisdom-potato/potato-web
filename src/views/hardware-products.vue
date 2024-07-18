@@ -18,7 +18,7 @@
   <el-row class="product-store-link" justify="end">前往官方店铺查看更多</el-row>
 
   <el-row justify="center">
-    <el-row class="products-container" justify="space-between" align="middle">
+    <div class="products-container">
 
       <div class="product-card" id="product-card-1">
         <div class="product-text">土豆泥<br/>系列</div>
@@ -38,7 +38,7 @@
         <img id="product-3" src="../assets/product-3.png" alt=""/>
       </div>
 
-    </el-row>
+    </div>
   </el-row>
 
 
@@ -113,7 +113,7 @@ export default {
 
   margin-left: 1.25rem; /* 20px */
   margin-right: 1.25rem; /* 20px */
-  border-radius: 2.9375rem; /* 47px */
+  border-radius: 47px; /* 47px */
 }
 
 .header-text {
@@ -165,12 +165,16 @@ export default {
   width: 76rem; /* 1216px */
   height: 32.0625rem; /* 513px */
   margin-top: -0.625rem; /* -10px */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .product-card {
   width: 23.125rem; /* 370px */
   height: 29.1875rem; /* 467px */
-  border-radius: 1.25rem; /* 20px */
+  border-radius: 20px;
   overflow: hidden;
   position: relative;
   transition-duration: 0.5s;
@@ -289,57 +293,80 @@ export default {
 
 @media screen and (max-width: 768px) {
   .mid-title {
-    font-size: 4rem;
+    font-size: 5rem;
+    line-height: 5rem;
   }
 
   .header-container {
     width: 80%;
-    height: 40rem;
+    height: 80rem;
+    align-items: normal;
+
+    flex-direction: column;
+    overflow: hidden;
   }
 
   .header-switch-triangle {
     width: 2rem;
     height: 5rem;
+    display: none;
   }
 
   .header-text {
+    margin-top: 10rem;
+    font-size: 10rem;
+    line-height: 12rem;
+  }
+
+  .polygon-combinations {
+    width: 100rem;
+    height: 100rem;
+    opacity: 0.7;
+    top: -30rem;
+    left: 20rem;
+
+  }
+
+  .product-title {
+    display: none;
+
     font-size: 5rem;
     line-height: 5rem;
   }
 
-  .polygon-combinations {
-    width: 50rem;
-    height: 50rem;
-
-    top: 10rem;
-  }
-
-  .product-title {
-    font-size: 4rem;
-  }
-
   .product-store-link {
-    font-size: 2rem;
+    display: none;
+
+    font-size: 3rem;
+    line-height: 3rem;
     margin-bottom: 1rem;
   }
 
   .products-container {
-    width: 90%;
-    height: 40rem;
+    width: 80%;
+    height: auto;
+
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    gap: 10rem;
   }
 
   .product-card {
-    width: 30rem;
-    height: 35rem;
+    width: 80rem;
+    height: 90rem;
+
+    pointer-events: none;
 
     &:hover {
-      width: 35rem;
-      height: 40rem;
+      width: 100rem;
+      height: 115rem;
     }
   }
 
   .product-text {
-    font-size: 5rem;
+    font-size: 1500%;
+    line-height: 120%;
   }
 
   .el-divider {
