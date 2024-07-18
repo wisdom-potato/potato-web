@@ -42,7 +42,8 @@
 
     <!--折叠按钮-->
     <el-col :offset="15" :span="2">
-      <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg" @click="collapseMenuClicked()" class="collapse-menu-button">
+      <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg"
+           @click="collapseMenuClicked()" class="collapse-menu-button">
         <rect width="34" height="5" rx="2.5"/>
         <rect y="11" width="34" height="5" rx="2.5"/>
         <rect y="22" width="34" height="5" rx="2.5"/>
@@ -154,8 +155,7 @@ export default {
   margin-left: 1.5rem;
   cursor: pointer;
 
-  fill: #D0D5E9;
-;
+  fill: #D0D5E9;;
 
   &:active {
     fill: #8596CB;

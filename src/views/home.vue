@@ -20,21 +20,21 @@
     </div>
   </div>
 
-<!--  <el-row align="middle" justify="center" style="margin-top: 20px">-->
-<!--    <el-row style="width: 1144px; height:417px; background-color: lightblue" justify="space-between">-->
-<!--      <div style="width: 561px; background-color: lightgreen">-->
-<!--        <div id="competition-english-text">Competition Solutions</div>-->
-<!--      </div>-->
-<!--      <div style="width: 573px; background-color: lightcoral"></div>-->
-<!--    </el-row>-->
-<!--  </el-row>-->
+  <!--  <el-row align="middle" justify="center" style="margin-top: 20px">-->
+  <!--    <el-row style="width: 1144px; height:417px; background-color: lightblue" justify="space-between">-->
+  <!--      <div style="width: 561px; background-color: lightgreen">-->
+  <!--        <div id="competition-english-text">Competition Solutions</div>-->
+  <!--      </div>-->
+  <!--      <div style="width: 573px; background-color: lightcoral"></div>-->
+  <!--    </el-row>-->
+  <!--  </el-row>-->
 
 
   <el-row align="middle" justify="center" class="home-content-left">
     <el-row id="home-solution" justify="space-between">
       <div id="competition-text-col">
         <span id="competition-text">竞赛解决方案</span>
-        <img src="../assets/star.png" style="width: 3.25rem; height: 3.25rem">
+        <img src="../assets/star.png" style="width: 3.25rem; height: 3.25rem" alt="">
         <br>
         <span id="competition-english-text">Competition Solutions</span>
         <div id="competition-description" style="width: 35.063rem">
@@ -55,8 +55,8 @@
     <el-row id="home-hardware" justify="space-between">
       <div style="height: 30rem;position: relative;width:35.063rem">
         <image-zoom id="home-product-img" :src="getAssetsFile('product.png')"></image-zoom>
-        <img id="home-product-bg1" src="../assets/img.png">
-        <img id="home-product-bg2" src="../assets/img.png">
+        <img id="home-product-bg1" src="../assets/img.png" alt="">
+        <img id="home-product-bg2" src="../assets/img.png" alt="">
         <p class="float" id="hardware1-float">自研硬件</p>
         <p class="float" id="hardware2-float">开发平台</p>
 
@@ -64,14 +64,13 @@
 
       <div id="hardware-text-col">
         <div style="text-align: right; margin-top: -3rem; margin-bottom: 2.5rem">
-          <img src="../assets/star.png"  style="margin-right: 0.938rem; width: 3.25rem; height: 3.25rem">
+          <img src="../assets/star.png" style="margin-right: 0.938rem; width: 3.25rem; height: 3.25rem">
           <span id="hardware-text">硬件产品</span> <br>
           <span id="hardware-english-text">Hardware Products</span>
         </div>
 
 
-
-        <div id="competition-description" style="width: 35rem;" >
+        <div id="competition-description" style="width: 35rem;">
           <p style="padding:2.063rem 1.375rem 1.563rem 1.313rem">
             我们自研的MP-0、MP-1等教育机器人为机器人竞赛学习与教育提供了强大的支持。它们不仅助力比赛进行，还为学员提供了一个实践和技能提升的平台。通过与这些教育机器人的互动和实践，学员将能够全面提升自己的机器人竞赛能力和STEM领域的学习和发展水平。</p>
         </div>
@@ -80,15 +79,15 @@
     </el-row>
   </el-row>
 
-  <el-row align="middle" justify="center"  class="home-content-left">
+  <el-row align="middle" justify="center" class="home-content-left">
     <el-row id="home-ed" justify="space-between">
       <div id="competition-text-col" style="width: 35.063rem; margin-right: 3rem">
         <span id="competition-text">STEAM 教育</span>
-        <img src="../assets/star.png" style="width:3.25rem; height:3.25rem">
+        <img src="../assets/star.png" style="width:3.25rem; height:3.25rem" alt="">
         <br>
         <span id="competition-english-text">STEAM Education</span>
 
-        <div id="competition-description" style="width: 35rem"  >
+        <div id="competition-description" style="width: 35rem">
           <p style="padding:2.063rem 1.375rem 1.563rem 1.313rem">
             我们的专业Robomaster、Robocon、FRC等竞赛培训旨在为学生提供全面且深入的竞赛准备，帮助他们在机器人领域斩获佳绩，并为未来STEM领域的学习和发展奠定坚实基础。通过我们的培训服务，学生将能够掌握机器人竞赛所需的专业技能，培养创新思维和团队合作能力，为未来的成功铺就坚实的道路。</p>
         </div>
@@ -105,7 +104,7 @@
 
   <div class="home-past-project">
     <h2 id="past-project-header">过往项目</h2>
-    <el-carousel  style="height: 30rem;"  :show-indicators="true" :motion-blur="false">
+    <el-carousel style="height: 30rem;" :show-indicators="true" :motion-blur="false">
       <el-carousel-item style="height: 30rem">
         <el-row align="middle" justify="center">
           <el-row justify="space-between" style="width: 80rem">
@@ -115,7 +114,7 @@
             <div class="project-card" style="position: relative">
               <div class="black-filter">
                 <img src="../assets/project-card.png"
-                     style="width: 27.438rem;height:20rem; position:absolute; right: 2.75rem; top:4.25rem">
+                     style="width: 27.438rem;height:20rem; position:absolute; right: 2.75rem; top:4.25rem" alt="">
               </div>
               <p id="card-title">x大学智能车大赛方案设计</p>
               <div class="card-text-div">
@@ -144,7 +143,8 @@
             <div class="project-card">
               <div class="black-filter" style="position: relative;">
                 <img src="../assets/project-card-2.png"
-                     style="width: 18.75rem;height:23.875rem; position:absolute; margin-left: 40.5rem; margin-top:2.363rem">
+                     style="width: 18.75rem;height:23.875rem; position:absolute; margin-left: 40.5rem; margin-top:2.363rem"
+                     alt="">
               </div>
 
               <p id="card-title">MakeX 挑战赛竞赛方案</p>
@@ -176,7 +176,7 @@
     <h2 id="about-title-cn"> 关于我们 </h2>
     <h3 id="about-title-en"> about us</h3>
     <div class="home-about-us-text">
-      <img id="logo" src="../assets/logo.png">
+      <img id="logo" src="../assets/logo.png" alt="">
       <p id="home-about-text"> 致力于为中小学生提供以机器人科技研发为核心的创新实践平台。我们提供个性化定制的学习指导方案和专业化的技能培训，旨在激发学生的科技创新精神，让他们在接触顶尖机器人赛事的同时感受
         STEM 教育的魅力。Infinity Geek Robotics Club 科研基地主营项目为 FRC 竞赛培训，助力学生在机器人领域斩获佳绩，并为未来
         STEM 领域的学习和发展奠定坚实基础。</p>
@@ -239,7 +239,7 @@ export default {
 }
 
 #home-about-text {
-  font-family: "Microsoft YaHei";
+  font-family: "Microsoft YaHei", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 2rem;
@@ -267,7 +267,7 @@ export default {
 }
 
 #about-title-cn {
-  font-family: "Microsoft YaHei";
+  font-family: "Microsoft YaHei", sans-serif;
   font-weight: 700;
   font-size: 3.75rem;
   line-height: 4.949375rem;
@@ -277,7 +277,7 @@ export default {
 }
 
 #about-title-en {
-  font-family: "TT Supermolot";
+  font-family: "TT Supermolot", sans-serif;
   font-size: 3.125rem;
   line-height: 3.84375rem;
   font-style: italic;
@@ -297,7 +297,7 @@ export default {
 
 .card-text {
   padding-top: 1.25rem;
-  font-family: "Microsoft YaHei";
+  font-family: "Microsoft YaHei", sans-serif;
   font-weight: 400;
   font-size: 1.875rem;
   color: white;
@@ -321,7 +321,7 @@ export default {
 #card-title {
   color: white;
   font-weight: 700;
-  font-family: "Microsoft YaHei";
+  font-family: "Microsoft YaHei", sans-serif;
   font-size: 2.1875rem;
   line-height: 2.875rem;
   letter-spacing: 0.12rem;
@@ -356,7 +356,6 @@ export default {
 }
 
 
-
 //#project-idx-text {
 //  padding-left: 2.188rem;
 //}
@@ -373,7 +372,7 @@ export default {
 #past-project-header {
   font-size: 3.75rem;
   line-height: 4.949rem;
-  font-family: "Microsoft YaHei";
+  font-family: "Microsoft YaHei", sans-serif;
   color: #31354D;
   text-align: center;
 }
@@ -429,7 +428,7 @@ export default {
 
 .float {
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.25); /* 添加阴影特效 */
-  font-family: "Microsoft YaHei";
+  font-family: "Microsoft YaHei", sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.875rem;
@@ -450,7 +449,7 @@ export default {
   margin-top: 6.688rem;
 }
 
-#home-hardware{
+#home-hardware {
   width: 71.5rem;
 }
 
@@ -531,7 +530,7 @@ export default {
 
 #competition-description {
   border-radius: 0.625rem;
-  font-family: "Microsoft YaHei";
+  font-family: "Microsoft YaHei", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 2rem;
@@ -544,7 +543,7 @@ export default {
 #hardware-description {
   border-radius: 0.625rem;
   margin-left: 1.25rem;
-  font-family: "Microsoft YaHei";
+  font-family: "Microsoft YaHei", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 2rem;
@@ -555,7 +554,7 @@ export default {
 
 #competition-text-col {
   width: 35.063rem;
-  height:30rem;
+  height: 30rem;
 }
 
 #hardware-text-col {
@@ -563,7 +562,7 @@ export default {
 }
 
 #competition-english-text {
-  width:553px;
+  width: 553px;
 
   //styleName: 英文标题;
   font-family: TT Supermolot, sans-serif;
@@ -583,7 +582,7 @@ export default {
   font-weight: 700;
   color: #31354D;
   letter-spacing: 0.05rem;
-  font-family: "Microsoft YaHei";
+  font-family: "Microsoft YaHei", sans-serif;
   align-items: center;
 }
 
@@ -593,16 +592,16 @@ export default {
   font-weight: 700;
   color: #31354D;
   letter-spacing: 0.05rem;
-  font-family: "Microsoft YaHei";
+  font-family: "Microsoft YaHei", sans-serif;
   align-items: center;
   //margin-right: 8rem;
 }
 
 #hardware-english-text {
-  font-family: "TT Supermolot";
+  font-family: "TT Supermolot", sans-serif;
   font-size: 3.125rem;
   font-style: italic;
-  line-height:3.844rem;
+  line-height: 3.844rem;
   color: #BDC8E4;
   font-weight: 900;
   position: relative;
@@ -617,7 +616,7 @@ export default {
 }
 
 .el-link {
-  font-family: "Microsoft YaHei", serif;
+  font-family: "Microsoft YaHei", sans-serif;
   color: white;
   font-size: 1.25rem;
   font-weight: 400;
@@ -666,7 +665,7 @@ export default {
 }
 
 #title {
-  font-family: Microsoft YaHei;
+  font-family: Microsoft YaHei, sans-serif;
   font-size: 4rem;
   line-height: 4.851rem;
   letter-spacing: 0.5rem;
@@ -675,7 +674,7 @@ export default {
 }
 
 #subtitle {
-  font-family: Microsoft YaHei;
+  font-family: Microsoft YaHei, sans-serif;
   font-size: 1.5rem;
   line-height: 1.819rem;
   letter-spacing: 0.5rem;

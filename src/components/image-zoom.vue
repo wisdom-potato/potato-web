@@ -5,7 +5,7 @@
       @mouseout="zoomOut"
       :style="{ zIndex: zIndex }"
   >
-    <img :src="src" :class="{ zoom: isZoomed }" />
+    <img :src="src" :class="{ zoom: isZoomed }" alt=""/>
   </div>
 </template>
 
@@ -14,24 +14,26 @@ export default {
   name: 'ImageZoom',
   props: {
     src: String
-  },
-  data() {
-    return {
-      isZoomed: false,
-      zIndex: 2 // 初始z-index
-    };
-  },
-  methods: {
-    zoomIn() {
-      this.isZoomed = true;
-      this.zIndex = 10; // 放大时提升z-index
-    },
-    zoomOut() {
-      this.isZoomed = false;
-      this.zIndex = 2; // 缩小时恢复z-index
-    }
   }
-};
+}
+</script>
+
+<script setup>
+import {ref} from 'vue';
+
+const isZoomed = ref(false);
+const zIndex = ref(2);
+
+function zoomIn() {
+  isZoomed.value = true;
+  zIndex.value = 10;
+}
+
+function zoomOut() {
+  isZoomed.value = false;
+  zIndex.value = 2;
+}
+
 </script>
 
 <style>

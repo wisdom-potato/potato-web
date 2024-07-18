@@ -80,7 +80,7 @@ export default {
 
 <style scoped lang="less">
 .mid-title {
-  font-family: Microsoft YaHei, serif;
+  font-family: Microsoft YaHei, sans-serif;
   font-size: 2.1875rem; /* 35px */
   font-weight: 700;
   line-height: 2.8869rem; /* 46.19px */
@@ -117,7 +117,7 @@ export default {
 }
 
 .header-text {
-  font-family: Microsoft YaHei, serif;
+  font-family: Microsoft YaHei, sans-serif;
   font-size: 3.75rem; /* 60px */
   font-weight: 700;
   line-height: 4.9494rem; /* 79.19px */
@@ -137,7 +137,7 @@ export default {
 }
 
 .product-title {
-  font-family: Microsoft YaHei, serif;
+  font-family: Microsoft YaHei, sans-serif;
   font-size: 3.75rem; /* 60px */
   font-weight: 700;
   line-height: 4.9494rem; /* 79.19px */
@@ -148,7 +148,7 @@ export default {
 }
 
 .product-store-link {
-  font-family: Microsoft YaHei, serif;
+  font-family: Microsoft YaHei, sans-serif;
   font-size: 1rem; /* 16px */
   font-weight: 400;
   line-height: 2rem; /* 32px */
@@ -226,7 +226,7 @@ export default {
 }
 
 .product-text {
-  font-family: Microsoft YaHei, serif;
+  font-family: Microsoft YaHei, sans-serif;
   font-size: 3.75rem; /* 60px */
   font-weight: 700;
   line-height: 4.9494rem; /* 79.19px */
@@ -244,7 +244,7 @@ export default {
 }
 
 .roadmap-title {
-  font-family: Microsoft YaHei, serif;
+  font-family: Microsoft YaHei, sans-serif;
   font-size: 2.1875rem; /* 35px */
   font-weight: 700;
   line-height: 2.8869rem; /* 46.19px */
@@ -269,7 +269,7 @@ export default {
   border-radius: 1.25rem; /* 20px */
   background-color: #EFF1F8;
 
-  font-family: Microsoft YaHei, serif;
+  font-family: Microsoft YaHei, sans-serif;
   font-size: 2.1875rem; /* 35px */
   font-weight: 700;
   letter-spacing: 0.12rem;
@@ -395,8 +395,6 @@ export default {
     width: 30rem;
     height: 30rem;
   }
-
-
 }
 
 </style>

@@ -8,9 +8,9 @@
 
     <!--正文-->
     <!--el-main要注释掉要不然那个home里的sticky不会生效-->
-<!--            <el-main >-->
+    <!--            <el-main >-->
     <router-view/>
-<!--            </el-main>-->
+    <!--            </el-main>-->
 
     <!--页脚-->
     <el-footer>

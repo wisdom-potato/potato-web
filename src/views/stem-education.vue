@@ -111,7 +111,7 @@ export default {
 
 <style scoped lang="less">
 .mid-title {
-  font-family: "Microsoft YaHei", serif;
+  font-family: "Microsoft YaHei", sans-serif;
   font-size: 2.188rem; /* 35px */
   font-weight: 700;
   line-height: 2.887rem; /* 46.19px */
@@ -154,7 +154,7 @@ export default {
   width: 26.4375rem; /* 423px */
   height: 29.75rem; /* 476px */
 
-  font-family: Microsoft YaHei, serif;
+  font-family: Microsoft YaHei, sans-serif;
   font-size: 3.75rem; /* 60px */
   font-weight: 700;
   line-height: 4.9494rem; /* 79.19px */
@@ -168,7 +168,7 @@ export default {
 }
 
 .header-link {
-  font-family: Microsoft YaHei, serif;
+  font-family: Microsoft YaHei, sans-serif;
   font-size: 2.188rem; /* 35px */
   font-weight: 700;
   line-height: 2.887rem; /* 46.19px */
@@ -184,7 +184,7 @@ export default {
 }
 
 .header-english-text {
-  font-family: TT Supermolot, SansSerif;
+  font-family: TT Supermolot, sans-serif;
   font-size: 3.125rem; /* 50px */
   font-style: italic;
   font-weight: 900;
@@ -229,7 +229,7 @@ export default {
   opacity: 0.8;
 
   p {
-    font-family: Microsoft YaHei, serif;
+    font-family: Microsoft YaHei, sans-serif;
     font-size: 1.5rem; /* 24px */
     font-weight: 700;
     line-height: 1.98rem; /* 31.68px */
@@ -256,7 +256,7 @@ export default {
 }
 
 .card-title {
-  font-family: Microsoft YaHei, serif;
+  font-family: Microsoft YaHei, sans-serif;
   font-size: 1.25rem; /* 20px */
   font-weight: 700;
   line-height: 1.875rem; /* 30px */
@@ -271,7 +271,7 @@ export default {
 .card-text {
   //width: 18.563rem; /* 297px */
 
-  font-family: Microsoft YaHei, serif;
+  font-family: Microsoft YaHei, sans-serif;
   font-size: 1rem; /* 16px */
   font-weight: 400;
   line-height: 2rem; /* 32px */
@@ -302,7 +302,7 @@ export default {
 }
 
 .teachers-title {
-  font-family: Microsoft YaHei, serif;
+  font-family: Microsoft YaHei, sans-serif;
   font-size: 3.75rem; /* 60px */
   font-weight: 700;
   line-height: 4.9494rem; /* 79.19px */
@@ -323,7 +323,7 @@ export default {
   background-color: #ECF1FF;
   padding: 1.25rem 2.0313rem; /* 20px 32.5px 20px 32.5px */
 
-  font-family: Microsoft YaHei, serif;
+  font-family: Microsoft YaHei, sans-serif;
   font-size: 1.25rem; /* 20px */
   font-weight: 700;
   line-height: 1.875rem; /* 30px */
@@ -391,7 +391,7 @@ export default {
   top: 0;
   border-radius: 0.625rem; /* 10px */
   opacity: 90%;
-  font-family: Microsoft YaHei, serif;
+  font-family: Microsoft YaHei, sans-serif;
   font-size: 1.25rem; /* 20px */
   font-weight: 700;
   line-height: 1.875rem; /* 30px */
@@ -401,7 +401,7 @@ export default {
   padding: 1.25rem; /* 20px */
 
   p {
-    font-family: Microsoft YaHei, serif;
+    font-family: Microsoft YaHei, sans-serif;
     font-size: 1rem; /* 16px */
     font-weight: 400;
     line-height: 2rem; /* 32px */
