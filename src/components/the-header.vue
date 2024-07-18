@@ -167,9 +167,9 @@ export default {
 
 .collapse-menu-item {
   font-family: "Microsoft YaHei", serif;
-  color: white;
+  color: #ECF1FF;
   font-size: 5rem;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 4rem;
   letter-spacing: 0.1em;
   text-align: left;
