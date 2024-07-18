@@ -96,7 +96,7 @@ export default {
 </script>
 
 <style scoped lang="less">
-@header-height: 4.688rem;
+@header-height: 5rem;
 @mobile-header-height: 12rem;
 
 .common {
@@ -156,11 +156,13 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 4px 4px 0 #00000040;
+
   z-index: 200;
 
   box-sizing: border-box;
-  padding: 2rem 0 0 5rem;
+  padding: 5rem 0 0 5rem;
 }
 
 .collapse-menu-item {
@@ -171,7 +173,11 @@ export default {
   line-height: 4rem;
   letter-spacing: 0.1em;
   text-align: left;
+}
 
+.el-divider {
+  border-color: #D0D5E966;
+  width: 80%;
 }
 
 @media screen and (max-width: 768px) {
@@ -190,9 +196,9 @@ export default {
 
   #mobile-logo {
     display: block;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     height: @mobile-header-height;
-    transform: scale(0.8);
+    transform: scale(0.7);
   }
 
   .menu-buttons {

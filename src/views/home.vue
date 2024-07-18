@@ -230,7 +230,7 @@ export default {
 </script>
 
 <style scoped lang="less">
-@header-height: 4.688rem;
+@header-height: 5rem;
 @mobile-header-height: 12rem;
 
 .black-filter {
