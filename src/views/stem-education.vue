@@ -209,7 +209,7 @@ export default {
 .ed-goals {
   width: 68.125rem; /* 1090px */
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 0.6fr));
   place-content: center center;
   gap: 41px;
   margin-top: 3.125rem; /* 50px */
@@ -319,7 +319,7 @@ export default {
 
 .description {
   box-sizing: border-box;
-  border-radius:30px; /* 30px */
+  border-radius: 30px; /* 30px */
   background-color: #ECF1FF;
   padding: 1.25rem 2.0313rem; /* 20px 32.5px 20px 32.5px */
 
@@ -421,7 +421,7 @@ export default {
     height: 80rem;
   }
 
-  .header-container{
+  .header-container {
     width: 80%;
     height: 80rem;
     align-items: normal;
@@ -461,6 +461,7 @@ export default {
   }
 
   .ed-goals {
+    grid-template-columns: 1fr;
     width: 80%;
   }
 
@@ -541,6 +542,7 @@ export default {
     width: 40rem;
     height: 80rem;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
     &:hover {
       .teacher-pic {
         filter: brightness(60%);
@@ -564,12 +566,12 @@ export default {
     padding: 2rem;
     font-size: 3rem;
     line-height: 3rem;
+
     p {
       font-size: 2.5rem;
       line-height: 2.5rem;
     }
   }
-
 
 
 }
