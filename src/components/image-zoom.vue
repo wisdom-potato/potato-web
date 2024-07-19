@@ -11,15 +11,16 @@
 
 <script>
 export default {
-  name: 'ImageZoom',
-  props: {
-    src: String
-  }
+  name: 'ImageZoom'
 }
 </script>
 
 <script setup>
 import {ref} from 'vue';
+
+const props = defineProps({
+  src: String
+});
 
 const isZoomed = ref(false);
 const zIndex = ref(2);
