@@ -13,31 +13,25 @@
   </el-row>
 
 
-  <div class="home-container">
-    <div class="title-container">
-      <h1 id="title">智慧土豆</h1>
-      <h2 id="subtitle">机器人技术支持专家</h2>
+    <div class="home-container">
+      <div class="title-container">
+        <div class="overlay">
+          <h1 class="title">智慧土豆</h1>
+          <h2 class="subtitle">机器人技术支持专家</h2>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <!--  <el-row align="middle" justify="center" style="margin-top: 20px">-->
-  <!--    <el-row style="width: 1144px; height:417px; background-color: lightblue" justify="space-between">-->
-  <!--      <div style="width: 561px; background-color: lightgreen">-->
-  <!--        <div id="competition-english-text">Competition Solutions</div>-->
-  <!--      </div>-->
-  <!--      <div style="width: 573px; background-color: lightcoral"></div>-->
-  <!--    </el-row>-->
-  <!--  </el-row>-->
 
 
   <el-row align="middle" justify="center" class="home-content-left">
     <el-row id="home-solution" justify="space-between">
       <div id="competition-text-col">
         <span id="competition-text">竞赛解决方案</span>
-        <img src="../assets/star.png" style="width: 3.25rem; height: 3.25rem" alt="">
+        <img src="../assets/star.png" class="star" alt="">
         <br>
         <span id="competition-english-text">Competition Solutions</span>
-        <div id="competition-description" style="width: 35.063rem">
+        <div id="competition-description" >
           <p style="padding:2.063rem 1.375rem 1.563rem 1.313rem">
             在机器人竞赛学习与教育领域，我们致力于为每位学员提供个性化定制的学习指导方案和专业化的技能培训，帮助他们实现学习上的突破和提升。无论是机械设计、电子电路、编程语言还是控制算法，我们都会全力以赴，为学员创造最佳的学习环境和机会，助力他们在机器人竞赛中取得成功。</p>
         </div>
@@ -48,12 +42,16 @@
         <p class="float" id="competition-float2">竞赛机器人设计</p>
         <image-zoom id="home-solution-img" :src="getAssetsFile('home-solution-image.png')"></image-zoom>
       </div>
+
+
+
     </el-row>
   </el-row>
 
   <el-row align="middle" justify="center" class="home-content-right">
     <el-row id="home-hardware" justify="space-between">
-      <div style="height: 30rem;position: relative;width:35.063rem">
+
+      <div class="hardware-img">
         <image-zoom id="home-product-img" :src="getAssetsFile('product.png')"></image-zoom>
         <img id="home-product-bg1" src="../assets/img.png" alt="">
         <img id="home-product-bg2" src="../assets/img.png" alt="">
@@ -63,14 +61,14 @@
       </div>
 
       <div id="hardware-text-col">
-        <div style="text-align: right; margin-top: -3rem; margin-bottom: 2.5rem">
-          <img src="../assets/star.png" style="margin-right: 0.938rem; width: 3.25rem; height: 3.25rem" alt="">
+        <div class="hardware-text-container" >
+          <img src="../assets/star.png" class="star" style="margin-right: 0.938rem;" alt="">
           <span id="hardware-text">硬件产品</span> <br>
           <span id="hardware-english-text">Hardware Products</span>
         </div>
 
 
-        <div id="competition-description" style="width: 35rem;">
+        <div id="competition-description">
           <p style="padding:2.063rem 1.375rem 1.563rem 1.313rem">
             我们自研的MP-0、MP-1等教育机器人为机器人竞赛学习与教育提供了强大的支持。它们不仅助力比赛进行，还为学员提供了一个实践和技能提升的平台。通过与这些教育机器人的互动和实践，学员将能够全面提升自己的机器人竞赛能力和STEM领域的学习和发展水平。</p>
         </div>
@@ -81,19 +79,18 @@
 
   <el-row align="middle" justify="center" class="home-content-left">
     <el-row id="home-ed" justify="space-between">
-      <div id="competition-text-col" style="width: 35.063rem; margin-right: 3rem">
+      <div id="competition-text-col">
         <span id="competition-text">STEAM 教育</span>
-        <img src="../assets/star.png" style="width:3.25rem; height:3.25rem" alt="">
+        <img src="../assets/star.png" class="star" alt="">
         <br>
         <span id="competition-english-text">STEAM Education</span>
 
-        <div id="competition-description" style="width: 35rem">
+        <div id="competition-description">
           <p style="padding:2.063rem 1.375rem 1.563rem 1.313rem">
             我们的专业Robomaster、Robocon、FRC等竞赛培训旨在为学生提供全面且深入的竞赛准备，帮助他们在机器人领域斩获佳绩，并为未来STEM领域的学习和发展奠定坚实基础。通过我们的培训服务，学生将能够掌握机器人竞赛所需的专业技能，培养创新思维和团队合作能力，为未来的成功铺就坚实的道路。</p>
         </div>
       </div>
-
-      <div class="solution-image" style="position: relative; width: 32rem; margin-left: 3rem;">
+      <div class="solution-image" >
         <p class="float" id="edu-float1">专业师资</p>
         <p class="float" id="edu-float2">参与比赛</p>
         <p class="float" id="edu-float3">培养兴趣</p>
@@ -418,7 +415,7 @@ export default {
 }
 
 #home-steam-ed-img {
-  position: absolute;
+  position: relative;
   margin-left: -2rem;
   margin-top: 3rem;
   width: 31.1875rem;
@@ -468,6 +465,9 @@ export default {
 #home-solution {
   width: 71.5rem;
 }
+#home-ed{
+  width: 71.5rem;
+}
 
 #home-solution-img {
   width: 32.938rem;
@@ -491,7 +491,6 @@ export default {
   height: 26.125rem;
   z-index: 2;
   position: absolute;
-
 }
 
 #home-product-bg1 {
@@ -501,7 +500,6 @@ export default {
   position: absolute;
   margin-left: 7.063rem;
   border-radius: 0.625rem;
-
 }
 
 #home-product-bg2 {
@@ -519,16 +517,14 @@ export default {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
-  //margin-left: 1.875rem;
   border-radius: 1.875rem;
 
   width: 31.875rem;
   height: 26.063rem;
-  //background-size: 31.875rem 26.063rem;
 }
 
 #competition-description {
+  width: 35.063rem;
   border-radius: 0.625rem;
   font-family: "Microsoft YaHei", sans-serif;
   font-size: 1rem;
@@ -562,7 +558,7 @@ export default {
 }
 
 #competition-english-text {
-  width: 553px;
+  //width: 553px;
 
   //styleName: 英文标题;
   font-family: TT Supermolot, sans-serif;
@@ -638,7 +634,7 @@ export default {
   background-image: url("../assets/home-bg.png");
   background-size: cover;
   width: 100%;
-  height: 30.813rem;
+  height: 40rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -656,31 +652,31 @@ export default {
 }
 
 .title-container {
-
+  width: 100%;
+  height: 100%;
   color: #FFFFFF;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
-#title {
+.title {
   font-family: Microsoft YaHei, sans-serif;
   font-size: 4rem;
   line-height: 4.851rem;
-  letter-spacing: 0.5rem;
+  letter-spacing: 2rem;
   text-align: center;
   font-weight: 700;
+  z-index: 2;
+  position: relative;
 }
 
-#subtitle {
+.subtitle {
   font-family: Microsoft YaHei, sans-serif;
   font-size: 1.5rem;
   line-height: 1.819rem;
-  letter-spacing: 0.5rem;
+  letter-spacing: 1.2rem;
   text-align: center;
   font-weight: 700;
-
+  z-index: 2;
+  position: relative;
 }
 
 .menu-container {
@@ -690,12 +686,241 @@ export default {
   z-index: 100;
 }
 
+
+.overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.star{
+  width: 3.25rem;
+  height: 3.25rem;
+}
+
+.hardware-img{
+  height: 30rem;
+  position: relative;
+  width:35.063rem;
+}
+
+.hardware-text-container{
+  text-align: right;
+}
+
 @media screen and (max-width: 768px) {
   .menu-container {
     top: @mobile-header-height;
   }
+  .home-container{
+    height: 80rem;
+  }
 
-}
+  .title{
+    font-size: 8rem;
+  }
+  .subtitle{
+    font-size: 3rem;
+  }
+  .star{
+    display: none;
+  }
+
+  #home-solution {
+    height: 70rem;
+  }
+
+  #competition-text-col{
+    width: 71.5rem;
+    height: 40rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+  }
+
+  #competition-text{
+    font-size: 6rem;
+    letter-spacing: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  #competition-english-text{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  #competition-description{
+    width: 80rem;
+    border-radius: 0;
+    font-family: "Microsoft YaHei", sans-serif;
+    font-size: 3rem;
+    background-color: rgb(246,249,255) ;
+    line-height: 3.5rem;
+    letter-spacing: 0.5rem;
+    box-shadow: 0 0 0 0;
+
+  }
+
+  #home-solution{
+    margin-bottom: 15rem;
+  }
+
+  .solution-image {
+    width: 47.8125rem;
+    height: 39.0945rem;
+    margin-left: 8rem;
+  }
+
+  #home-solution-img{
+    width: 50.938rem;
+    height: 30.438rem;
+    position: absolute;
+    margin-top: 4.125rem;
+    margin-left: 4.125rem;
+  }
+
+  #competition-float1{
+    font-size: 2rem;
+    width: 8rem;
+    margin-top: 7.3rem;
+  }
+
+  #competition-float2{
+    font-size: 2rem;
+    width: 14rem;
+    margin-top: 32rem;
+    margin-left: 32.125rem;
+  }
+
+  #home-hardware{
+    flex-direction: column-reverse;
+  }
+
+  #hardware-text-col{
+    width: 71.5rem;
+    height: 60rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #hardware-text{
+    font-size: 6rem;
+    letter-spacing: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  #hardware-english-text{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  .hardware-text-container{
+    height: 15rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hardware-img{
+    height: 50rem;
+    position: relative;
+    width:75.063rem;
+  }
+
+  #home-product-img {
+    width: 70.063rem;
+    height: 35.125rem;
+    z-index: 2;
+    position: absolute;
+    margin-top: -5rem;
+  }
+
+  #home-product-bg1 {
+    width: 37.313rem;
+    height: 27.813rem;
+    margin-left: 21.063rem;
+    margin-top: -3rem;
+  }
+
+  #home-product-bg2 {
+    width: 28.938rem;
+    height: 18.813rem;
+    margin-top: 11.938rem;
+    margin-left: 13rem;
+  }
+
+  #hardware1-float {
+    width: 8rem;
+    margin-top: -1rem;
+    margin-left: 17.9rem;
+    font-size: 2rem;
+  }
+
+  #hardware2-float {
+    width: 8rem;
+    margin-top: 23rem;
+    margin-left: 44.438rem;
+    font-size: 2rem;
+  }
+
+  #home-ed {
+    height: 70rem;
+  }
+
+  .home-content-left {
+    margin-top: 11.25rem;
+    margin-bottom: 5.125rem;
+    height: 100rem;
+  }
+
+  #home-steam-ed-img {
+    margin-left: -4rem;
+    margin-top: 1rem;
+    width: 48.1875rem;
+    height: 42.4375rem;
+    z-index: 0;
+  }
+
+  #edu-float1 {
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+    width: 8rem;
+    font-size: 2rem;
+
+  }
+
+  #edu-float2 {
+    margin-top: 37.5rem;
+    margin-left: -1rem;
+    width: 8rem;
+    font-size: 2rem;
+
+  }
+
+  #edu-float3 {
+    margin-left: 40rem;
+    margin-top: 23.75rem;
+    width: 8rem;
+    font-size: 2rem;
+
+  }
 
 
-</style>
+
+
+
+
+
+}</style>
