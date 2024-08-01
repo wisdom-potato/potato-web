@@ -101,7 +101,7 @@
 
   <div class="home-past-project">
     <h2 id="past-project-header">过往项目</h2>
-    <el-carousel style="height: 30rem;" :show-indicators="true" :motion-blur="false">
+    <el-carousel style="height: 30rem;" :show-indicators="true" :autoplay="false" :motion-blur="false">
       <el-carousel-item style="height: 30rem">
         <el-row align="middle" justify="center">
           <el-row justify="space-between" style="width: 80rem">
@@ -110,9 +110,31 @@
             </div>
             <div class="project-card" style="position: relative">
               <div class="black-filter">
-                <img src="../assets/project-card.png"
-                     style="width: 27.438rem;height:20rem; position:absolute; right: 2.75rem; top:4.25rem" alt="">
+                <el-carousel motion-blur="true"  style="width: 27.438rem;height:20rem; position:absolute; right: 2.75rem; top:4.25rem">
+                <div class="black-filter">
+                  <el-carousel-item>
+                    <img src="../assets/project-card.png"
+                         style="width: 27.438rem;height:20rem;" alt="">
+                  </el-carousel-item>
+
+                  <el-carousel-item>
+                    <img src="../assets/home-car1.png"
+                         style="width: 27.438rem;height:20rem;" alt="">
+                  </el-carousel-item>
+
+                  <el-carousel-item>
+                    <img src="../assets/home-car2.png"
+                         style="width: 27.438rem;height:20rem;" alt="">
+                  </el-carousel-item>
+
+                  <el-carousel-item>
+                    <img src="../assets/home-car3.png"
+                         style="width: 27.438rem;height:20rem;" alt="">
+                  </el-carousel-item>
+                </div>
+              </el-carousel>
               </div>
+
               <p id="card-title">x大学智能车大赛方案设计</p>
               <div class="card-text-div">
                 <p class="card-text">提供比赛方案策划</p>
@@ -138,10 +160,25 @@
         <el-row align="middle" justify="center">
           <el-row justify="space-between" style="width: 80rem">
             <div class="project-card">
-              <div class="black-filter" style="position: relative;">
-                <img src="../assets/project-card-2.png"
-                     style="width: 18.75rem;height:23.875rem; position:absolute; margin-left: 40.5rem; margin-top:2.363rem"
-                     alt="">
+              <div class="black-filter" style="position: relative">
+                <el-carousel motion-blur="true"  style="width: 18.75rem;height:23.875rem; position:absolute; margin-left: 40.5rem; margin-top:2.363rem">
+                  <div class="black-filter">
+                    <el-carousel-item>
+                      <img src="../assets/project-card-2.png"
+                           style="width: 18.75rem;height:23.875rem;" alt="">
+                    </el-carousel-item>
+
+                    <el-carousel-item>
+                      <img src="../assets/home-competition1.png"
+                           style="width: 18.75rem;height:23.875rem;" alt="">
+                    </el-carousel-item>
+
+                    <el-carousel-item>
+                      <img src="../assets/home-competition2.png"
+                           style="width: 18.75rem;height:23.875rem;" alt="">
+                    </el-carousel-item>
+                  </div>
+                </el-carousel>
               </div>
 
               <p id="card-title">MakeX 挑战赛竞赛方案</p>
