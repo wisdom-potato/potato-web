@@ -77,7 +77,7 @@
     </el-row>
   </el-row>
 
-  <el-row align="middle" justify="center" class="home-content-left">
+  <el-row align="middle" justify="center" class="home-content-left" id="stem-ed">
     <el-row id="home-ed" justify="space-between">
       <div id="competition-text-col">
         <span id="competition-text">STEM 教育</span>
@@ -206,6 +206,63 @@
     </el-carousel>
   </div>
 
+
+  <div class="home-past-project-mobile">
+    <h2 id="competition-text">过往项目</h2>  <br>
+
+    <h3 class="competition-subtitle"> MakeX 挑战赛竞赛方案</h3>
+    <div class="competition-container">
+      <div class="competition-text-description">
+        <p class="comp-subtext">·道具硬件开发支持</p>
+        <p class="comp-subtext">·竞赛规则指导</p>
+        <p class="comp-subtext">·竞赛技术教育</p>
+      </div>
+      <div class="carousel-container">
+        <el-carousel style="height: 35rem; width: 50rem; margin-top: 3rem" arrow="never" indicator-position="none">
+          <el-carousel-item>
+            <img style="height: 35rem; width: 20rem" src="../assets/past-mobile1.png">
+          </el-carousel-item>
+          <el-carousel-item>
+            <img style="height: 35rem; width: 50rem" src="../assets/past-mobile2.png">
+          </el-carousel-item>
+          <el-carousel-item>
+            <img style="height: 35rem; width: 50rem" src="../assets/past-mobile3.png">
+          </el-carousel-item>
+          <el-carousel-item>
+            <img style="height: 35rem; width: 50rem" src="../assets/past-mobile4.png">
+          </el-carousel-item>
+        </el-carousel>
+      </div>
+    </div>
+
+    <h3 class="competition-subtitle"> x大学智能车大赛方案设计</h3>
+    <div class="competition-container">
+      <div class="competition-text-description">
+        <p class="comp-subtext">·道具硬件开发支持</p>
+        <p class="comp-subtext">·竞赛规则指导</p>
+        <p class="comp-subtext">·竞赛技术教育</p>
+      </div>
+      <div class="carousel-container">
+        <el-carousel style="height: 35rem; width: 50rem; margin-top: 3rem" arrow="never" indicator-position="none">
+          <el-carousel-item>
+            <img style="height: 35rem; width: 50rem" src="../assets/past-mobile5.png">
+          </el-carousel-item>
+          <el-carousel-item>
+            <img style="height: 35rem; width: 50rem" src="../assets/past-mobile6.png">
+          </el-carousel-item>
+          <el-carousel-item>
+            <img style="height: 35rem; width: 50rem" src="../assets/past-mobile7.png">
+          </el-carousel-item>
+          <el-carousel-item>
+            <img style="height: 35rem; width: 50rem" src="../assets/past-mobile8.png">
+          </el-carousel-item>
+
+        </el-carousel>
+      </div>
+    </div>
+
+  </div>
+
   <div class="home-about-us">
     <h2 id="about-title-cn"> 关于我们 </h2>
     <h3 id="about-title-en"> about us</h3>
@@ -215,6 +272,16 @@
         STEM 教育的魅力。Infinity Geek Robotics Club 科研基地主营项目为 FRC 竞赛培训，助力学生在机器人领域斩获佳绩，并为未来
         STEM 领域的学习和发展奠定坚实基础。</p>
     </div>
+    <div class="home-about-us-text-mobile">
+      <img id="logo" src="../assets/logo.png" alt="">
+      <div class="home-about-mobile-container">
+        <p id="home-about-text"> 致力于为中小学生提供以机器人科技研发为核心的创新实践平台。我们提供个性化定制的学习指导方案和专业化的技能培训，旨在激发学生的科技创新精神，让他们在接触顶尖机器人赛事的同时感受
+          STEM 教育的魅力。Infinity Geek Robotics Club 科研基地主营项目为 FRC 竞赛培训，助力学生在机器人领域斩获佳绩，并为未来
+          STEM 领域的学习和发展奠定坚实基础。</p>
+      </div>
+
+    </div>
+
   </div>
 
 </template>
@@ -266,6 +333,10 @@ export default {
 <style scoped lang="less">
 @header-height: 5rem;
 @mobile-header-height: 12rem;
+
+.home-past-project-mobile{
+  display: none;
+}
 
 .black-filter {
   background: black;
@@ -751,6 +822,9 @@ export default {
 .hardware-text-container{
   text-align: right;
 }
+.home-about-us-text-mobile{
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
   .menu-container {
@@ -922,6 +996,11 @@ export default {
     height: 100rem;
   }
 
+  #stem-ed{
+    margin-top: 0;
+  }
+
+
   #home-steam-ed-img {
     margin-left: -4rem;
     margin-top: 1rem;
@@ -951,6 +1030,109 @@ export default {
     margin-top: 23.75rem;
     width: 8rem;
     font-size: 2rem;
+
+  }
+  .home-past-project{
+    display: none;
+  }
+
+  .home-past-project-mobile{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 150rem;
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    align-items: center;
+  }
+  .competition-subtitle{
+    font-size: 4.75rem;
+    line-height: 4.949rem;
+    font-weight: 700;
+    color: #31354D;
+    letter-spacing: 0.05rem;
+    font-family: "Microsoft YaHei", sans-serif;
+    align-items: center;
+    margin-top: 5rem;
+  }
+  .competition-container{
+    margin-top: 5rem;
+    width: 100%;
+    height: 45rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .competition-text-description{
+    height: 45rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-left: 20rem;
+  }
+  .comp-subtext{
+    font-family: "Microsoft YaHei";
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.12rem;
+    color: #110A0B;
+  }
+  .carousel-container{
+    width: 50rem;
+    height: 45rem;
+    margin-left: 8rem;
+  }
+
+  #about-title-en{
+    display: none;
+  }
+
+  #about-title-cn{
+    line-height: 4.949rem;
+    font-weight: 700;
+    color: #31354D;
+    font-family: "Microsoft YaHei", sans-serif;
+    align-items: center;
+    font-size: 6rem;
+    letter-spacing: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  .home-about-us-text{
+    display: none;
+  }
+  .home-about-us-text-mobile{
+    height: 80rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    align-items: center;
+  }
+  .home-about-mobile-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    width: 70.063rem;
+    margin-top: 5rem;
+    background-image: url("../assets/about-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: justify;
+  }
+  #logo{
+    width: 60rem;
+    height: 13rem;
+    margin-right: 10rem;
+  }
+  #home-about-text{
+    font-size: 2.5rem;
+    line-height: 5rem;
 
   }
 
