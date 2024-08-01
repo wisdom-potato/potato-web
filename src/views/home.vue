@@ -101,7 +101,7 @@
 
   <div class="home-past-project">
     <h2 id="past-project-header">过往项目</h2>
-    <el-carousel style="height: 30rem;" autoplay="false" motion-blur="true">
+    <el-carousel style="height: 30rem;" :autoplay="false" motion-blur="true">
       <el-carousel-item style="height: 30rem">
         <el-row align="middle" justify="center">
           <el-row justify="space-between" style="width: 80rem">
@@ -110,26 +110,25 @@
             </div>
             <div class="project-card" style="position: relative">
               <div class="black-filter">
-                <el-carousel motion-blur="true" indicator-position="none" arrow="never"  style="width: 27.438rem;height:20rem; position:absolute; right: 2.75rem; top:4.25rem">
+                <el-carousel  motion-blur="true" indicator-position="none" arrow="never"  style="width: 29.438rem;height:25rem; position:absolute; right: 1rem; top:4.25rem">
                 <div class="black-filter">
                   <el-carousel-item>
-                    <img src="../assets/project-card.png"
-                         style="width: 27.438rem;height:20rem;" alt="">
+                    <img class="home-carouselpic1" src="../assets/project-card.png" alt="">
                   </el-carousel-item>
 
                   <el-carousel-item>
                     <img src="../assets/home-car1.png"
-                         style="width: 27.438rem;height:20rem;" alt="">
+                         class="home-carouselpic1" alt="">
                   </el-carousel-item>
 
                   <el-carousel-item>
                     <img src="../assets/home-car2.png"
-                         style="width: 27.438rem;height:20rem;" alt="">
+                         class="home-carouselpic1" alt="">
                   </el-carousel-item>
 
                   <el-carousel-item>
                     <img src="../assets/home-car3.png"
-                         style="width: 27.438rem;height:20rem;" alt="">
+                         class="home-carouselpic1" alt="">
                   </el-carousel-item>
                 </div>
               </el-carousel>
@@ -161,21 +160,21 @@
           <el-row justify="space-between" style="width: 80rem">
             <div class="project-card">
               <div class="black-filter" style="position: relative">
-                <el-carousel motion-blur="true" arrow="never" indicator-position="none" style="width: 18.75rem;height:23.875rem; position:absolute; margin-left: 40.5rem; margin-top:2.363rem">
+                <el-carousel motion-blur="true" arrow="never" indicator-position="none" style="width: 21.75rem;height:26.875rem; position:absolute; margin-left: 40.5rem; margin-top:2.363rem">
                   <div class="black-filter">
                     <el-carousel-item>
-                      <img src="../assets/project-card-2.png"
-                           style="width: 18.75rem;height:23.875rem;" alt="">
+                      <img class="home-carouselpic2"  src="../assets/project-card-2.png"
+                           alt="">
                     </el-carousel-item>
 
                     <el-carousel-item>
                       <img src="../assets/home-competition1.png"
-                           style="width: 18.75rem;height:23.875rem;" alt="">
+                           class="home-carouselpic2" alt="">
                     </el-carousel-item>
 
                     <el-carousel-item>
                       <img src="../assets/home-competition2.png"
-                           style="width: 18.75rem;height:23.875rem;" alt="">
+                           class="home-carouselpic2"  alt="">
                     </el-carousel-item>
                   </div>
                 </el-carousel>
@@ -793,6 +792,23 @@ export default {
   width: 100%;
   z-index: 100;
 }
+.el-carousel__item{
+  height: 27rem;
+  //overflow: visible;
+}
+.home-carouselpic1{
+  width: 27.438rem;
+  height:20rem;
+  border-radius: 2rem;
+  border: 0.4rem solid #FFFFFF;
+}
+
+.home-carouselpic2{
+  width: 18.75rem;
+  height:23.875rem;
+  border-radius: 2rem;
+  border: 0.4rem solid #FFFFFF;
+}
 
 
 .overlay {
@@ -1136,6 +1152,9 @@ export default {
 
   }
 
+  .el-carousel__item{
+    height: 35rem;
+  }
 
 
 
