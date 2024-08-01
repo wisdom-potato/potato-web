@@ -95,6 +95,7 @@ export default {
 
 .slider-container {
   margin-bottom: 7.1875rem; /* 115px */
+  overflow: hidden;
 }
 
 .header-switch-triangle {

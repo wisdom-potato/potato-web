@@ -65,38 +65,54 @@
   <el-row class="teachers-title" justify="center">专业教师团队</el-row>
   <el-row justify="center">
     <el-row class="teachers-descriptions" justify="center">
-      <div class="description" id="description1">拥有丰富机器人竞赛、培训经验</div>
-      <div class="description">荣获多项国内外知名机器人比赛大奖</div>
-      <div class="description">均毕业于国内外知名高校、985/211学校理工类专业</div>
+      <el-row class="description-container" justify="center" align="middle">
+        <img src="../assets/teacher-description-icon-1.png" alt="" class="teacher-description-icon"/>
+      </el-row>
+      <el-row class="description-container" justify="center" align="middle">
+        <div class="description">拥有丰富机器人竞赛、培训经验</div>
+      </el-row>
+      <el-row class="description-container" justify="center" align="middle">
+        <img src="../assets/teacher-description-icon-2.png" alt="" class="teacher-description-icon"/>
+      </el-row>
+      <el-row class="description-container" justify="center" align="middle">
+        <div class="description">荣获多项国内外知名机器人比赛大奖</div>
+      </el-row>
+      <el-row class="description-container" justify="center" align="middle">
+        <img src="../assets/teacher-description-icon-3.png" alt="" class="teacher-description-icon"/>
+      </el-row>
+      <el-row class="description-container" justify="center" align="middle">
+        <div class="description">均毕业于国内外知名高校、985/211学校理工类专业</div>
+      </el-row>
     </el-row>
   </el-row>
-  <el-row justify="center">
-    <div class="teachers-container">
-      <!--背景颜色-->
-      <div class="teachers-background"/>
+  <!--  <el-row justify="center">-->
+  <!--    <div class="teachers-container">-->
+  <!--      &lt;!&ndash;背景颜色&ndash;&gt;-->
+  <!--      <div class="teachers-background"/>-->
 
-      <div class="teacher-pic-container">
-        <img class="teacher-pic" src="../assets/teacher-1.png" alt="" id="teacher-pic-1"/>
-        <div class="teacher-text">教师姓名1<p>教师介绍1</p></div>
-      </div>
+  <!--      <div class="teacher-pic-container">-->
+  <!--        <img class="teacher-pic" src="../assets/teacher-1.png" alt="" id="teacher-pic-1"/>-->
+  <!--        <div class="teacher-text">教师姓名1<p>教师介绍1</p></div>-->
+  <!--      </div>-->
 
-      <div class="teacher-pic-container">
-        <img class="teacher-pic" src="../assets/teacher-2.png" alt=""/>
-        <div class="teacher-text">教师姓名2<p>教师介绍2</p></div>
-      </div>
+  <!--      <div class="teacher-pic-container">-->
+  <!--        <img class="teacher-pic" src="../assets/teacher-2.png" alt=""/>-->
+  <!--        <div class="teacher-text">教师姓名2<p>教师介绍2</p></div>-->
+  <!--      </div>-->
 
-      <div class="teacher-pic-container">
-        <img class="teacher-pic" src="../assets/teacher-3.png" alt=""/>
-        <div class="teacher-text">教师姓名3<p>教师介绍3</p></div>
-      </div>
+  <!--      <div class="teacher-pic-container">-->
+  <!--        <img class="teacher-pic" src="../assets/teacher-3.png" alt=""/>-->
+  <!--        <div class="teacher-text">教师姓名3<p>教师介绍3</p></div>-->
+  <!--      </div>-->
 
-      <div class="teacher-pic-container">
-        <img class="teacher-pic" src="../assets/teacher-4.png" alt=""/>
-        <div class="teacher-text">教师姓名4<p>教师介绍4</p></div>
-      </div>
+  <!--      <div class="teacher-pic-container">-->
+  <!--        <img class="teacher-pic" src="../assets/teacher-4.png" alt=""/>-->
+  <!--        <div class="teacher-text">教师姓名4<p>教师介绍4</p></div>-->
+  <!--      </div>-->
 
-    </div>
-  </el-row>
+  <!--    </div>-->
+  <!--  </el-row>-->
+
 
 </template>
 
@@ -257,7 +273,7 @@ export default {
 
 .card-title {
   font-family: Microsoft YaHei, sans-serif;
-  font-size: 1.25rem; /* 20px */
+  font-size: 1.375rem; /* 22px */
   font-weight: 700;
   line-height: 1.875rem; /* 30px */
   letter-spacing: 0.1rem;
@@ -272,7 +288,7 @@ export default {
   //width: 18.563rem; /* 297px */
 
   font-family: Microsoft YaHei, sans-serif;
-  font-size: 1rem; /* 16px */
+  font-size: 1.25rem; /* 20px */
   font-weight: 400;
   line-height: 2rem; /* 32px */
   letter-spacing: 0.1rem;
@@ -283,6 +299,7 @@ export default {
 
   margin-top: 0.625rem; /* 10px */
   margin-left: 1.25rem; /* 20px */
+  margin-right: 1rem;
 }
 
 #ed-goal-3 {
@@ -310,106 +327,117 @@ export default {
   color: #31354D;
 
   margin-top: 4.375rem; /* 70px */
-  margin-bottom: 1.25rem; /* 20px */
+  margin-bottom: 3rem; /* 20px */
 }
 
 .teachers-descriptions {
   width: 51.313rem; /* 821px */
 }
 
+.description-container {
+  width: 100%;
+  height: auto;
+}
+
+.teacher-description-icon {
+  width: 6.25rem; /* 30px */
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
 .description {
   box-sizing: border-box;
   border-radius: 30px; /* 30px */
   background-color: #ECF1FF;
-  padding: 1.25rem 2.0313rem; /* 20px 32.5px 20px 32.5px */
+  padding: 1.25rem 3rem; /* 20px 32.5px 20px 32.5px */
 
   font-family: Microsoft YaHei, sans-serif;
   font-size: 1.25rem; /* 20px */
   font-weight: 700;
   line-height: 1.875rem; /* 30px */
   letter-spacing: 0.1rem;
-  color: #8596CB;
+  color: #6a78a2;
 
-  margin-bottom: 1.25rem; /* 20px */
+  margin-bottom: 5rem; /* 20px */
 }
 
-#description1 {
-  margin-right: 1.875rem; /* 30px */
-}
-
-.teachers-container {
-  width: 75.375rem; /* 1206px */
-  height: 31.5rem; /* 504px */
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-  margin-top: 1.875rem; /* 30px */
-  margin-bottom: 12.5rem; /* 200px */
-}
-
-.teachers-background {
-  width: 75.375rem; /* 1206px */
-  height: 29.75rem; /* 476px */
-  background-color: #6374B6;
-  position: absolute;
-}
-
-.teacher-pic-container {
-  width: 16.875rem; /* 270px */
-  height: 31.5rem; /* 504px */
-  position: relative;
-  border-radius: 10px;
-
-  &:hover {
-    .teacher-pic {
-      filter: brightness(60%);
-    }
-
-    .teacher-text {
-      display: block;
-      filter: brightness(100%);
-    }
-  }
-}
-
-.teacher-pic {
-  width: 16.875rem; /* 270px */
-  height: 31.5rem; /* 504px */
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.teacher-text {
-  display: none;
-  width: 16.875rem; /* 270px */
-  height: 31.5rem; /* 504px */
-  margin: 0;
-  position: absolute;
-  top: 0;
-  border-radius: 0.625rem; /* 10px */
-  opacity: 90%;
-  font-family: Microsoft YaHei, sans-serif;
-  font-size: 1.25rem; /* 20px */
-  font-weight: 700;
-  line-height: 1.875rem; /* 30px */
-  letter-spacing: 0.1rem;
-  color: white;
-  box-sizing: border-box;
-  padding: 1.25rem; /* 20px */
-
-  p {
-    font-family: Microsoft YaHei, sans-serif;
-    font-size: 1rem; /* 16px */
-    font-weight: 400;
-    line-height: 2rem; /* 32px */
-    letter-spacing: 0.1rem;
-    color: white;
-    text-align: left;
-  }
-}
+//#description1 {
+//  margin-right: 1.875rem; /* 30px */
+//}
+//
+//.teachers-container {
+//  width: 75.375rem; /* 1206px */
+//  height: 31.5rem; /* 504px */
+//
+//  display: flex;
+//  flex-direction: row;
+//  justify-content: space-between;
+//  align-items: center;
+//
+//  margin-top: 1.875rem; /* 30px */
+//  margin-bottom: 12.5rem; /* 200px */
+//}
+//
+//.teachers-background {
+//  width: 75.375rem; /* 1206px */
+//  height: 29.75rem; /* 476px */
+//  background-color: #6374B6;
+//  position: absolute;
+//}
+//
+//.teacher-pic-container {
+//  width: 16.875rem; /* 270px */
+//  height: 31.5rem; /* 504px */
+//  position: relative;
+//  border-radius: 10px;
+//
+//  &:hover {
+//    .teacher-pic {
+//      filter: brightness(60%);
+//    }
+//
+//    .teacher-text {
+//      display: block;
+//      filter: brightness(100%);
+//    }
+//  }
+//}
+//
+//.teacher-pic {
+//  width: 16.875rem; /* 270px */
+//  height: 31.5rem; /* 504px */
+//  object-fit: cover;
+//  border-radius: 10px;
+//}
+//
+//.teacher-text {
+//  display: none;
+//  width: 16.875rem; /* 270px */
+//  height: 31.5rem; /* 504px */
+//  margin: 0;
+//  position: absolute;
+//  top: 0;
+//  border-radius: 0.625rem; /* 10px */
+//  opacity: 90%;
+//  font-family: Microsoft YaHei, sans-serif;
+//  font-size: 1.25rem; /* 20px */
+//  font-weight: 700;
+//  line-height: 1.875rem; /* 30px */
+//  letter-spacing: 0.1rem;
+//  color: white;
+//  box-sizing: border-box;
+//  padding: 1.25rem; /* 20px */
+//
+//  p {
+//    font-family: Microsoft YaHei, sans-serif;
+//    font-size: 1rem; /* 16px */
+//    font-weight: 400;
+//    line-height: 2rem; /* 32px */
+//    letter-spacing: 0.1rem;
+//    color: white;
+//    text-align: left;
+//  }
+//}
 
 @media screen and (max-width: 768px) {
   .mid-title {
@@ -503,76 +531,82 @@ export default {
   }
 
   .teachers-title {
-    font-size: 5rem;
-    line-height: 5rem;
-    margin-bottom: 5rem;
+    font-size: 8rem;
+    line-height: 8rem;
+    margin-bottom: 6rem;
   }
 
   .teachers-descriptions {
     width: 80%;
   }
 
+  .teacher-description-icon {
+    width: 20rem; /* 30px */
+    object-fit: contain;
+    margin-bottom: 3rem;
+  }
+
   .description {
     font-size: 3.5rem;
     line-height: 3.5rem;
-    padding: 3rem 5rem;
+    padding: 3rem 4rem;
     margin-bottom: 5rem;
+    text-align: center;
   }
 
-  #description1 {
-    margin-right: 0;
-  }
-
-  .teachers-container {
-    width: 70%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    gap: 2rem;
-  }
-
-  .teachers-background {
-    width: 90%;
-    height: 40rem;
-    display: none;
-  }
-
-  .teacher-pic-container {
-    width: 40rem;
-    height: 80rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-
-    &:hover {
-      .teacher-pic {
-        filter: brightness(60%);
-      }
-
-      .teacher-text {
-        display: block;
-        filter: brightness(100%);
-      }
-    }
-  }
-
-  .teacher-pic {
-    width: 100%;
-    height: 100%;
-  }
-
-  .teacher-text {
-    width: 20rem;
-    height: 40rem;
-    padding: 2rem;
-    font-size: 3rem;
-    line-height: 3rem;
-
-    p {
-      font-size: 2.5rem;
-      line-height: 2.5rem;
-    }
-  }
-
+  //#description1 {
+  //  margin-right: 0;
+  //}
+  //
+  //.teachers-container {
+  //  width: 70%;
+  //  height: auto;
+  //  display: grid;
+  //  grid-template-columns: 1fr 1fr;
+  //  justify-items: center;
+  //  gap: 2rem;
+  //}
+  //
+  //.teachers-background {
+  //  width: 90%;
+  //  height: 40rem;
+  //  display: none;
+  //}
+  //
+  //.teacher-pic-container {
+  //  width: 40rem;
+  //  height: 80rem;
+  //  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  //
+  //  &:hover {
+  //    .teacher-pic {
+  //      filter: brightness(60%);
+  //    }
+  //
+  //    .teacher-text {
+  //      display: block;
+  //      filter: brightness(100%);
+  //    }
+  //  }
+  //}
+  //
+  //.teacher-pic {
+  //  width: 100%;
+  //  height: 100%;
+  //}
+  //
+  //.teacher-text {
+  //  width: 20rem;
+  //  height: 40rem;
+  //  padding: 2rem;
+  //  font-size: 3rem;
+  //  line-height: 3rem;
+  //
+  //  p {
+  //    font-size: 2.5rem;
+  //    line-height: 2.5rem;
+  //  }
+  //}
 
 }
 
