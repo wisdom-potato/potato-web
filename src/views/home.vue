@@ -8,7 +8,7 @@
       <el-link @click.prevent="scrollTo('home-hardware')">硬件产品</el-link>
     </el-col>
     <el-col :span="8" class="centered-content">
-      <el-link @click.prevent="scrollTo('home-ed')">STEAM教育</el-link>
+      <el-link @click.prevent="scrollTo('home-ed')">STEM教育</el-link>
     </el-col>
   </el-row>
 
@@ -80,10 +80,10 @@
   <el-row align="middle" justify="center" class="home-content-left">
     <el-row id="home-ed" justify="space-between">
       <div id="competition-text-col">
-        <span id="competition-text">STEAM 教育</span>
+        <span id="competition-text">STEM 教育</span>
         <img src="../assets/star.png" class="star" alt="">
         <br>
-        <span id="competition-english-text">STEAM Education</span>
+        <span id="competition-english-text">STEM Education</span>
 
         <div id="competition-description">
           <p style="padding:2.063rem 1.375rem 1.563rem 1.313rem">
@@ -101,7 +101,7 @@
 
   <div class="home-past-project">
     <h2 id="past-project-header">过往项目</h2>
-    <el-carousel style="height: 30rem;" :show-indicators="true" :autoplay="false" :motion-blur="false">
+    <el-carousel style="height: 30rem;" autoplay="false" motion-blur="true">
       <el-carousel-item style="height: 30rem">
         <el-row align="middle" justify="center">
           <el-row justify="space-between" style="width: 80rem">
@@ -110,7 +110,7 @@
             </div>
             <div class="project-card" style="position: relative">
               <div class="black-filter">
-                <el-carousel motion-blur="true"  style="width: 27.438rem;height:20rem; position:absolute; right: 2.75rem; top:4.25rem">
+                <el-carousel motion-blur="true" indicator-position="none" arrow="never"  style="width: 27.438rem;height:20rem; position:absolute; right: 2.75rem; top:4.25rem">
                 <div class="black-filter">
                   <el-carousel-item>
                     <img src="../assets/project-card.png"
@@ -161,7 +161,7 @@
           <el-row justify="space-between" style="width: 80rem">
             <div class="project-card">
               <div class="black-filter" style="position: relative">
-                <el-carousel motion-blur="true"  style="width: 18.75rem;height:23.875rem; position:absolute; margin-left: 40.5rem; margin-top:2.363rem">
+                <el-carousel motion-blur="true" arrow="never" indicator-position="none" style="width: 18.75rem;height:23.875rem; position:absolute; margin-left: 40.5rem; margin-top:2.363rem">
                   <div class="black-filter">
                     <el-carousel-item>
                       <img src="../assets/project-card-2.png"
