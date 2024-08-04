@@ -47,7 +47,10 @@
 
   <div class="competition-intro">
     <h2 id="intro-title">让每一场比赛都精彩绝伦</h2>
-    <p id="intro-text">北京智慧土豆公司，致力于为竞赛团队提供全面、专业的解决方案，以增强其在各类比赛中的竞争力。</p>
+    <div id="intro-text">
+      <p>北京智慧土豆公司，致力于为竞赛团队提供全面、专业的解决方案，以增强其在各类比赛中的竞争力。</p>
+    </div>
+
     <el-row align="middle" justify="center" style="margin-top: 6.625rem;width: 100%;">
       <el-row class="intro-container" justify="space-evenly">
         <div id="intro-img1">
@@ -59,8 +62,11 @@
 
         <div id="intro-img2">
           <h2 id="competition-advising">竞赛机器人设计</h2>
-          <p id="advising-text">
+          <p id="advising-text" class="advising-text-desk" >
             公司注重实践和创新，不仅提供机器人的硬件设计和软件编程指导，还会帮助团队进行创新设计的思维训练。设计师和工程师团队会与学生紧密合作，确保设计的机器人能够在满足比赛规则的同时，具备较强的实战能力和创新点。整个设计过程中，团队会定期进行设计的测试和优化，以确保最终的机器人设计能够高效完成比赛任务，从而在竞赛中取得优异成绩。
+          </p>
+          <p id="advising-text-mobile">
+            公司注重实践和创新，不仅提供机器人的硬件设计和软件编程指导，还会帮助团队进行创新设计的思维训练。设计师和工程师团队会与学生紧密合作，确保设计的机器人能够在满足比赛规则的同时，具备较强的实战能力和创新点。
           </p>
         </div>
 
@@ -70,11 +76,10 @@
     </el-row>
   </div>
   <div class="past-projects">
-    <hr style="width: 75rem; background-color: rgba(99,116,182,0.2); height: 0.063rem; border: none">
+    <hr class="line" >
     <h2 id="past-projects-title">过往项目</h2>
-    <hr style="width: 75rem; background-color: rgba(99,116,182,0.2); height: 0.063rem; border: none">
+    <hr class="line">
     <h2 id="card-title">X大学智能车大赛方案设计</h2>
-
     <el-row align="middle" justify="center" style="width: 100%">
       <el-row class="past-projects-container" justify="space-between">
         <div id="card-content1">
@@ -82,6 +87,26 @@
             基于X大学信息学院对学习软硬件技术的具体需求，我们着手设计了智能车大赛规则。按照这些规则的要求，我们进一步设计并配置了比赛所需的硬件。最终，比赛在周密的准备和专业的组织下成功举行。</p>
           <p class="float" id="competition-float1">确定需求</p>
         </div>
+        <div class="carousel-container">
+          <el-carousel class="mobile-carousel">
+            <el-carousel-item>
+              <img class="carousel-img" src="../assets/competition-carousel-img1.png">
+            </el-carousel-item>
+            <el-carousel-item>
+              <img class="carousel-img" src="../assets/competition-carousel-img2.png">
+            </el-carousel-item>
+            <el-carousel-item>
+              <img class="carousel-img" src="../assets/competition-carousel-img3.png">
+            </el-carousel-item>
+            <el-carousel-item>
+              <img class="carousel-img" src="../assets/competition-carousel-img4.png">
+            </el-carousel-item>
+          </el-carousel>
+          <p class="float" id="competition-mobile-float1">确定需求</p>
+          <p class="float" id="competition-mobile-float2">硬件设计</p>
+          <p class="float" id="competition-mobile-float3">规则策划</p>
+        </div>
+
         <div id="card-content2">
           <img src="../assets/competition-img3.png" class="card-img1" alt="">
           <img src="../assets/competition-img4.png" class="card-img2" alt="">
@@ -112,15 +137,27 @@
     <el-row align="middle" justify="center" style="width: 100%;">
       <el-row justify="space-between" class="past-projects-container">
         <div id="card-content4" style="position: relative;">
-          <p class="card-text1" id="card-text2">
+          <p class="card-text1">
             在指导参加MakeX的队伍时，首先分析比赛要求和队伍的实际情况，然后提供一个包含技术指导、策略规划和实战训练的全面辅导方案。此外，公司会针对MakeX比赛的特点，帮助队伍设计能够高效完成比赛任务的机器人，并确保其设计既创新又实用。</p>
           <p class="float" id="competition-float4">确定需求</p>
+        </div>
+        <div class="carousel-container" id="carousel-container1">
+          <el-carousel class="mobile-carousel1">
+            <el-carousel-item class="carousel-item1">
+              <img class="carousel-img1" src="../assets/competition-img7.png">
+            </el-carousel-item>
+            <el-carousel-item class="carousel-item1">
+              <img class="carousel-img1" src="../assets/competition-img8.png">
+            </el-carousel-item>
+          </el-carousel>
+          <p class="float" id="competition-mobile-float4">确定需求</p>
+          <p class="float" id="competition-mobile-float5">方案确定</p>
+          <p class="float" id="competition-mobile-float6">成品交付</p>
         </div>
         <div id="card-content5">
           <img src="../assets/competition-img7.png" id="card-img3" alt="">
           <p class="float" id="competition-float5">方案确定 </p>
         </div>
-
         <div id="card-content6">
           <img src="../assets/competition-img8.png" id="card-img4" alt="">
           <p class="float" id="competition-float6">成品交付</p>
@@ -132,6 +169,11 @@
   <div class="information">
     <h2 id="card-title" style="color:#31354D; margin-bottom: 1.875rem">为您提供专业竞赛解决方案</h2>
     <p id="info-text">创赛精准、资源全面，专业定制竞赛方案。定制方案，全程服务，打造极致竞赛体验。</p>
+    <div class="info-text-area">
+      <p id="info-text1">创赛精准、资源全面，专业定制竞赛方案。</p>
+      <p id="info-text1" style="margin-top: -1rem">定制方案，全程服务，打造极致竞赛体验。</p>
+    </div>
+
     <el-row justify="center">
       <info-bubbles></info-bubbles>
     </el-row>
@@ -243,9 +285,6 @@ export default {
   background-image: url("../assets/card-content-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   position: relative;
   border-radius: 0.625rem;
 }
@@ -377,7 +416,7 @@ export default {
 .competition-intro {
   height: 100%;
   width: 100%;
-  margin-top: 59px;
+  margin-top: 3.75rem;
 }
 
 .overlay {
@@ -601,36 +640,56 @@ export default {
   margin-left: 16rem;
 }
 
+#advising-text-mobile{
+  display: none;
+}
+.line{
+  width: 75rem;
+  background-color: rgba(99,116,182,0.2);
+  height: 0.063rem;
+  border: none;
+}
+
+.info-text-area{
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
   .competition-intro {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
     margin-bottom: 10rem;
+    align-items: center;
+    justify-content: center;
   }
 
+
   .past-projects {
-    height: 200rem;
-    margin-bottom: 10rem;
+    height: 130rem;
+    margin-bottom: 20rem;
     margin-top: 0;
   }
 
   .carousel-container {
     height: 80rem;
   }
+  #carousel-container1{
+    height: 100rem;
+  }
 
   .el-carousel {
     height: 80rem;
   }
 
-  .carousel-container {
-    height: 80rem;
-  }
 
   #carousel-header {
+    margin-top: 25rem;
     font-size: 7rem;
   }
 
   #carousel-title1 {
-    margin-top: 35rem;
+    margin-top: 48rem;
   }
 
   #carousel-item1 {
@@ -653,7 +712,7 @@ export default {
   }
 
   .carousel-description {
-    line-height: 3rem;
+    line-height: 4.5rem;
   }
 
   #intro-title {
@@ -661,18 +720,27 @@ export default {
   }
 
   #intro-text {
+    letter-spacing: 0.5rem;
     font-size: 2.5rem;
     margin-top: 5rem;
+    line-height: 5rem;
+    width: 70rem;
+    text-align: left;
   }
 
   .intro-container {
-    width: 60rem;
+    width: 100%;
   }
 
   #intro-img1 {
-    width: 60rem;
-    height: 45rem;
+    width: 70rem;
+    height: 55rem;
     margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 
   #competition-advising {
@@ -680,84 +748,158 @@ export default {
     letter-spacing: 0.2rem;
     margin-top: 5rem;
   }
+  .advising-text-desk{
+    display: none;
+  }
 
   #advising-text {
-    font-size: 2rem;
-    line-height: 3rem;
-    margin-top: 8rem;
+    font-size: 3rem;
+    line-height: 5rem;
+    margin-top: 3rem;
+    letter-spacing: 0.2rem;
   }
+
+  #advising-text-mobile{
+    display: flex;
+    font-size: 3.2rem;
+    line-height: 5rem;
+    margin-top: 7rem;
+    letter-spacing: 0.3rem;
+    color: white;
+    font-weight: 300;
+    font-family: "Microsoft YaHei", sans-serif;
+    margin-left: 1.875rem;
+    margin-right: 1.875rem;
+    text-align: center;
+  }
+
 
 
   #intro-img2 {
-    width: 60rem;
-    height: 45rem;
+    width: 70rem;
+    height: 55rem;
+  }
+
+  .line{
+    display: none;
   }
 
   #past-projects-title {
-    font-size: 6rem;
+    font-size: 8rem;
+    letter-spacing: 1.2rem;
+    margin-bottom: 13rem;
   }
 
   #card-title {
-    font-size: 4rem;
+    font-size: 5rem;
+    letter-spacing: 0.8rem;
+    margin-bottom: 7rem;
+
   }
 
   .past-projects-container {
-    margin-left: 15rem;
-    width: 60rem;
+    margin-left: 0;
+    width: 100%;
     height: 100rem;
+
   }
 
+
   #card-content1 {
-    width: 46rem;
-    height: 45rem;
+    width: 100%;
+    height: 23rem;
+    background-image: none;
     display: flex;
-    text-align: center;
-    align-items: center;
     justify-content: center;
-    margin-bottom: 10rem;
   }
 
   #card-content2 {
-    width: 46rem;
-    height: 45rem;
-    display: flex;
-
+    display: none;
   }
 
   #card-content3 {
-    width: 46rem;
-    height: 45rem;
-    margin-bottom: 10rem;
+    display: none;
   }
 
   .card-text1 {
-    width: 35rem;
-    height: 20.25rem;
-    font-size: 3rem;
-    line-height: 4rem;
-    letter-spacing: 0.3rem;
-    padding-bottom: 10rem;
-    margin-top: -8rem;
-    margin-bottom: 0;
+    width: 90rem;
+    font-size: 3.3rem;
+    line-height: 4.3rem;
+    letter-spacing: 0.4rem;
+    margin-top: 0rem;
+    color: black;
+    text-align: left;
 
   }
 
   #competition-float1 {
-    margin-left: 33rem;
-    margin-top: 45rem;
-    font-size: 2.3rem;
-    width: 10rem;
+    display: none;
+  }
+  #competition-mobile-float1{
+    width: 16rem;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    position: absolute;
+    bottom: 5rem;
+    left: 25rem;
+  }
+  #competition-mobile-float2{
+    width: 16rem;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    position: absolute;
+    bottom: 5rem;
+  }
+  #competition-mobile-float3{
+    width: 16rem;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    position: absolute;
+    bottom: 5rem;
+    right: 25rem;
+  }
+  #competition-mobile-float4{
+    width: 16rem;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    position: absolute;
+    bottom: 8rem;
+    left: 25rem;
+  }
+  #competition-mobile-float5{
+    width: 16rem;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    position: absolute;
+    bottom: 8rem;
+  }
+  #competition-mobile-float6{
+    width: 16rem;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    position: absolute;
+    bottom: 8rem;
+    right: 25rem;
   }
 
-  #card-content2 {
-    width: 46rem;
-    height: 45rem;
+  .carousel-container{
+    position: relative;
     display: flex;
-    text-align: center;
-    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: -10rem;
     justify-content: center;
-    margin-bottom: 10rem;
   }
+  .mobile-carousel{
+    width: 75rem;
+    height: 55rem;
+  }
+  .carousel-img{
+    width: 75rem;
+    height: 55rem;
+    border-radius: 1rem;
+  }
+
 
   .card-img1 {
     width: 60rem;
@@ -802,24 +944,18 @@ export default {
   }
 
   #card-content4 {
-    width: 46rem;
-    height: 60rem;
+    //margin-top: 10rem;
+    width: 100%;
+    height: 23rem;
+    margin-bottom: 20rem;
+    background-image: none;
     display: flex;
-    text-align: center;
-    align-items: center;
     justify-content: center;
-    margin-bottom: 10rem;
   }
 
-  #card-text2 {
-    margin-top: -20rem;
-  }
 
   #competition-float4 {
-    font-size: 2rem;
-    width: 8rem;
-    margin-top: 60rem;
-    margin-right: -23rem;
+    display: none;
   }
 
   #card-img3 {
@@ -834,31 +970,51 @@ export default {
   }
 
   #card-content5 {
-    width: 60rem;
-    justify-content: left;
-    margin-bottom: 10rem;
+    display: none;
   }
 
   #card-content6 {
-    width: 40rem;
+    display: none;
   }
 
   #competition-float5 {
-    font-size: 2rem;
-    width: 8rem;
-    margin-left: 35rem;
+    display: none;
   }
 
   #competition-float6 {
-    font-size: 2rem;
-    width: 8rem;
-    margin-left: 35rem;
+    display: none;
   }
 
   #info-text {
-    margin-top: 3rem;
-    font-size: 2.5rem;
+    display: none;
+
   }
+
+  .info-text-area{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+  }
+  #info-text1{
+    font-family: "Microsoft YaHei", sans-serif;
+    color: black;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+  }
+  .mobile-carousel1{
+    width: 55rem;
+    height: 85rem;
+  }
+  .carousel-img1{
+    width: 55rem;
+    height: 75rem;
+    border-radius: 1rem;
+  }
+
+
 }
 
 
