@@ -1056,11 +1056,14 @@ export default {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 150rem;
+    height: 170rem;
     margin-top: 15rem;
     margin-bottom: 5rem;
     text-align: center;
     align-items: center;
+    background: url("../assets/home-pastproj-bg1.png") no-repeat  center top,
+                url("../assets/home-pastproj-bg2.png") no-repeat center bottom;
+    background-size: contain, contain;
   }
   .competition-subtitle{
     font-size: 4.75rem;

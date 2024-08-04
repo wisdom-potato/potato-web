@@ -27,7 +27,6 @@
         <el-row class="carousel-container" align="middle" justify="start" style="width: 100%">
           <el-row class="carousel-container" justify="space-between"
                   style="flex-direction: column; width: 100rem; margin-left: 3.5rem">
-
             <div class="carousel-title" id="carousel-title1">
               ROBOMASTER
             </div>
