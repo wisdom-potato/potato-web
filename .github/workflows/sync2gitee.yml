@@ -2,9 +2,7 @@
 name: sync2gitee
 on:
   push:
-    branches:
-      - master
-      - dev
+    branches: ['main']
 jobs:
   repo-sync:
     env:
