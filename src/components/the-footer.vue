@@ -15,7 +15,7 @@
   </el-row>
 
   <!--页脚蓝条-->
-  <el-row class="company-container" justify="center" align="middle">北京智慧土豆有限公司</el-row>
+  <el-row class="company-container" justify="center" align="middle">北京智慧土豆科技有限公司</el-row>
 
 </template>
 

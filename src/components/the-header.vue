@@ -12,13 +12,12 @@
     <!--标签-->
     <el-col :span="17" :offset="1" class="menu-buttons">
       <el-row justify="end" align="middle">
-
         <el-col :span="4">
           <el-link @click="router.push({name: 'Home'});scrollToAnchor('content');">首页</el-link>
         </el-col>
 
         <el-col :span="4">
-          <el-link>开源资料</el-link>
+          <el-link @click="goToExternalLink('https://potato-documentation.readthedocs.io/zh-cn/latest/MP-0/index.html')">开源资料</el-link>
         </el-col>
 
         <el-col :span="4">
@@ -76,6 +75,10 @@ import {useRouter} from "vue-router";
 import {ref} from "vue";
 
 const router = useRouter();
+
+function goToExternalLink(link) {
+  window.open(link);
+}
 
 let showCollapseMenu = ref(false);
 
