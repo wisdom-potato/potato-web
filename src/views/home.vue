@@ -13,15 +13,14 @@
   </el-row>
 
 
-    <div class="home-container">
-      <div class="title-container">
-        <div class="overlay">
-          <h1 class="title">智慧土豆</h1>
-          <h2 class="subtitle">机器人技术支持专家</h2>
-        </div>
+  <div class="home-container">
+    <div class="title-container">
+      <div class="overlay">
+        <h1 class="title">智慧土豆</h1>
+        <h2 class="subtitle">机器人技术支持专家</h2>
       </div>
     </div>
-
+  </div>
 
 
   <el-row align="middle" justify="center" class="home-content-left">
@@ -31,7 +30,7 @@
         <img src="../assets/star.png" class="star" alt="">
         <br>
         <span id="competition-english-text">Competition Solutions</span>
-        <div id="competition-description" >
+        <div id="competition-description">
           <p style="padding:2.063rem 1.375rem 1.563rem 1.313rem">
             在机器人竞赛学习与教育领域，我们致力于为每位学员提供个性化定制的学习指导方案和专业化的技能培训，帮助他们实现学习上的突破和提升。无论是机械设计、电子电路、编程语言还是控制算法，我们都会全力以赴，为学员创造最佳的学习环境和机会，助力他们在机器人竞赛中取得成功。</p>
         </div>
@@ -42,7 +41,6 @@
         <p class="float" id="competition-float2">竞赛机器人设计</p>
         <image-zoom id="home-solution-img" :src="getAssetsFile('home-solution-image.png')"></image-zoom>
       </div>
-
 
 
     </el-row>
@@ -61,7 +59,7 @@
       </div>
 
       <div id="hardware-text-col">
-        <div class="hardware-text-container" >
+        <div class="hardware-text-container">
           <img src="../assets/star.png" class="star" style="margin-right: 0.938rem;" alt="">
           <span id="hardware-text">硬件产品</span> <br>
           <span id="hardware-english-text">Hardware Products</span>
@@ -90,7 +88,7 @@
             我们的专业Robomaster、Robocon、FRC等竞赛培训旨在为学生提供全面且深入的竞赛准备，帮助他们在机器人领域斩获佳绩，并为未来STEM领域的学习和发展奠定坚实基础。通过我们的培训服务，学生将能够掌握机器人竞赛所需的专业技能，培养创新思维和团队合作能力，为未来的成功铺就坚实的道路。</p>
         </div>
       </div>
-      <div class="solution-image" >
+      <div class="solution-image">
         <p class="float" id="edu-float1">专业师资</p>
         <p class="float" id="edu-float2">参与比赛</p>
         <p class="float" id="edu-float3">培养兴趣</p>
@@ -110,28 +108,29 @@
             </div>
             <div class="project-card" style="position: relative">
               <div class="black-filter">
-                <el-carousel  motion-blur="true" indicator-position="none" arrow="never"  style="width: 29.438rem;height:25rem; position:absolute; right: 1rem; top:4.25rem">
-                <div class="black-filter">
-                  <el-carousel-item>
-                    <img class="home-carouselpic1" src="../assets/project-card.png" alt="">
-                  </el-carousel-item>
+                <el-carousel motion-blur="true" indicator-position="none" arrow="never"
+                             style="width: 29.438rem;height:25rem; position:absolute; right: 1rem; top:4.25rem">
+                  <div class="black-filter">
+                    <el-carousel-item>
+                      <img class="home-carouselpic1" src="../assets/project-card.png" alt="">
+                    </el-carousel-item>
 
-                  <el-carousel-item>
-                    <img src="../assets/home-car1.png"
-                         class="home-carouselpic1" alt="">
-                  </el-carousel-item>
+                    <el-carousel-item>
+                      <img src="../assets/home-car1.png"
+                           class="home-carouselpic1" alt="">
+                    </el-carousel-item>
 
-                  <el-carousel-item>
-                    <img src="../assets/home-car2.png"
-                         class="home-carouselpic1" alt="">
-                  </el-carousel-item>
+                    <el-carousel-item>
+                      <img src="../assets/home-car2.png"
+                           class="home-carouselpic1" alt="">
+                    </el-carousel-item>
 
-                  <el-carousel-item>
-                    <img src="../assets/home-car3.png"
-                         class="home-carouselpic1" alt="">
-                  </el-carousel-item>
-                </div>
-              </el-carousel>
+                    <el-carousel-item>
+                      <img src="../assets/home-car3.png"
+                           class="home-carouselpic1" alt="">
+                    </el-carousel-item>
+                  </div>
+                </el-carousel>
               </div>
 
               <p id="card-title">x大学智能车大赛方案设计</p>
@@ -160,10 +159,11 @@
           <el-row justify="space-between" style="width: 80rem">
             <div class="project-card">
               <div class="black-filter" style="position: relative">
-                <el-carousel motion-blur="true" arrow="never" indicator-position="none" style="width: 21.75rem;height:26.875rem; position:absolute; margin-left: 40.5rem; margin-top:2.363rem">
+                <el-carousel motion-blur="true" arrow="never" indicator-position="none"
+                             style="width: 21.75rem;height:26.875rem; position:absolute; margin-left: 40.5rem; margin-top:2.363rem">
                   <div class="black-filter">
                     <el-carousel-item>
-                      <img class="home-carouselpic2"  src="../assets/project-card-2.png"
+                      <img class="home-carouselpic2" src="../assets/project-card-2.png"
                            alt="">
                     </el-carousel-item>
 
@@ -174,7 +174,7 @@
 
                     <el-carousel-item>
                       <img src="../assets/home-competition2.png"
-                           class="home-carouselpic2"  alt="">
+                           class="home-carouselpic2" alt="">
                     </el-carousel-item>
                   </div>
                 </el-carousel>
@@ -333,7 +333,7 @@ export default {
 @header-height: 5rem;
 @mobile-header-height: 12rem;
 
-.home-past-project-mobile{
+.home-past-project-mobile {
   display: none;
 }
 
@@ -572,7 +572,8 @@ export default {
 #home-solution {
   width: 71.5rem;
 }
-#home-ed{
+
+#home-ed {
   width: 71.5rem;
 }
 
@@ -792,20 +793,22 @@ export default {
   width: 100%;
   z-index: 100;
 }
-.el-carousel__item{
+
+.el-carousel__item {
   height: 27rem;
   //overflow: visible;
 }
-.home-carouselpic1{
+
+.home-carouselpic1 {
   width: 27.438rem;
-  height:20rem;
+  height: 20rem;
   border-radius: 2rem;
   border: 0.4rem solid #FFFFFF;
 }
 
-.home-carouselpic2{
+.home-carouselpic2 {
   width: 18.75rem;
-  height:23.875rem;
+  height: 23.875rem;
   border-radius: 2rem;
   border: 0.4rem solid #FFFFFF;
 }
@@ -824,21 +827,22 @@ export default {
   justify-content: center;
 }
 
-.star{
+.star {
   width: 3.25rem;
   height: 3.25rem;
 }
 
-.hardware-img{
+.hardware-img {
   height: 30rem;
   position: relative;
-  width:35.063rem;
+  width: 35.063rem;
 }
 
-.hardware-text-container{
+.hardware-text-container {
   text-align: right;
 }
-.home-about-us-text-mobile{
+
+.home-about-us-text-mobile {
   display: none;
 }
 
@@ -846,17 +850,20 @@ export default {
   .menu-container {
     top: @mobile-header-height;
   }
-  .home-container{
+
+  .home-container {
     height: 80rem;
   }
 
-  .title{
+  .title {
     font-size: 8rem;
   }
-  .subtitle{
+
+  .subtitle {
     font-size: 3rem;
   }
-  .star{
+
+  .star {
     display: none;
   }
 
@@ -864,7 +871,7 @@ export default {
     height: 70rem;
   }
 
-  #competition-text-col{
+  #competition-text-col {
     width: 71.5rem;
     height: 40rem;
     justify-content: center;
@@ -874,30 +881,30 @@ export default {
     margin-bottom: 10rem;
   }
 
-  #competition-text{
+  #competition-text {
     font-size: 6rem;
     letter-spacing: 1.2rem;
     margin-bottom: 2rem;
   }
 
-  #competition-english-text{
+  #competition-english-text {
     font-size: 5rem;
     margin-bottom: 2rem;
   }
 
-  #competition-description{
+  #competition-description {
     width: 80rem;
     border-radius: 0;
     font-family: "Microsoft YaHei", sans-serif;
     font-size: 3rem;
-    background-color: rgb(246,249,255) ;
+    background-color: rgb(246, 249, 255);
     line-height: 3.5rem;
     letter-spacing: 0.5rem;
     box-shadow: 0 0 0 0;
 
   }
 
-  #home-solution{
+  #home-solution {
     margin-bottom: 15rem;
   }
 
@@ -907,7 +914,7 @@ export default {
     margin-left: 8rem;
   }
 
-  #home-solution-img{
+  #home-solution-img {
     width: 50.938rem;
     height: 30.438rem;
     position: absolute;
@@ -915,24 +922,24 @@ export default {
     margin-left: 4.125rem;
   }
 
-  #competition-float1{
+  #competition-float1 {
     font-size: 2rem;
     width: 8rem;
     margin-top: 7.3rem;
   }
 
-  #competition-float2{
+  #competition-float2 {
     font-size: 2rem;
     width: 14rem;
     margin-top: 32rem;
     margin-left: 32.125rem;
   }
 
-  #home-hardware{
+  #home-hardware {
     flex-direction: column-reverse;
   }
 
-  #hardware-text-col{
+  #hardware-text-col {
     width: 71.5rem;
     height: 60rem;
     justify-content: center;
@@ -941,18 +948,18 @@ export default {
     flex-direction: column;
   }
 
-  #hardware-text{
+  #hardware-text {
     font-size: 6rem;
     letter-spacing: 1.2rem;
     margin-bottom: 2rem;
   }
 
-  #hardware-english-text{
+  #hardware-english-text {
     font-size: 5rem;
     margin-bottom: 2rem;
   }
 
-  .hardware-text-container{
+  .hardware-text-container {
     height: 15rem;
     justify-content: center;
     align-items: center;
@@ -960,10 +967,10 @@ export default {
     flex-direction: column;
   }
 
-  .hardware-img{
+  .hardware-img {
     height: 50rem;
     position: relative;
-    width:75.063rem;
+    width: 75.063rem;
   }
 
   #home-product-img {
@@ -1012,7 +1019,7 @@ export default {
     height: 100rem;
   }
 
-  #stem-ed{
+  #stem-ed {
     margin-top: 0;
   }
 
@@ -1048,11 +1055,12 @@ export default {
     font-size: 2rem;
 
   }
-  .home-past-project{
+
+  .home-past-project {
     display: none;
   }
 
-  .home-past-project-mobile{
+  .home-past-project-mobile {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -1061,11 +1069,12 @@ export default {
     margin-bottom: 5rem;
     text-align: center;
     align-items: center;
-    background: url("../assets/home-pastproj-bg1.png") no-repeat  center top,
-                url("../assets/home-pastproj-bg2.png") no-repeat center bottom;
+    background: url("../assets/home-pastproj-bg1.png") no-repeat center top,
+    url("../assets/home-pastproj-bg2.png") no-repeat center bottom;
     background-size: contain, contain;
   }
-  .competition-subtitle{
+
+  .competition-subtitle {
     font-size: 4.75rem;
     line-height: 4.949rem;
     font-weight: 700;
@@ -1075,14 +1084,16 @@ export default {
     align-items: center;
     margin-top: 5rem;
   }
-  .competition-container{
+
+  .competition-container {
     margin-top: 5rem;
     width: 100%;
     height: 45rem;
     display: flex;
     flex-direction: row;
   }
-  .competition-text-description{
+
+  .competition-text-description {
     height: 45rem;
     width: 30rem;
     display: flex;
@@ -1091,7 +1102,8 @@ export default {
     text-align: left;
     margin-left: 20rem;
   }
-  .comp-subtext{
+
+  .comp-subtext {
     font-family: "Microsoft YaHei";
     font-weight: 700;
     font-size: 2.5rem;
@@ -1099,17 +1111,18 @@ export default {
     letter-spacing: 0.12rem;
     color: #110A0B;
   }
-  .carousel-container{
+
+  .carousel-container {
     width: 50rem;
     height: 45rem;
     margin-left: 8rem;
   }
 
-  #about-title-en{
+  #about-title-en {
     display: none;
   }
 
-  #about-title-cn{
+  #about-title-cn {
     line-height: 4.949rem;
     font-weight: 700;
     color: #31354D;
@@ -1119,10 +1132,12 @@ export default {
     letter-spacing: 1.2rem;
     margin-bottom: 2rem;
   }
-  .home-about-us-text{
+
+  .home-about-us-text {
     display: none;
   }
-  .home-about-us-text-mobile{
+
+  .home-about-us-text-mobile {
     height: 80rem;
     width: 100%;
     display: flex;
@@ -1130,7 +1145,8 @@ export default {
     //justify-content: center;
     align-items: center;
   }
-  .home-about-mobile-container{
+
+  .home-about-mobile-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1144,24 +1160,22 @@ export default {
     background-repeat: no-repeat;
     text-align: justify;
   }
-  #logo{
+
+  #logo {
     width: 60rem;
     height: 13rem;
     margin-right: 10rem;
   }
-  #home-about-text{
+
+  #home-about-text {
     font-size: 2.5rem;
     line-height: 5rem;
 
   }
 
-  .el-carousel__item{
+  .el-carousel__item {
     height: 35rem;
   }
-
-
-
-
 
 
 }</style>

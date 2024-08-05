@@ -61,7 +61,7 @@
 
         <div id="intro-img2">
           <h2 id="competition-advising">竞赛机器人设计</h2>
-          <p id="advising-text" class="advising-text-desk" >
+          <p id="advising-text" class="advising-text-desk">
             公司注重实践和创新，不仅提供机器人的硬件设计和软件编程指导，还会帮助团队进行创新设计的思维训练。设计师和工程师团队会与学生紧密合作，确保设计的机器人能够在满足比赛规则的同时，具备较强的实战能力和创新点。整个设计过程中，团队会定期进行设计的测试和优化，以确保最终的机器人设计能够高效完成比赛任务，从而在竞赛中取得优异成绩。
           </p>
           <p id="advising-text-mobile">
@@ -75,7 +75,7 @@
     </el-row>
   </div>
   <div class="past-projects">
-    <hr class="line" >
+    <hr class="line">
     <h2 id="past-projects-title">过往项目</h2>
     <hr class="line">
     <h2 id="card-title">X大学智能车大赛方案设计</h2>
@@ -639,17 +639,18 @@ export default {
   margin-left: 16rem;
 }
 
-#advising-text-mobile{
+#advising-text-mobile {
   display: none;
 }
-.line{
+
+.line {
   width: 75rem;
-  background-color: rgba(99,116,182,0.2);
+  background-color: rgba(99, 116, 182, 0.2);
   height: 0.063rem;
   border: none;
 }
 
-.info-text-area{
+.info-text-area {
   display: none;
 }
 #competition-mobile-float1{
@@ -692,7 +693,8 @@ export default {
   .carousel-container {
     height: 80rem;
   }
-  #carousel-container1{
+
+  #carousel-container1 {
     height: 100rem;
   }
 
@@ -766,7 +768,8 @@ export default {
     letter-spacing: 0.2rem;
     margin-top: 5rem;
   }
-  .advising-text-desk{
+
+  .advising-text-desk {
     display: none;
   }
 
@@ -777,7 +780,7 @@ export default {
     letter-spacing: 0.2rem;
   }
 
-  #advising-text-mobile{
+  #advising-text-mobile {
     display: flex;
     font-size: 3.2rem;
     line-height: 5rem;
@@ -792,13 +795,12 @@ export default {
   }
 
 
-
   #intro-img2 {
     width: 70rem;
     height: 55rem;
   }
 
-  .line{
+  .line {
     display: none;
   }
 
@@ -853,7 +855,8 @@ export default {
   #competition-float1 {
     display: none;
   }
-  #competition-mobile-float1{
+
+  #competition-mobile-float1 {
     width: 16rem;
     font-size: 3rem;
     letter-spacing: 0.2rem;
@@ -861,14 +864,16 @@ export default {
     bottom: 5rem;
     left: 25rem;
   }
-  #competition-mobile-float2{
+
+  #competition-mobile-float2 {
     width: 16rem;
     font-size: 3rem;
     letter-spacing: 0.2rem;
     position: absolute;
     bottom: 5rem;
   }
-  #competition-mobile-float3{
+
+  #competition-mobile-float3 {
     width: 16rem;
     font-size: 3rem;
     letter-spacing: 0.2rem;
@@ -876,7 +881,8 @@ export default {
     bottom: 5rem;
     right: 25rem;
   }
-  #competition-mobile-float4{
+
+  #competition-mobile-float4 {
     width: 16rem;
     font-size: 3rem;
     letter-spacing: 0.2rem;
@@ -884,14 +890,16 @@ export default {
     bottom: 8rem;
     left: 25rem;
   }
-  #competition-mobile-float5{
+
+  #competition-mobile-float5 {
     width: 16rem;
     font-size: 3rem;
     letter-spacing: 0.2rem;
     position: absolute;
     bottom: 8rem;
   }
-  #competition-mobile-float6{
+
+  #competition-mobile-float6 {
     width: 16rem;
     font-size: 3rem;
     letter-spacing: 0.2rem;
@@ -900,7 +908,7 @@ export default {
     right: 25rem;
   }
 
-  .carousel-container{
+  .carousel-container {
     position: relative;
     display: flex;
     width: 100%;
@@ -908,11 +916,13 @@ export default {
     margin-top: -10rem;
     justify-content: center;
   }
-  .mobile-carousel{
+
+  .mobile-carousel {
     width: 75rem;
     height: 55rem;
   }
-  .carousel-img{
+
+  .carousel-img {
     width: 75rem;
     height: 55rem;
     border-radius: 1rem;
@@ -1008,13 +1018,14 @@ export default {
 
   }
 
-  .info-text-area{
+  .info-text-area {
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
     margin-bottom: 10rem;
   }
-  #info-text1{
+
+  #info-text1 {
     font-family: "Microsoft YaHei", sans-serif;
     color: black;
     font-weight: 400;
@@ -1022,11 +1033,13 @@ export default {
     line-height: 2rem;
     letter-spacing: 0.1rem;
   }
-  .mobile-carousel1{
+
+  .mobile-carousel1 {
     width: 55rem;
     height: 85rem;
   }
-  .carousel-img1{
+
+  .carousel-img1 {
     width: 55rem;
     height: 75rem;
     border-radius: 1rem;

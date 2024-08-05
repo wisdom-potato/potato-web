@@ -17,7 +17,9 @@
         </el-col>
 
         <el-col :span="4">
-          <el-link @click="goToExternalLink('https://potato-documentation.readthedocs.io/zh-cn/latest/MP-0/index.html')">开源资料</el-link>
+          <el-link
+              @click="goToExternalLink('https://potato-documentation.readthedocs.io/zh-cn/latest/MP-0/index.html')">开源资料
+          </el-link>
         </el-col>
 
         <el-col :span="4">
