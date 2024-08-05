@@ -479,7 +479,7 @@ export default {
 }
 
 #carousel-item2 {
-  background-image: url("src/assets/robomaster.png");
+  background-image: url("../assets/robomaster.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -652,6 +652,25 @@ export default {
 .info-text-area{
   display: none;
 }
+#competition-mobile-float1{
+  display: none;
+}
+#competition-mobile-float2{
+  display: none;
+}
+#competition-mobile-float3{
+  display: none;
+}
+#competition-mobile-float4{
+  display: none;
+}
+#competition-mobile-float5{
+  display: none;
+}
+#competition-mobile-float6{
+  display: none;
+}
+
 
 @media screen and (max-width: 768px) {
   .competition-intro {
