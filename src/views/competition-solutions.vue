@@ -78,7 +78,7 @@
     <hr class="line">
     <h2 id="past-projects-title">过往项目</h2>
     <hr class="line">
-    <h2 id="card-title">X大学智能车大赛方案设计</h2>
+    <h2 id="card-title1">X大学智能车大赛方案设计</h2>
     <el-row align="middle" justify="center" style="width: 100%">
       <el-row class="past-projects-container" justify="space-between">
         <div id="card-content1">
@@ -246,6 +246,12 @@ export default {
 </script>
 
 <style scoped lang="less">
+@font-face {
+  font-family: 'TT Supermolot';
+  src: url('../fonts/TT Supermolot Black Italic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
 #info-text {
   font-family: "Microsoft YaHei", sans-serif;
   color: black;
@@ -320,6 +326,16 @@ export default {
 }
 
 #card-title {
+  font-family: "TT Supermolot", sans-serif;
+  font-weight: 700;
+  font-size: 2.188rem;
+  line-height: 2.887rem;
+  letter-spacing: 0.12rem;
+  color: #6374B6;
+  text-align: center;
+}
+
+#card-title1 {
   font-family: "Microsoft YaHei", sans-serif;
   font-weight: 700;
   font-size: 2.188rem;
@@ -485,6 +501,7 @@ export default {
   background-size: cover;
   height: 50rem;
 }
+
 
 #carousel-title1 {
   margin-top: 30rem;

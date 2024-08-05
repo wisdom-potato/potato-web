@@ -332,6 +332,13 @@ export default {
 <style scoped lang="less">
 @header-height: 5rem;
 @mobile-header-height: 12rem;
+@font-face {
+  font-family: 'TT Supermolot';
+  src: url('../fonts/TT Supermolot Black Italic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
 
 .home-past-project-mobile {
   display: none;
