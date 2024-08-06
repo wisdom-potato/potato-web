@@ -855,19 +855,33 @@ export default {
 
 @media screen and (max-width: 768px) {
   .menu-container {
+    display: none;
     top: @mobile-header-height;
   }
 
   .home-container {
     height: 80rem;
+    margin-bottom: 10rem;
   }
 
   .title {
-    font-size: 8rem;
+    font-family: Microsoft YaHei;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.81px;
+    letter-spacing: 0.67em;
+    text-align: center;
+
   }
 
   .subtitle {
-    font-size: 3rem;
+    font-family: Microsoft YaHei;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18.19px;
+    letter-spacing: 0.67em;
+    text-align: center;
+
   }
 
   .star {
@@ -889,9 +903,17 @@ export default {
   }
 
   #competition-text {
-    font-size: 6rem;
-    letter-spacing: 1.2rem;
-    margin-bottom: 2rem;
+    //font-size: 6rem;
+    //letter-spacing: 1.2rem;
+    //margin-bottom: 2rem;
+
+
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42.23px;
+    letter-spacing: 0.12em;
+    text-align: left;
+
   }
 
   #competition-english-text {
@@ -900,14 +922,17 @@ export default {
   }
 
   #competition-description {
-    width: 80rem;
-    border-radius: 0;
-    font-family: "Microsoft YaHei", sans-serif;
-    font-size: 3rem;
+    width: 90rem;
     background-color: rgb(246, 249, 255);
-    line-height: 3.5rem;
-    letter-spacing: 0.5rem;
     box-shadow: 0 0 0 0;
+
+    font-family: Microsoft YaHei;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    text-align: justify;
+    margin-bottom: 30px;
 
   }
 
@@ -956,9 +981,11 @@ export default {
   }
 
   #hardware-text {
-    font-size: 6rem;
-    letter-spacing: 1.2rem;
-    margin-bottom: 2rem;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42.23px;
+    letter-spacing: 0.12em;
+    text-align: left;
   }
 
   #hardware-english-text {
@@ -972,6 +999,15 @@ export default {
     align-items: center;
     display: flex;
     flex-direction: column;
+  }
+  #past-project-header{
+    //font-family: Microsoft YaHei;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42.23px;
+    letter-spacing: 0.12em;
+    text-align: left;
+
   }
 
   .hardware-img {
@@ -1021,9 +1057,15 @@ export default {
   }
 
   .home-content-left {
-    margin-top: 11.25rem;
-    margin-bottom: 5.125rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    height: 110rem;
+  }
+
+  .home-content-right {
     height: 100rem;
+    margin-top: 5rem;
+    margin-bottom: 0;
   }
 
   #stem-ed {
@@ -1071,25 +1113,23 @@ export default {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 170rem;
-    margin-top: 15rem;
+    height: 160rem;
+    margin-top: 5rem;
     margin-bottom: 5rem;
     text-align: center;
     align-items: center;
-    background: url("../assets/home-pastproj-bg1.png") no-repeat center top,
-    url("../assets/home-pastproj-bg2.png") no-repeat center bottom;
-    background-size: contain, contain;
+    background: url("../assets/home-pastproj-bg1.png") no-repeat center 20%,
+    url("../assets/home-pastproj-bg2.png") no-repeat center 130%;
+    background-size: 110%,110%;
   }
 
   .competition-subtitle {
-    font-size: 4.75rem;
-    line-height: 4.949rem;
+    font-family: Microsoft YaHei;
+    font-size: 18px;
     font-weight: 700;
-    color: #31354D;
-    letter-spacing: 0.05rem;
-    font-family: "Microsoft YaHei", sans-serif;
-    align-items: center;
-    margin-top: 5rem;
+    line-height: 23.76px;
+    letter-spacing: 0.12em;
+    text-align: left;
   }
 
   .competition-container {
@@ -1101,22 +1141,22 @@ export default {
   }
 
   .competition-text-description {
-    height: 45rem;
-    width: 30rem;
+    height: 40rem;
+    width: 45rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    margin-left: 20rem;
+    margin-left: 10rem;
   }
 
   .comp-subtext {
-    font-family: "Microsoft YaHei";
-    font-weight: 700;
-    font-size: 2.5rem;
-    line-height: 1.2rem;
-    letter-spacing: 0.12rem;
-    color: #110A0B;
+    font-family: Microsoft YaHei;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 5.8px;
+    letter-spacing: 0.12em;
+    text-align: left;
   }
 
   .carousel-container {
@@ -1130,14 +1170,12 @@ export default {
   }
 
   #about-title-cn {
-    line-height: 4.949rem;
+    font-family: Microsoft YaHei;
+    font-size: 32px;
     font-weight: 700;
-    color: #31354D;
-    font-family: "Microsoft YaHei", sans-serif;
-    align-items: center;
-    font-size: 6rem;
-    letter-spacing: 1.2rem;
-    margin-bottom: 2rem;
+    line-height: 32.23px;
+    letter-spacing: 0.12em;
+    text-align: left;
   }
 
   .home-about-us-text {
@@ -1145,7 +1183,7 @@ export default {
   }
 
   .home-about-us-text-mobile {
-    height: 80rem;
+    height: 90rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1169,14 +1207,18 @@ export default {
   }
 
   #logo {
-    width: 60rem;
-    height: 13rem;
-    margin-right: 10rem;
+    width: 334px;
+    height: 78px;
+
+    gap: 0px;
   }
 
   #home-about-text {
-    font-size: 2.5rem;
-    line-height: 5rem;
+    width: 360px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.1em;
 
   }
 
