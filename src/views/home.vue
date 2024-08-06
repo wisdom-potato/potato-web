@@ -1088,15 +1088,15 @@ export default {
   }
 
   .home-content-left {
-    margin-top: 5rem;
+    margin-top: 0rem;
     margin-bottom: 5rem;
     height: 150rem;
   }
 
   .home-content-right {
-    height: 100rem;
-    margin-top: 5rem;
-    margin-bottom: 0;
+    height: 110rem;
+    margin-top: 10rem;
+    margin-bottom: 0rem;
   }
 
   #stem-ed {
