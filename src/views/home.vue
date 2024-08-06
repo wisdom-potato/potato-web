@@ -228,9 +228,6 @@
       <div class="carousel-container">
         <el-carousel style="height: 35rem; width: 50rem; margin-top: 3rem" arrow="never" indicator-position="none">
           <el-carousel-item>
-            <img style="height: 35rem; width: 20rem" src="../assets/past-mobile1.png">
-          </el-carousel-item>
-          <el-carousel-item>
             <img style="height: 35rem; width: 50rem" src="../assets/past-mobile2.png">
           </el-carousel-item>
           <el-carousel-item>
