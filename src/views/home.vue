@@ -1196,8 +1196,8 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 1rem;
-    width: 70.063rem;
+    border-radius: 2rem;
+    width: 380px;
     margin-top: 5rem;
     background-image: url("../assets/about-bg.png");
     background-position: center;
