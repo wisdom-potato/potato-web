@@ -41,6 +41,9 @@
         <p class="float" id="competition-float2">竞赛机器人设计</p>
         <image-zoom id="home-solution-img" :src="getAssetsFile('home-solution-image.png')"></image-zoom>
       </div>
+      <div class="solution-img-mobile">
+        <img class="mobile-img1" src="../assets/solution-img-mobile.png">
+      </div>
 
 
     </el-row>
@@ -56,6 +59,9 @@
         <p class="float" id="hardware1-float">自研硬件</p>
         <p class="float" id="hardware2-float">开发平台</p>
 
+      </div>
+      <div class="solution-img-mobile">
+        <img class="mobile-img3" src="../assets/solution-img-mobile3.png">
       </div>
 
       <div id="hardware-text-col">
@@ -93,6 +99,9 @@
         <p class="float" id="edu-float2">参与比赛</p>
         <p class="float" id="edu-float3">培养兴趣</p>
         <image-zoom id="home-steam-ed-img" :src="getAssetsFile('steam-education.png')"></image-zoom>
+      </div>
+      <div class="solution-img-mobile">
+        <img class="mobile-img2" src="../assets/solution-img-mobile2.png">
       </div>
     </el-row>
   </el-row>
@@ -365,6 +374,9 @@ export default {
   height: 9.938rem;
   margin-top: 3.375rem;
   margin-bottom: 2.875rem;
+}
+.solution-img-mobile{
+  display: none;
 }
 
 .home-about-us-text {
@@ -861,7 +873,7 @@ export default {
 
   .home-container {
     height: 80rem;
-    margin-bottom: 10rem;
+    //margin-bottom: 10rem;
   }
 
   .title {
@@ -886,6 +898,25 @@ export default {
 
   .star {
     display: none;
+  }
+
+  .solution-img-mobile{
+    display: flex;
+    width: 100%;
+    margin-left: -3rem;
+  }
+
+  .mobile-img1{
+    width: 297px;
+    height: 214px;
+  }
+  .mobile-img2{
+    width: 318px;
+    height: 229px;
+  }
+  .mobile-img3{
+    width: 309px;
+    height: 213px;
   }
 
   #home-solution {
@@ -944,7 +975,9 @@ export default {
     width: 47.8125rem;
     height: 39.0945rem;
     margin-left: 8rem;
+    display: none;
   }
+
 
   #home-solution-img {
     width: 50.938rem;
@@ -1011,9 +1044,7 @@ export default {
   }
 
   .hardware-img {
-    height: 50rem;
-    position: relative;
-    width: 75.063rem;
+    display: none;
   }
 
   #home-product-img {
@@ -1059,7 +1090,7 @@ export default {
   .home-content-left {
     margin-top: 5rem;
     margin-bottom: 5rem;
-    height: 110rem;
+    height: 150rem;
   }
 
   .home-content-right {
