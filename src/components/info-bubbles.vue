@@ -1,10 +1,10 @@
 <template>
-  <el-row class="info-bubbles" justify="space-between" align="middle">
+  <div class="info-bubbles">
     <div class="info-bubble" id="info-bubble-1">需求分析</div>
     <div class="info-bubble" id="info-bubble-2">资源整合</div>
     <div class="info-bubble" id="info-bubble-3">方案设计</div>
     <div class="info-bubble" id="info-bubble-4">实施反馈</div>
-  </el-row>
+  </div>
 </template>
 
 <script setup>
@@ -55,8 +55,10 @@ export default {
 
 <style scoped lang="less">
 .info-bubbles {
-  width: 605px;
-  height: 246px;
+  width: 37.8125rem; /* 605px */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.0625rem;
 }
 
 .info-bubble {
@@ -65,24 +67,36 @@ export default {
   justify-content: center;
   align-items: center;
 
-  margin-bottom: 38px;
+  margin-bottom: 2.375rem; /* 38px */
 
-  width: 286px;
-  height: 104px;
+  height: 6.5rem; /* 104px */
   background-color: #EFF1F8;
   border-radius: 20px;
 
   font-family: Microsoft YaHei, serif;
-  font-size: 100%;
+  font-size: 1rem; /* 100% */
   font-weight: 700;
-  line-height: 100%;
+  line-height: 1rem; /* 100% */
   letter-spacing: 0.12em;
   color: #6374B6;
 
   transform-origin: center;
   transition-duration: 1s;
 
-  // 这个属性可以让浏览器提前渲染元素，提高性能，同时解决了文字一起放大时的位置向下跳一下的问题
+  /* 这个属性可以让浏览器提前渲染元素，提高性能，同时解决了文字一起放大时的位置向下跳一下的问题 */
   will-change: transform;
+}
+
+@media (max-width: 768px) {
+  .info-bubbles {
+    width: 80%;
+    gap: 5rem;
+  }
+
+  .info-bubble {
+    height: 15rem;
+
+    font-size: 5rem;
+  }
 }
 </style>
