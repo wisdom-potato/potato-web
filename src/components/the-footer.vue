@@ -1,16 +1,14 @@
 <template>
 
   <!--联系方式板-->
-  <el-row class="board-container" justify="center" align="middle" id="footer">
-    <el-row class="title-container" justify="center" align="middle">
-      <h1 id="chinese-title">联系我们&nbsp</h1>
-      <h2 id="english-title">contact us</h2>
-    </el-row>
-    <div class="contact-container">
-      <div>联系人：何老师</div>
-      <div>电话：13522793809</div>
-      <div>微信：同电话</div>
-      <div>地址：北京市顺义区千里马国际</div>
+  <el-row class="board-container" justify="center" align="middle">
+    <div class="title-container">
+      <div id="chinese-title">联系我们</div>
+      <div id="english-title">contact us</div>
+      <div id="contact">联系人：何老师</div>
+    </div>
+    <div>
+      <img class="qr-code" src="../assets/contact-qr-code.png" alt="">
     </div>
   </el-row>
 
@@ -35,10 +33,6 @@ export default {
   background-size: cover;
   width: 100%;
   height: 30.813rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .title-container {
@@ -68,22 +62,21 @@ export default {
   color: #CCD2E9;
 }
 
-.contact-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 40%;
-  color: white;
-  border-radius: 0.625rem;
-  margin-top: -0.641rem;
-  padding: 1.922rem;
+#contact {
+  margin-top: 5rem;
 
   font-family: YouSheBiaoTiHei, serif;
   font-size: 2rem;
   font-weight: 400;
   line-height: 2.6rem;
+}
+
+.qr-code {
+  margin-left: 8rem;
+  width: 18rem;
+  opacity: 80%;
+  background-blend-mode: exclusion;
+  border-radius: 10px;
 }
 
 .company-container {
@@ -120,11 +113,19 @@ export default {
     line-height: 6rem;
   }
 
-  .contact-container {
-    width: 80%;
+  #contact {
     font-size: 4.5rem;
     line-height: 4.5rem;
   }
+
+  .qr-code {
+    margin-left: 8rem;
+    width: 30rem;
+    opacity: 80%;
+    background-blend-mode: exclusion;
+    border-radius: 5px;
+  }
+
 
   .company-container {
     height: 15.5rem;

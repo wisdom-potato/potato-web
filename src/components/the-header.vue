@@ -57,7 +57,7 @@
     <el-drawer v-model="showCollapseMenu" :with-header="false" :show-close="false" direction="ttb" size="100%">
       <div @click="collapseMenuClicked('Home')" class="collapse-menu-item">首页</div>
       <el-divider/>
-      <div class="collapse-menu-item">开源资料</div>
+      <div class="collapse-menu-item" @click="goToExternalLink('https://potato-documentation.readthedocs.io/zh-cn/latest/MP-0/index.html')">开源资料</div>
       <el-divider/>
       <div class="collapse-menu-item" @click="collapseMenuClicked('HardwareProducts')">硬件产品</div>
       <el-divider/>

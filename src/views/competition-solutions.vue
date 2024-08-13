@@ -169,8 +169,8 @@
     <h2 id="card-title" style="color:#31354D; margin-bottom: 1.875rem">为您提供专业竞赛解决方案</h2>
     <p id="info-text">创赛精准、资源全面，专业定制竞赛方案。定制方案，全程服务，打造极致竞赛体验。</p>
     <div class="info-text-area">
-      <p id="info-text1">创赛精准、资源全面，专业定制竞赛方案。</p>
-      <p id="info-text1" style="margin-top: -1rem">定制方案，全程服务，打造极致竞赛体验。</p>
+      <p class="info-text1">创赛精准、资源全面，专业定制竞赛方案。</p>
+      <p class="info-text1" style="margin-top: -1rem">定制方案，全程服务，打造极致竞赛体验。</p>
     </div>
 
     <el-row justify="center">
@@ -252,6 +252,7 @@ export default {
   font-weight: bold;
   font-style: italic;
 }
+
 #info-text {
   font-family: "Microsoft YaHei", sans-serif;
   color: black;
@@ -670,22 +671,28 @@ export default {
 .info-text-area {
   display: none;
 }
-#competition-mobile-float1{
+
+#competition-mobile-float1 {
   display: none;
 }
-#competition-mobile-float2{
+
+#competition-mobile-float2 {
   display: none;
 }
-#competition-mobile-float3{
+
+#competition-mobile-float3 {
   display: none;
 }
-#competition-mobile-float4{
+
+#competition-mobile-float4 {
   display: none;
 }
-#competition-mobile-float5{
+
+#competition-mobile-float5 {
   display: none;
 }
-#competition-mobile-float6{
+
+#competition-mobile-float6 {
   display: none;
 }
 
@@ -966,6 +973,12 @@ export default {
     margin-bottom: -10rem;
   }
 
+  #card-title1 {
+    font-size: 5rem;
+    letter-spacing: 0.8rem;
+    margin-bottom: 7rem;
+  }
+
   .image-zoom1 {
     width: 40.875rem;
     height: 35.375rem;
@@ -1042,12 +1055,12 @@ export default {
     margin-bottom: 10rem;
   }
 
-  #info-text1 {
+  .info-text1 {
     font-family: "Microsoft YaHei", sans-serif;
-    color: black;
-    font-weight: 400;
-    font-size: 2rem;
-    line-height: 2rem;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
     letter-spacing: 0.1rem;
   }
 
@@ -1062,6 +1075,12 @@ export default {
     border-radius: 1rem;
   }
 
+  #card-title {
+    font-size: 6rem;
+    line-height: 6rem;
+    letter-spacing: 0.8rem;
+    margin-bottom: 7rem;
+  }
 
 }
 

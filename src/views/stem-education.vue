@@ -156,6 +156,8 @@ export default {
   background-image: url("../assets/green-rectgangle-long.png");
   background-size: cover;
 
+  overflow: hidden;
+
   width: 66.9375rem; /* 1071px */
   height: 29.75rem; /* 476px */
   display: flex;
