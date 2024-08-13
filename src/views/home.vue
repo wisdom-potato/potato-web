@@ -380,10 +380,8 @@ export default {
   margin: auto;
   width: 63.063rem;
   height: 28rem;
-  background-image: url("../assets/about-bg.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: rgb(236,239,246);
+  border-radius: 1rem;
 }
 
 #about-title-cn {
@@ -1227,10 +1225,8 @@ export default {
     border-radius: 2rem;
     width: 380px;
     margin-top: 5rem;
-    background-image: url("../assets/about-bg.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: rgb(236,239,246);
+    border-radius: 1rem;
     text-align: justify;
   }
 
