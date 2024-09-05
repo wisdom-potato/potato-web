@@ -17,7 +17,6 @@
     <div>北京智慧土豆科技有限公司</div>
     <a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2024078818号-1</a>
   </div>
-
 </template>
 
 <script setup>
