@@ -14,7 +14,9 @@
 
   <!--页脚蓝条-->
   <el-row class="company-container" justify="center" align="middle">北京智慧土豆科技有限公司</el-row>
-
+  <el-row class="company-container" justify="center" align="middle">
+	<a style="color:white" href="https://beian.miit.gov.cn/" target="_blank">京ICP备2024078818号-1</a>
+  </el-row>
 </template>
 
 <script setup>
