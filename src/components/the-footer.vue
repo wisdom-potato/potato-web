@@ -1,7 +1,7 @@
 <template>
 
   <!--联系方式板-->
-  <el-row class="board-container" justify="center" align="middle">
+  <div class="board-container">
     <div class="title-container">
       <div id="chinese-title">联系我们</div>
       <div id="english-title">contact us</div>
@@ -10,10 +10,13 @@
     <div>
       <img class="qr-code" src="../assets/contact-qr-code.png" alt="">
     </div>
-  </el-row>
+  </div>
 
   <!--页脚蓝条-->
-  <el-row class="company-container" justify="center" align="middle">北京智慧土豆科技有限公司</el-row>
+  <div class="company-container">
+    <div>北京智慧土豆科技有限公司</div>
+    <a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2024078818号-1</a>
+  </div>
 
 </template>
 
@@ -29,6 +32,10 @@ export default {
 
 <style scoped lang="less">
 .board-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   background-image: url("../assets/footer-background.png");
   background-size: cover;
   width: 100%;
@@ -80,18 +87,41 @@ export default {
 }
 
 .company-container {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   width: 100%;
   height: 7.75rem;
   font-family: Microsoft YaHei, serif;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 7.75rem;
   letter-spacing: 0.1rem;
-  text-align: center;
   color: #FFFFFF;
   background-color: #31354D;
 
-  margin-top: -0.938rem;;
+  margin-top: -0.85rem;
+
+  a {
+    position: absolute;
+    bottom: 1rem;
+
+
+    color: #FAFAFA;
+    text-decoration: none;
+    font-family: Microsoft YaHei, serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+
+    &:hover {
+      color: #FFFFFF;
+      text-decoration: underline;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -131,7 +161,21 @@ export default {
     height: 15.5rem;
     font-size: 3rem;
     line-height: 15.5rem;
+
+    a {
+      font-size: 2rem;
+      line-height: 2rem;
+      bottom: 2rem;
+
+      &:hover {
+        color: #FFFFFF;
+        text-decoration: underline;
+      }
+
+
+    }
   }
+
 
 }
 
